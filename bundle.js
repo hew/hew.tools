@@ -2,7 +2,7 @@ webpackJsonp([1],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -20,7 +20,7 @@ webpackJsonp([1],[
 
 	(0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 1 */
@@ -199,7 +199,7 @@ webpackJsonp([1],[
 /* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -207,27 +207,23 @@ webpackJsonp([1],[
 	  value: true
 	});
 
-	var _objectWithoutProperties2 = __webpack_require__(167);
-
-	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-
-	var _getPrototypeOf = __webpack_require__(168);
+	var _getPrototypeOf = __webpack_require__(167);
 
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-	var _classCallCheck2 = __webpack_require__(194);
+	var _classCallCheck2 = __webpack_require__(193);
 
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-	var _createClass2 = __webpack_require__(195);
+	var _createClass2 = __webpack_require__(194);
 
 	var _createClass3 = _interopRequireDefault(_createClass2);
 
-	var _possibleConstructorReturn2 = __webpack_require__(199);
+	var _possibleConstructorReturn2 = __webpack_require__(198);
 
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-	var _inherits2 = __webpack_require__(242);
+	var _inherits2 = __webpack_require__(241);
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -235,19 +231,23 @@ webpackJsonp([1],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Box = __webpack_require__(250);
+	var _Box = __webpack_require__(249);
 
-	var _Box2 = _interopRequireDefault(_Box);
+	var _OS = __webpack_require__(251);
 
-	var _Projects = __webpack_require__(251);
+	var _OS2 = _interopRequireDefault(_OS);
+
+	var _Projects = __webpack_require__(253);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Footer = __webpack_require__(253);
+	var _Footer = __webpack_require__(254);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _style = __webpack_require__(254);
+	var _siteData = __webpack_require__(255);
+
+	var _style = __webpack_require__(256);
 
 	var _style2 = _interopRequireDefault(_style);
 
@@ -264,16 +264,25 @@ webpackJsonp([1],[
 	  (0, _createClass3.default)(App, [{
 	    key: 'render',
 	    value: function render() {
+	      var source = _siteData.siteData.source;
+	      var navLinks = _siteData.siteData.navLinks;
+	      var projectLinks = _siteData.siteData.projectLinks;
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'px2 sm-px2 lg-px4' },
-	        _react2.default.createElement(About, null),
-	        _react2.default.createElement(Work, null),
-	        _react2.default.createElement(Contact, null),
-	        _react2.default.createElement(_Projects2.default, null),
+	        _react2.default.createElement(Who, null),
+	        _react2.default.createElement(More, null),
+	        _react2.default.createElement(Nav, {
+	          data: navLinks
+	        }),
+	        _react2.default.createElement(_OS2.default, null),
+	        _react2.default.createElement(_Projects2.default, {
+	          data: projectLinks
+	        }),
 	        _react2.default.createElement(_Footer2.default, {
 	          source: source,
-	          nav: nav
+	          data: navLinks
 	        })
 	      );
 	    }
@@ -292,8 +301,7 @@ webpackJsonp([1],[
 	    lineHeight: 1.125
 	  }
 	};
-	var About = function About(_ref) {
-	  var props = (0, _objectWithoutProperties3.default)(_ref, []);
+	var Who = function Who() {
 	  return _react2.default.createElement(
 	    'section',
 	    { id: 'about', className: 'py2' },
@@ -306,7 +314,7 @@ webpackJsonp([1],[
 	        { className: 'xs-hide' },
 	        '/'
 	      ),
-	      'hew Jones is a web  ',
+	      'hew Jones is a web ',
 	      _react2.default.createElement('br', { className: 'sm-hide lg-show' }),
 	      'designer',
 	      _react2.default.createElement(Str, null),
@@ -315,8 +323,7 @@ webpackJsonp([1],[
 	    )
 	  );
 	};
-	var Work = function Work(_ref2) {
-	  var props = (0, _objectWithoutProperties3.default)(_ref2, []);
+	var More = function More() {
 	  return _react2.default.createElement(
 	    'section',
 	    { id: 'contact', className: 'py2' },
@@ -345,8 +352,8 @@ webpackJsonp([1],[
 	    )
 	  );
 	};
-	var Contact = function Contact(_ref3) {
-	  var props = (0, _objectWithoutProperties3.default)(_ref3, []);
+	var Nav = function Nav(_ref) {
+	  var data = _ref.data;
 	  return _react2.default.createElement(
 	    'section',
 	    { id: 'contact', className: 'py2' },
@@ -355,39 +362,19 @@ webpackJsonp([1],[
 	      null,
 	      'Links'
 	    ),
-	    _react2.default.createElement(
-	      'p',
-	      { className: 'm0' },
-	      _react2.default.createElement(Str, null),
-	      ' ',
-	      _react2.default.createElement(
-	        'a',
-	        { href: '//github.com/hew' },
-	        ' Github '
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'p',
-	      { className: 'm0' },
-	      _react2.default.createElement(Str, null),
-	      ' ',
-	      _react2.default.createElement(
-	        'a',
-	        { href: '//twitter.com/hvmmus' },
-	        ' Twitter '
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'p',
-	      { className: 'm0' },
-	      _react2.default.createElement(Str, null),
-	      ' ',
-	      _react2.default.createElement(
-	        'a',
-	        { href: '/blog' },
-	        ' Blog '
-	      )
-	    )
+	    data.map(function (data, i) {
+	      return _react2.default.createElement(
+	        'p',
+	        { key: i, className: 'm0' },
+	        _react2.default.createElement(Str, null),
+	        ' ',
+	        _react2.default.createElement(
+	          'a',
+	          { href: data.href },
+	          data.name
+	        )
+	      );
+	    })
 	  );
 	};
 	var Str = function Str() {
@@ -397,70 +384,48 @@ webpackJsonp([1],[
 	    '/'
 	  );
 	};
-	var source = 'http://github.com/hew/hew.github.io';
-	var nav = [{ href: '//github.com/hew', title: 'Github' }, { href: '//twitter.com/hvmmus', title: 'Twitter' }, { href: '/blog', title: 'Blog' }];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 167 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	exports.__esModule = true;
-
-	exports.default = function (obj, keys) {
-	  var target = {};
-
-	  for (var i in obj) {
-	    if (keys.indexOf(i) >= 0) continue;
-	    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-	    target[i] = obj[i];
-	  }
-
-	  return target;
-	};
+	module.exports = { "default": __webpack_require__(168), __esModule: true };
 
 /***/ },
 /* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(169), __esModule: true };
+	__webpack_require__(169);
+	module.exports = __webpack_require__(180).Object.getPrototypeOf;
 
 /***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(170);
-	module.exports = __webpack_require__(181).Object.getPrototypeOf;
-
-/***/ },
-/* 170 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject        = __webpack_require__(171)
-	  , $getPrototypeOf = __webpack_require__(173);
+	var toObject        = __webpack_require__(170)
+	  , $getPrototypeOf = __webpack_require__(172);
 
-	__webpack_require__(179)('getPrototypeOf', function(){
+	__webpack_require__(178)('getPrototypeOf', function(){
 	  return function getPrototypeOf(it){
 	    return $getPrototypeOf(toObject(it));
 	  };
 	});
 
 /***/ },
-/* 171 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
-	var defined = __webpack_require__(172);
+	var defined = __webpack_require__(171);
 	module.exports = function(it){
 	  return Object(defined(it));
 	};
 
 /***/ },
-/* 172 */
+/* 171 */
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -470,13 +435,13 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 173 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-	var has         = __webpack_require__(174)
-	  , toObject    = __webpack_require__(171)
-	  , IE_PROTO    = __webpack_require__(175)('IE_PROTO')
+	var has         = __webpack_require__(173)
+	  , toObject    = __webpack_require__(170)
+	  , IE_PROTO    = __webpack_require__(174)('IE_PROTO')
 	  , ObjectProto = Object.prototype;
 
 	module.exports = Object.getPrototypeOf || function(O){
@@ -488,7 +453,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 174 */
+/* 173 */
 /***/ function(module, exports) {
 
 	var hasOwnProperty = {}.hasOwnProperty;
@@ -497,20 +462,20 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 175 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var shared = __webpack_require__(176)('keys')
-	  , uid    = __webpack_require__(178);
+	var shared = __webpack_require__(175)('keys')
+	  , uid    = __webpack_require__(177);
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global = __webpack_require__(177)
+	var global = __webpack_require__(176)
 	  , SHARED = '__core-js_shared__'
 	  , store  = global[SHARED] || (global[SHARED] = {});
 	module.exports = function(key){
@@ -518,7 +483,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -527,7 +492,7 @@ webpackJsonp([1],[
 	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 /***/ },
-/* 178 */
+/* 177 */
 /***/ function(module, exports) {
 
 	var id = 0
@@ -537,13 +502,13 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 179 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
-	var $export = __webpack_require__(180)
-	  , core    = __webpack_require__(181)
-	  , fails   = __webpack_require__(190);
+	var $export = __webpack_require__(179)
+	  , core    = __webpack_require__(180)
+	  , fails   = __webpack_require__(189);
 	module.exports = function(KEY, exec){
 	  var fn  = (core.Object || {})[KEY] || Object[KEY]
 	    , exp = {};
@@ -552,13 +517,13 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 180 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global    = __webpack_require__(177)
-	  , core      = __webpack_require__(181)
-	  , ctx       = __webpack_require__(182)
-	  , hide      = __webpack_require__(184)
+	var global    = __webpack_require__(176)
+	  , core      = __webpack_require__(180)
+	  , ctx       = __webpack_require__(181)
+	  , hide      = __webpack_require__(183)
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -618,18 +583,18 @@ webpackJsonp([1],[
 	module.exports = $export;
 
 /***/ },
-/* 181 */
+/* 180 */
 /***/ function(module, exports) {
 
-	var core = module.exports = {version: '2.2.1'};
+	var core = module.exports = {version: '2.2.2'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
-	var aFunction = __webpack_require__(183);
+	var aFunction = __webpack_require__(182);
 	module.exports = function(fn, that, length){
 	  aFunction(fn);
 	  if(that === undefined)return fn;
@@ -650,7 +615,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -659,12 +624,12 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(185)
-	  , createDesc = __webpack_require__(193);
-	module.exports = __webpack_require__(189) ? function(object, key, value){
+	var dP         = __webpack_require__(184)
+	  , createDesc = __webpack_require__(192);
+	module.exports = __webpack_require__(188) ? function(object, key, value){
 	  return dP.f(object, key, createDesc(1, value));
 	} : function(object, key, value){
 	  object[key] = value;
@@ -672,15 +637,15 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var anObject       = __webpack_require__(186)
-	  , IE8_DOM_DEFINE = __webpack_require__(188)
-	  , toPrimitive    = __webpack_require__(192)
+	var anObject       = __webpack_require__(185)
+	  , IE8_DOM_DEFINE = __webpack_require__(187)
+	  , toPrimitive    = __webpack_require__(191)
 	  , dP             = Object.defineProperty;
 
-	exports.f = __webpack_require__(189) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+	exports.f = __webpack_require__(188) ? Object.defineProperty : function defineProperty(O, P, Attributes){
 	  anObject(O);
 	  P = toPrimitive(P, true);
 	  anObject(Attributes);
@@ -693,17 +658,17 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(187);
+	var isObject = __webpack_require__(186);
 	module.exports = function(it){
 	  if(!isObject(it))throw TypeError(it + ' is not an object!');
 	  return it;
 	};
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -711,24 +676,24 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = !__webpack_require__(189) && !__webpack_require__(190)(function(){
-	  return Object.defineProperty(__webpack_require__(191)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	module.exports = !__webpack_require__(188) && !__webpack_require__(189)(function(){
+	  return Object.defineProperty(__webpack_require__(190)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Thank's IE8 for his funny defineProperty
-	module.exports = !__webpack_require__(190)(function(){
+	module.exports = !__webpack_require__(189)(function(){
 	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports) {
 
 	module.exports = function(exec){
@@ -740,11 +705,11 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(187)
-	  , document = __webpack_require__(177).document
+	var isObject = __webpack_require__(186)
+	  , document = __webpack_require__(176).document
 	  // in old IE typeof document.createElement is 'object'
 	  , is = isObject(document) && isObject(document.createElement);
 	module.exports = function(it){
@@ -752,11 +717,11 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
-	var isObject = __webpack_require__(187);
+	var isObject = __webpack_require__(186);
 	// instead of the ES6 spec version, we didn't implement @@toPrimitive case
 	// and the second argument - flag - preferred type is a string
 	module.exports = function(it, S){
@@ -769,7 +734,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports) {
 
 	module.exports = function(bitmap, value){
@@ -782,7 +747,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -796,14 +761,14 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _defineProperty = __webpack_require__(196);
+	var _defineProperty = __webpack_require__(195);
 
 	var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -828,38 +793,38 @@ webpackJsonp([1],[
 	}();
 
 /***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(196), __esModule: true };
+
+/***/ },
 /* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(197), __esModule: true };
-
-/***/ },
-/* 197 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(198);
-	var $Object = __webpack_require__(181).Object;
+	__webpack_require__(197);
+	var $Object = __webpack_require__(180).Object;
 	module.exports = function defineProperty(it, key, desc){
 	  return $Object.defineProperty(it, key, desc);
 	};
 
 /***/ },
-/* 198 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $export = __webpack_require__(180);
+	var $export = __webpack_require__(179);
 	// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-	$export($export.S + $export.F * !__webpack_require__(189), 'Object', {defineProperty: __webpack_require__(185).f});
+	$export($export.S + $export.F * !__webpack_require__(188), 'Object', {defineProperty: __webpack_require__(184).f});
 
 /***/ },
-/* 199 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _typeof2 = __webpack_require__(200);
+	var _typeof2 = __webpack_require__(199);
 
 	var _typeof3 = _interopRequireDefault(_typeof2);
 
@@ -874,18 +839,18 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 200 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _iterator = __webpack_require__(201);
+	var _iterator = __webpack_require__(200);
 
 	var _iterator2 = _interopRequireDefault(_iterator);
 
-	var _symbol = __webpack_require__(229);
+	var _symbol = __webpack_require__(228);
 
 	var _symbol2 = _interopRequireDefault(_symbol);
 
@@ -900,28 +865,28 @@ webpackJsonp([1],[
 	};
 
 /***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(201), __esModule: true };
+
+/***/ },
 /* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(202), __esModule: true };
+	__webpack_require__(202);
+	__webpack_require__(224);
+	module.exports = __webpack_require__(223)('iterator');
 
 /***/ },
 /* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(203);
-	__webpack_require__(225);
-	module.exports = __webpack_require__(224)('iterator');
-
-/***/ },
-/* 203 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
-	var $at  = __webpack_require__(204)(true);
+	var $at  = __webpack_require__(203)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
-	__webpack_require__(206)(String, 'String', function(iterated){
+	__webpack_require__(205)(String, 'String', function(iterated){
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -936,11 +901,11 @@ webpackJsonp([1],[
 	});
 
 /***/ },
-/* 204 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(205)
-	  , defined   = __webpack_require__(172);
+	var toInteger = __webpack_require__(204)
+	  , defined   = __webpack_require__(171);
 	// true  -> String#at
 	// false -> String#codePointAt
 	module.exports = function(TO_STRING){
@@ -958,7 +923,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 205 */
+/* 204 */
 /***/ function(module, exports) {
 
 	// 7.1.4 ToInteger
@@ -969,20 +934,20 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 206 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var LIBRARY        = __webpack_require__(207)
-	  , $export        = __webpack_require__(180)
-	  , redefine       = __webpack_require__(208)
-	  , hide           = __webpack_require__(184)
-	  , has            = __webpack_require__(174)
-	  , Iterators      = __webpack_require__(209)
-	  , $iterCreate    = __webpack_require__(210)
-	  , setToStringTag = __webpack_require__(223)
-	  , getPrototypeOf = __webpack_require__(173)
-	  , ITERATOR       = __webpack_require__(224)('iterator')
+	var LIBRARY        = __webpack_require__(206)
+	  , $export        = __webpack_require__(179)
+	  , redefine       = __webpack_require__(207)
+	  , hide           = __webpack_require__(183)
+	  , has            = __webpack_require__(173)
+	  , Iterators      = __webpack_require__(208)
+	  , $iterCreate    = __webpack_require__(209)
+	  , setToStringTag = __webpack_require__(222)
+	  , getPrototypeOf = __webpack_require__(172)
+	  , ITERATOR       = __webpack_require__(223)('iterator')
 	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
 	  , FF_ITERATOR    = '@@iterator'
 	  , KEYS           = 'keys'
@@ -1044,35 +1009,35 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 207 */
+/* 206 */
 /***/ function(module, exports) {
 
 	module.exports = true;
 
 /***/ },
-/* 208 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(184);
+	module.exports = __webpack_require__(183);
 
 /***/ },
-/* 209 */
+/* 208 */
 /***/ function(module, exports) {
 
 	module.exports = {};
 
 /***/ },
-/* 210 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var create         = __webpack_require__(211)
-	  , descriptor     = __webpack_require__(193)
-	  , setToStringTag = __webpack_require__(223)
+	var create         = __webpack_require__(210)
+	  , descriptor     = __webpack_require__(192)
+	  , setToStringTag = __webpack_require__(222)
 	  , IteratorPrototype = {};
 
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-	__webpack_require__(184)(IteratorPrototype, __webpack_require__(224)('iterator'), function(){ return this; });
+	__webpack_require__(183)(IteratorPrototype, __webpack_require__(223)('iterator'), function(){ return this; });
 
 	module.exports = function(Constructor, NAME, next){
 	  Constructor.prototype = create(IteratorPrototype, {next: descriptor(1, next)});
@@ -1080,26 +1045,26 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 211 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	var anObject    = __webpack_require__(186)
-	  , dPs         = __webpack_require__(212)
-	  , enumBugKeys = __webpack_require__(221)
-	  , IE_PROTO    = __webpack_require__(175)('IE_PROTO')
+	var anObject    = __webpack_require__(185)
+	  , dPs         = __webpack_require__(211)
+	  , enumBugKeys = __webpack_require__(220)
+	  , IE_PROTO    = __webpack_require__(174)('IE_PROTO')
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
-	  var iframe = __webpack_require__(191)('iframe')
+	  var iframe = __webpack_require__(190)('iframe')
 	    , i      = enumBugKeys.length
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
-	  __webpack_require__(222).appendChild(iframe);
+	  __webpack_require__(221).appendChild(iframe);
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1125,14 +1090,14 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 212 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP       = __webpack_require__(185)
-	  , anObject = __webpack_require__(186)
-	  , getKeys  = __webpack_require__(213);
+	var dP       = __webpack_require__(184)
+	  , anObject = __webpack_require__(185)
+	  , getKeys  = __webpack_require__(212);
 
-	module.exports = __webpack_require__(189) ? Object.defineProperties : function defineProperties(O, Properties){
+	module.exports = __webpack_require__(188) ? Object.defineProperties : function defineProperties(O, Properties){
 	  anObject(O);
 	  var keys   = getKeys(Properties)
 	    , length = keys.length
@@ -1143,25 +1108,25 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 213 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(214)
-	  , enumBugKeys = __webpack_require__(221);
+	var $keys       = __webpack_require__(213)
+	  , enumBugKeys = __webpack_require__(220);
 
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
 	};
 
 /***/ },
-/* 214 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var has          = __webpack_require__(174)
-	  , toIObject    = __webpack_require__(215)
-	  , arrayIndexOf = __webpack_require__(218)(false)
-	  , IE_PROTO     = __webpack_require__(175)('IE_PROTO');
+	var has          = __webpack_require__(173)
+	  , toIObject    = __webpack_require__(214)
+	  , arrayIndexOf = __webpack_require__(217)(false)
+	  , IE_PROTO     = __webpack_require__(174)('IE_PROTO');
 
 	module.exports = function(object, names){
 	  var O      = toIObject(object)
@@ -1177,28 +1142,28 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 215 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
-	var IObject = __webpack_require__(216)
-	  , defined = __webpack_require__(172);
+	var IObject = __webpack_require__(215)
+	  , defined = __webpack_require__(171);
 	module.exports = function(it){
 	  return IObject(defined(it));
 	};
 
 /***/ },
-/* 216 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(217);
+	var cof = __webpack_require__(216);
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
 
 /***/ },
-/* 217 */
+/* 216 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1208,14 +1173,14 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 218 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
-	var toIObject = __webpack_require__(215)
-	  , toLength  = __webpack_require__(219)
-	  , toIndex   = __webpack_require__(220);
+	var toIObject = __webpack_require__(214)
+	  , toLength  = __webpack_require__(218)
+	  , toIndex   = __webpack_require__(219);
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -1228,27 +1193,27 @@ webpackJsonp([1],[
 	      if(value != value)return true;
 	    // Array#toIndex ignores holes, Array#includes - not
 	    } else for(;length > index; index++)if(IS_INCLUDES || index in O){
-	      if(O[index] === el)return IS_INCLUDES || index;
+	      if(O[index] === el)return IS_INCLUDES || index || 0;
 	    } return !IS_INCLUDES && -1;
 	  };
 	};
 
 /***/ },
-/* 219 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
-	var toInteger = __webpack_require__(205)
+	var toInteger = __webpack_require__(204)
 	  , min       = Math.min;
 	module.exports = function(it){
 	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
 	};
 
 /***/ },
-/* 220 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(205)
+	var toInteger = __webpack_require__(204)
 	  , max       = Math.max
 	  , min       = Math.min;
 	module.exports = function(index, length){
@@ -1257,7 +1222,7 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 221 */
+/* 220 */
 /***/ function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -1266,30 +1231,30 @@ webpackJsonp([1],[
 	).split(',');
 
 /***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(176).document && document.documentElement;
+
+/***/ },
 /* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(177).document && document.documentElement;
-
-/***/ },
-/* 223 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var def = __webpack_require__(185).f
-	  , has = __webpack_require__(174)
-	  , TAG = __webpack_require__(224)('toStringTag');
+	var def = __webpack_require__(184).f
+	  , has = __webpack_require__(173)
+	  , TAG = __webpack_require__(223)('toStringTag');
 
 	module.exports = function(it, tag, stat){
 	  if(it && !has(it = stat ? it : it.prototype, TAG))def(it, TAG, {configurable: true, value: tag});
 	};
 
 /***/ },
-/* 224 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var store      = __webpack_require__(176)('wks')
-	  , uid        = __webpack_require__(178)
-	  , Symbol     = __webpack_require__(177).Symbol
+	var store      = __webpack_require__(175)('wks')
+	  , uid        = __webpack_require__(177)
+	  , Symbol     = __webpack_require__(176).Symbol
 	  , USE_SYMBOL = typeof Symbol == 'function';
 	module.exports = function(name){
 	  return store[name] || (store[name] =
@@ -1297,14 +1262,14 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 225 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(226);
-	var global        = __webpack_require__(177)
-	  , hide          = __webpack_require__(184)
-	  , Iterators     = __webpack_require__(209)
-	  , TO_STRING_TAG = __webpack_require__(224)('toStringTag');
+	__webpack_require__(225);
+	var global        = __webpack_require__(176)
+	  , hide          = __webpack_require__(183)
+	  , Iterators     = __webpack_require__(208)
+	  , TO_STRING_TAG = __webpack_require__(223)('toStringTag');
 
 	for(var collections = ['NodeList', 'DOMTokenList', 'MediaList', 'StyleSheetList', 'CSSRuleList'], i = 0; i < 5; i++){
 	  var NAME       = collections[i]
@@ -1315,20 +1280,20 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 226 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var addToUnscopables = __webpack_require__(227)
-	  , step             = __webpack_require__(228)
-	  , Iterators        = __webpack_require__(209)
-	  , toIObject        = __webpack_require__(215);
+	var addToUnscopables = __webpack_require__(226)
+	  , step             = __webpack_require__(227)
+	  , Iterators        = __webpack_require__(208)
+	  , toIObject        = __webpack_require__(214);
 
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
-	module.exports = __webpack_require__(206)(Array, 'Array', function(iterated, kind){
+	module.exports = __webpack_require__(205)(Array, 'Array', function(iterated, kind){
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -1354,13 +1319,13 @@ webpackJsonp([1],[
 	addToUnscopables('entries');
 
 /***/ },
-/* 227 */
+/* 226 */
 /***/ function(module, exports) {
 
 	module.exports = function(){ /* empty */ };
 
 /***/ },
-/* 228 */
+/* 227 */
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -1368,48 +1333,48 @@ webpackJsonp([1],[
 	};
 
 /***/ },
+/* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(229), __esModule: true };
+
+/***/ },
 /* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(230), __esModule: true };
+	__webpack_require__(230);
+	__webpack_require__(240);
+	module.exports = __webpack_require__(180).Symbol;
 
 /***/ },
 /* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(231);
-	__webpack_require__(241);
-	module.exports = __webpack_require__(181).Symbol;
-
-/***/ },
-/* 231 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	// ECMAScript 6 symbols shim
-	var global         = __webpack_require__(177)
-	  , core           = __webpack_require__(181)
-	  , has            = __webpack_require__(174)
-	  , DESCRIPTORS    = __webpack_require__(189)
-	  , $export        = __webpack_require__(180)
-	  , redefine       = __webpack_require__(208)
-	  , META           = __webpack_require__(232).KEY
-	  , $fails         = __webpack_require__(190)
-	  , shared         = __webpack_require__(176)
-	  , setToStringTag = __webpack_require__(223)
-	  , uid            = __webpack_require__(178)
-	  , wks            = __webpack_require__(224)
-	  , keyOf          = __webpack_require__(233)
-	  , enumKeys       = __webpack_require__(234)
-	  , isArray        = __webpack_require__(237)
-	  , anObject       = __webpack_require__(186)
-	  , toIObject      = __webpack_require__(215)
-	  , toPrimitive    = __webpack_require__(192)
-	  , createDesc     = __webpack_require__(193)
-	  , _create        = __webpack_require__(211)
-	  , gOPNExt        = __webpack_require__(238)
-	  , $GOPD          = __webpack_require__(240)
-	  , $DP            = __webpack_require__(185)
+	var global         = __webpack_require__(176)
+	  , core           = __webpack_require__(180)
+	  , has            = __webpack_require__(173)
+	  , DESCRIPTORS    = __webpack_require__(188)
+	  , $export        = __webpack_require__(179)
+	  , redefine       = __webpack_require__(207)
+	  , META           = __webpack_require__(231).KEY
+	  , $fails         = __webpack_require__(189)
+	  , shared         = __webpack_require__(175)
+	  , setToStringTag = __webpack_require__(222)
+	  , uid            = __webpack_require__(177)
+	  , wks            = __webpack_require__(223)
+	  , keyOf          = __webpack_require__(232)
+	  , enumKeys       = __webpack_require__(233)
+	  , isArray        = __webpack_require__(236)
+	  , anObject       = __webpack_require__(185)
+	  , toIObject      = __webpack_require__(214)
+	  , toPrimitive    = __webpack_require__(191)
+	  , createDesc     = __webpack_require__(192)
+	  , _create        = __webpack_require__(210)
+	  , gOPNExt        = __webpack_require__(237)
+	  , $GOPD          = __webpack_require__(239)
+	  , $DP            = __webpack_require__(184)
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
 	  , gOPN           = gOPNExt.f
@@ -1544,11 +1509,11 @@ webpackJsonp([1],[
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
-	  __webpack_require__(239).f = gOPNExt.f = $getOwnPropertyNames;
-	  __webpack_require__(236).f  = $propertyIsEnumerable
-	  __webpack_require__(235).f = $getOwnPropertySymbols;
+	  __webpack_require__(238).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(235).f  = $propertyIsEnumerable
+	  __webpack_require__(234).f = $getOwnPropertySymbols;
 
-	  if(DESCRIPTORS && !__webpack_require__(207)){
+	  if(DESCRIPTORS && !__webpack_require__(206)){
 	    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
 	  }
 	}
@@ -1613,7 +1578,7 @@ webpackJsonp([1],[
 	$JSON && $export($export.S + $export.F * (!USE_NATIVE || BUGGY_JSON), 'JSON', {stringify: $stringify});
 
 	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(184)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(183)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -1622,18 +1587,18 @@ webpackJsonp([1],[
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
-/* 232 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var META     = __webpack_require__(178)('meta')
-	  , isObject = __webpack_require__(187)
-	  , has      = __webpack_require__(174)
-	  , setDesc  = __webpack_require__(185).f
+	var META     = __webpack_require__(177)('meta')
+	  , isObject = __webpack_require__(186)
+	  , has      = __webpack_require__(173)
+	  , setDesc  = __webpack_require__(184).f
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
 	  return true;
 	};
-	var FREEZE = !__webpack_require__(190)(function(){
+	var FREEZE = !__webpack_require__(189)(function(){
 	  return isExtensible(Object.preventExtensions({}));
 	});
 	var setMeta = function(it){
@@ -1680,11 +1645,11 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 233 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getKeys   = __webpack_require__(213)
-	  , toIObject = __webpack_require__(215);
+	var getKeys   = __webpack_require__(212)
+	  , toIObject = __webpack_require__(214);
 	module.exports = function(object, el){
 	  var O      = toIObject(object)
 	    , keys   = getKeys(O)
@@ -1695,13 +1660,13 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 234 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
-	var getKeys = __webpack_require__(213)
-	  , gOPS    = __webpack_require__(235)
-	  , pIE     = __webpack_require__(236);
+	var getKeys = __webpack_require__(212)
+	  , gOPS    = __webpack_require__(234)
+	  , pIE     = __webpack_require__(235);
 	module.exports = function(it){
 	  var result     = getKeys(it)
 	    , getSymbols = gOPS.f;
@@ -1715,34 +1680,34 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 235 */
+/* 234 */
 /***/ function(module, exports) {
 
 	exports.f = Object.getOwnPropertySymbols;
 
 /***/ },
-/* 236 */
+/* 235 */
 /***/ function(module, exports) {
 
 	exports.f = {}.propertyIsEnumerable;
 
 /***/ },
-/* 237 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
-	var cof = __webpack_require__(217);
+	var cof = __webpack_require__(216);
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
 
 /***/ },
-/* 238 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-	var toIObject = __webpack_require__(215)
-	  , gOPN      = __webpack_require__(239).f
+	var toIObject = __webpack_require__(214)
+	  , gOPN      = __webpack_require__(238).f
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -1762,30 +1727,30 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys      = __webpack_require__(214)
-	  , hiddenKeys = __webpack_require__(221).concat('length', 'prototype');
+	var $keys      = __webpack_require__(213)
+	  , hiddenKeys = __webpack_require__(220).concat('length', 'prototype');
 
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 	  return $keys(O, hiddenKeys);
 	};
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pIE            = __webpack_require__(236)
-	  , createDesc     = __webpack_require__(193)
-	  , toIObject      = __webpack_require__(215)
-	  , toPrimitive    = __webpack_require__(192)
-	  , has            = __webpack_require__(174)
-	  , IE8_DOM_DEFINE = __webpack_require__(188)
+	var pIE            = __webpack_require__(235)
+	  , createDesc     = __webpack_require__(192)
+	  , toIObject      = __webpack_require__(214)
+	  , toPrimitive    = __webpack_require__(191)
+	  , has            = __webpack_require__(173)
+	  , IE8_DOM_DEFINE = __webpack_require__(187)
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
-	exports.f = __webpack_require__(189) ? gOPD : function getOwnPropertyDescriptor(O, P){
+	exports.f = __webpack_require__(188) ? gOPD : function getOwnPropertyDescriptor(O, P){
 	  O = toIObject(O);
 	  P = toPrimitive(P, true);
 	  if(IE8_DOM_DEFINE)try {
@@ -1795,28 +1760,28 @@ webpackJsonp([1],[
 	};
 
 /***/ },
-/* 241 */
+/* 240 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 242 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _setPrototypeOf = __webpack_require__(243);
+	var _setPrototypeOf = __webpack_require__(242);
 
 	var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
 
-	var _create = __webpack_require__(247);
+	var _create = __webpack_require__(246);
 
 	var _create2 = _interopRequireDefault(_create);
 
-	var _typeof2 = __webpack_require__(200);
+	var _typeof2 = __webpack_require__(199);
 
 	var _typeof3 = _interopRequireDefault(_typeof2);
 
@@ -1839,34 +1804,34 @@ webpackJsonp([1],[
 	};
 
 /***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(243), __esModule: true };
+
+/***/ },
 /* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(244), __esModule: true };
+	__webpack_require__(244);
+	module.exports = __webpack_require__(180).Object.setPrototypeOf;
 
 /***/ },
 /* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(245);
-	module.exports = __webpack_require__(181).Object.setPrototypeOf;
+	// 19.1.3.19 Object.setPrototypeOf(O, proto)
+	var $export = __webpack_require__(179);
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(245).set});
 
 /***/ },
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// 19.1.3.19 Object.setPrototypeOf(O, proto)
-	var $export = __webpack_require__(180);
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(246).set});
-
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
 	/* eslint-disable no-proto */
-	var isObject = __webpack_require__(187)
-	  , anObject = __webpack_require__(186);
+	var isObject = __webpack_require__(186)
+	  , anObject = __webpack_require__(185);
 	var check = function(O, proto){
 	  anObject(O);
 	  if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -1875,7 +1840,7 @@ webpackJsonp([1],[
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
-	        set = __webpack_require__(182)(Function.call, __webpack_require__(240).f(Object.prototype, '__proto__').set, 2);
+	        set = __webpack_require__(181)(Function.call, __webpack_require__(239).f(Object.prototype, '__proto__').set, 2);
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -1890,42 +1855,43 @@ webpackJsonp([1],[
 	};
 
 /***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(247), __esModule: true };
+
+/***/ },
 /* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(248), __esModule: true };
-
-/***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(249);
-	var $Object = __webpack_require__(181).Object;
+	__webpack_require__(248);
+	var $Object = __webpack_require__(180).Object;
 	module.exports = function create(P, D){
 	  return $Object.create(P, D);
 	};
 
 /***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export = __webpack_require__(179)
+	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+	$export($export.S, 'Object', {create: __webpack_require__(210)});
+
+/***/ },
 /* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $export = __webpack_require__(180)
-	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	$export($export.S, 'Object', {create: __webpack_require__(211)});
-
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.BoxSimple = exports.Box = undefined;
 
-	var _objectWithoutProperties2 = __webpack_require__(167);
+	var _objectWithoutProperties2 = __webpack_require__(250);
 
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -1935,7 +1901,7 @@ webpackJsonp([1],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var ProjectCard = function ProjectCard(_ref) {
+	var Box = exports.Box = function Box(_ref) {
 	  var href = _ref.href;
 	  var name = _ref.name;
 	  var description = _ref.description;
@@ -1985,15 +1951,67 @@ webpackJsonp([1],[
 	  );
 	};
 
-	exports.default = ProjectCard;
+	var BoxSimple = exports.BoxSimple = function BoxSimple(_ref2) {
+	  var href = _ref2.href;
+	  var name = _ref2.name;
+	  var description = _ref2.description;
+	  var stars = _ref2.stars;
+	  var forks = _ref2.forks;
+	  var props = (0, _objectWithoutProperties3.default)(_ref2, ['href', 'name', 'description', 'stars', 'forks']);
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'mb2 flex-grid' },
+	    _react2.default.createElement(
+	      'a',
+	      { href: href,
+	        className: 'block btn inverse',
+	        title: 'View ' + name
+	      },
+	      _react2.default.createElement(
+	        'h2',
+	        { className: 'h4' },
+	        ' ',
+	        name,
+	        ' '
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'regular m0' },
+	        ' ',
+	        description,
+	        ' '
+	      )
+	    )
+	  );
+	};
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 250 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	exports.__esModule = true;
+
+	exports.default = function (obj, keys) {
+	  var target = {};
+
+	  for (var i in obj) {
+	    if (keys.indexOf(i) >= 0) continue;
+	    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+	    target[i] = obj[i];
+	  }
+
+	  return target;
+	};
 
 /***/ },
 /* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -2001,23 +2019,23 @@ webpackJsonp([1],[
 	  value: true
 	});
 
-	var _getPrototypeOf = __webpack_require__(168);
+	var _getPrototypeOf = __webpack_require__(167);
 
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-	var _classCallCheck2 = __webpack_require__(194);
+	var _classCallCheck2 = __webpack_require__(193);
 
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-	var _createClass2 = __webpack_require__(195);
+	var _createClass2 = __webpack_require__(194);
 
 	var _createClass3 = _interopRequireDefault(_createClass2);
 
-	var _possibleConstructorReturn2 = __webpack_require__(199);
+	var _possibleConstructorReturn2 = __webpack_require__(198);
 
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-	var _inherits2 = __webpack_require__(242);
+	var _inherits2 = __webpack_require__(241);
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -2029,21 +2047,17 @@ webpackJsonp([1],[
 
 	var _jax2 = _interopRequireDefault(_jax);
 
-	var _Box = __webpack_require__(250);
-
-	var _Box2 = _interopRequireDefault(_Box);
+	var _Box = __webpack_require__(249);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// const beep = [{"name":"react-static-boilerplate-ES6","desc":"React Static Site Boilerplate with ES6","url":"https://github.com/hew/react-static-boilerplate-ES6","stars":36,"forks":8},{"name":"react-hummus","desc":"Another React Starter","url":"http://tough-iron.surge.sh","stars":6,"forks":0},{"name":"sage-lost-stylus","desc":"Use Stylus and Lost with Sage","url":"https://github.com/hew/sage-lost-stylus","stars":6,"forks":1},{"name":"grunt-emails-zurb","desc":"Grunt + Assemble + Zurb = ♥","url":"https://github.com/hew/grunt-emails-zurb","stars":3,"forks":2},{"name":"blog","desc":"My blog. Built with React.","url":"http://hew.tools/blog","stars":2,"forks":0},{"name":"sage-basscss","desc":"Roots.io's 'Sage' Wordpress theme with Basscss (instead of Bootstrap) ","url":"https://github.com/hew/sage-basscss","stars":2,"forks":0},{"name":"frontend-boilerplate-min","desc":"Simplified from TJ's version","url":"https://github.com/hew/frontend-boilerplate-min","stars":1,"forks":0},{"name":"landing-page-express","desc":"Form validation + Email. A super simple Express app for landing pages. ","url":"https://github.com/hew/landing-page-express","stars":1,"forks":0},{"name":"materialize-landing-page","desc":"A landing page built with the Materialize framework. ","url":"https://github.com/hew/materialize-landing-page","stars":1,"forks":1},{"name":"eww","desc":"","url":"https://github.com/hew/eww","stars":0,"forks":0},{"name":"hew.github.io","desc":"My personal website. Built with, and is me playing around with React.","url":"https://github.com/hew/hew.github.io","stars":0,"forks":0},{"name":"hotfiles","desc":"My dotfiles — so hot right now.","url":"https://github.com/hew/hotfiles","stars":0,"forks":0},{"name":"resume.css","desc":"This is my resume as a css file.","url":"http://hew.tools/resume.css","stars":0,"forks":0},{"name":"single-gulp-wired-ep","desc":"Wiredep (Bower injection) in a Single Gulp Task","url":"https://github.com/hew/single-gulp-wired-ep","stars":0,"forks":0},{"name":"cover-letter","desc":"Cover letter thing.","url":"http://hew.tools/cover-letter","stars":0,"forks":0},{"name":"lix","desc":null,"url":"https://github.com/hew/lix","stars":0,"forks":0}]
+	var OS = function (_Component) {
+	  (0, _inherits3.default)(OS, _Component);
 
-	var Projects = function (_Component) {
-	  (0, _inherits3.default)(Projects, _Component);
+	  function OS(props) {
+	    (0, _classCallCheck3.default)(this, OS);
 
-	  function Projects(props) {
-	    (0, _classCallCheck3.default)(this, Projects);
-
-	    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Projects).call(this, props));
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(OS).call(this, props));
 
 	    _this.state = {
 	      parsedItems: []
@@ -2051,23 +2065,21 @@ webpackJsonp([1],[
 	    return _this;
 	  }
 
-	  (0, _createClass3.default)(Projects, [{
+	  (0, _createClass3.default)(OS, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      var _this2 = this;
 
 	      (0, _jax2.default)('http://hewtools.herokuapp.com/').then(function (response) {
 	        var parsed = JSON.parse(response);
-	        // console.log("parsed", parsed)
 	        _this2.setState({ parsedItems: parsed });
 	      });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var myProjects = this.state.parsedItems.map(function (item, i) {
-
-	        return _react2.default.createElement(_Box2.default, {
+	      var OSProjects = this.state.parsedItems.map(function (item, i) {
+	        return _react2.default.createElement(_Box.Box, {
 	          name: item.name,
 	          description: item.desc,
 	          href: item.url,
@@ -2088,17 +2100,17 @@ webpackJsonp([1],[
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'sm-flex flex flex-wrap xjustify-between mxn2' },
-	          myProjects
+	          OSProjects
 	        )
 	      );
 	    }
 	  }]);
-	  return Projects;
+	  return OS;
 	}(_react.Component);
 
-	exports.default = Projects;
+	exports.default = OS;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 252 */
@@ -2115,7 +2127,96 @@ webpackJsonp([1],[
 /* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(167);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(193);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(194);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(198);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(241);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(155);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _jax = __webpack_require__(252);
+
+	var _jax2 = _interopRequireDefault(_jax);
+
+	var _Box = __webpack_require__(249);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Projects = function (_Component) {
+	  (0, _inherits3.default)(Projects, _Component);
+
+	  function Projects(props) {
+	    (0, _classCallCheck3.default)(this, Projects);
+	    return (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Projects).call(this, props));
+	  }
+
+	  (0, _createClass3.default)(Projects, [{
+	    key: 'render',
+	    value: function render() {
+	      var data = this.props.data;
+
+	      var theProjects = data.map(function (item, i) {
+	        return _react2.default.createElement(_Box.BoxSimple, {
+	          name: item.name,
+	          description: item.desc,
+	          href: item.href,
+	          key: i
+	        });
+	      });
+
+	      return _react2.default.createElement(
+	        'section',
+	        { id: 'projects', className: 'py3' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Projects'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'sm-flex flex flex-wrap xjustify-between mxn2' },
+	          theProjects
+	        )
+	      );
+	    }
+	  }]);
+	  return Projects;
+	}(_react.Component);
+
+	exports.default = Projects;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -2131,7 +2232,7 @@ webpackJsonp([1],[
 
 	var Footer = function Footer(_ref) {
 	  var source = _ref.source;
-	  var nav = _ref.nav;
+	  var data = _ref.data;
 	  return _react2.default.createElement(
 	    'footer',
 	    { className: 'py3 mt3 mb3' },
@@ -2141,19 +2242,19 @@ webpackJsonp([1],[
 	      _react2.default.createElement(
 	        'a',
 	        { href: source, className: 'h6 btn px1 btn-link' },
-	        'Source'
+	        'View Source'
 	      ),
 	      _react2.default.createElement('div', { className: 'flex-auto' }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'flex flex-baseline' },
-	        nav.map(function (link) {
+	        data.map(function (data) {
 	          return _react2.default.createElement(
 	            'a',
-	            { href: link.href,
-	              key: link.href,
+	            { href: data.href,
+	              key: data.href,
 	              className: 'h6 btn px1 btn-link' },
-	            link.title
+	            data.name
 	          );
 	        })
 	      )
@@ -2163,26 +2264,57 @@ webpackJsonp([1],[
 
 	exports.default = Footer;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/DeadFamous/Dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 254 */
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var siteData = exports.siteData = {
+	  source: 'http://github.com/hew/hew.github.io',
+	  navLinks: [{ href: '//github.com/hew', name: 'Github' }, { href: '//twitter.com/hvmmus', name: 'Twitter' }, { href: '/blog', name: 'Blog' }],
+	  projectLinks: [{
+	    href: '//conversionape.com',
+	    name: 'Conversion Ape',
+	    desc: 'Landing page design & developement'
+	  }, {
+	    href: '//socialgirl.consulting',
+	    name: 'Social Girl',
+	    desc: 'A content & branding sweets-maker'
+	  }, {
+	    href: '//yourdispensary.website',
+	    name: 'Your Dispensary',
+	    desc: 'Static sites, Wordpress, Leafly API'
+	  }]
+	};
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/hew/dev/hew.github.io/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "siteData.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(255);
+	var content = __webpack_require__(257);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(257)(content, {});
+	var update = __webpack_require__(259)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./style.css", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./style.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2192,21 +2324,21 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 255 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(256)();
+	exports = module.exports = __webpack_require__(258)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden],\ntemplate {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active,\na:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb,\nstrong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton,\nhtml input[type=\"button\"], /* 1 */\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd,\nth {\n  padding: 0;\n}\n\n/*! Basscss | http://basscss.com | MIT License */\n\n/* Basscss Type Scale */\n\n.h1 { font-size: var(--h1) }\n\n.h2 { font-size: var(--h2) }\n\n.h3 { font-size: var(--h3) }\n\n.h4 { font-size: var(--h4) }\n\n.h5 { font-size: var(--h5) }\n\n.h6 { font-size: var(--h6) }\n\n:root {\n  --h1: 2rem;\n  --h2: 1.5rem;\n  --h3: 1.25rem;\n  --h4: 1rem;\n  --h5: .875rem;\n  --h6: .75rem;\n}\n\n/* Basscss Typography */\n\n.font-family-inherit { font-family: inherit }\n\n.font-size-inherit { font-size: inherit }\n\n.text-decoration-none { text-decoration: none }\n\n.bold    { font-weight: var(--bold-font-weight, bold) }\n\n.regular { font-weight: normal }\n\n.italic  { font-style: italic }\n\n.caps    { text-transform: uppercase; letter-spacing: var(--caps-letter-spacing); }\n\n.left-align   { text-align: left }\n\n.center       { text-align: center }\n\n.right-align  { text-align: right }\n\n.justify      { text-align: justify }\n\n.nowrap { white-space: nowrap }\n\n.break-word { word-wrap: break-word }\n\n.line-height-1 { line-height: var(--line-height-1) }\n\n.line-height-2 { line-height: var(--line-height-2) }\n\n.line-height-3 { line-height: var(--line-height-3) }\n\n.line-height-4 { line-height: var(--line-height-4) }\n\n.list-style-none { list-style: none }\n\n.underline { text-decoration: underline }\n\n.truncate {\n  max-width: 100%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n.list-reset {\n  list-style: none;\n  padding-left: 0;\n}\n\n:root {\n  --line-height-1: 1;\n  --line-height-2: 1.125;\n  --line-height-3: 1.25;\n  --line-height-4: 1.5;\n  --letter-spacing: 1;\n  --caps-letter-spacing: .2em;\n  --bold-font-weight: bold;\n}\n\n/* Basscss Layout */\n\n.inline       { display: inline }\n\n.block        { display: block }\n\n.inline-block { display: inline-block }\n\n.table        { display: table }\n\n.table-cell   { display: table-cell }\n\n.overflow-hidden { overflow: hidden }\n\n.overflow-scroll { overflow: scroll }\n\n.overflow-auto   { overflow: auto }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table\n}\n\n.clearfix:after { clear: both }\n\n.left  { float: left }\n\n.right { float: right }\n\n.fit { max-width: 100% }\n\n.max-width-1 { max-width: var(--width-1) }\n\n.max-width-2 { max-width: var(--width-2) }\n\n.max-width-3 { max-width: var(--width-3) }\n\n.max-width-4 { max-width: var(--width-4) }\n\n.border-box { box-sizing: border-box }\n\n:root {\n  --width-1: 24rem;\n  --width-2: 32rem;\n  --width-3: 48rem;\n  --width-4: 64rem;\n}\n\n/* Basscss Align */\n\n.align-baseline { vertical-align: baseline }\n\n.align-top      { vertical-align: top }\n\n.align-middle   { vertical-align: middle }\n\n.align-bottom   { vertical-align: bottom }\n\n/* Basscss Margin */\n\n.m0  { margin:        0 }\n\n.mt0 { margin-top:    0 }\n\n.mr0 { margin-right:  0 }\n\n.mb0 { margin-bottom: 0 }\n\n.ml0 { margin-left:   0 }\n\n.mx0 { margin-left:   0; margin-right:  0 }\n\n.my0 { margin-top:    0; margin-bottom: 0 }\n\n.m1  { margin:        var(--space-1) }\n\n.mt1 { margin-top:    var(--space-1) }\n\n.mr1 { margin-right:  var(--space-1) }\n\n.mb1 { margin-bottom: var(--space-1) }\n\n.ml1 { margin-left:   var(--space-1) }\n\n.mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }\n\n.my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }\n\n.m2  { margin:        var(--space-2) }\n\n.mt2 { margin-top:    var(--space-2) }\n\n.mr2 { margin-right:  var(--space-2) }\n\n.mb2 { margin-bottom: var(--space-2) }\n\n.ml2 { margin-left:   var(--space-2) }\n\n.mx2 { margin-left:   var(--space-2); margin-right:  var(--space-2) }\n\n.my2 { margin-top:    var(--space-2); margin-bottom: var(--space-2) }\n\n.m3  { margin:        var(--space-3) }\n\n.mt3 { margin-top:    var(--space-3) }\n\n.mr3 { margin-right:  var(--space-3) }\n\n.mb3 { margin-bottom: var(--space-3) }\n\n.ml3 { margin-left:   var(--space-3) }\n\n.mx3 { margin-left:   var(--space-3); margin-right:  var(--space-3) }\n\n.my3 { margin-top:    var(--space-3); margin-bottom: var(--space-3) }\n\n.m4  { margin:        var(--space-4) }\n\n.mt4 { margin-top:    var(--space-4) }\n\n.mr4 { margin-right:  var(--space-4) }\n\n.mb4 { margin-bottom: var(--space-4) }\n\n.ml4 { margin-left:   var(--space-4) }\n\n.mx4 { margin-left:   var(--space-4); margin-right:  var(--space-4) }\n\n.my4 { margin-top:    var(--space-4); margin-bottom: var(--space-4) }\n\n.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }\n\n.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }\n\n.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }\n\n.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }\n\n.ml-auto { margin-left: auto }\n\n.mr-auto { margin-right: auto }\n\n.mx-auto { margin-left: auto; margin-right: auto; }\n\n:root {\n  --space-1: .5rem;\n  --space-2: 1rem;\n  --space-3: 2rem;\n  --space-4: 4rem;\n}\n\n/* Basscss Padding */\n\n.p0  { padding: 0 }\n\n.pt0 { padding-top: 0 }\n\n.pr0 { padding-right: 0 }\n\n.pb0 { padding-bottom: 0 }\n\n.pl0 { padding-left: 0 }\n\n.px0 { padding-left: 0; padding-right:  0 }\n\n.py0 { padding-top: 0;  padding-bottom: 0 }\n\n.p1  { padding:        var(--space-1) }\n\n.pt1 { padding-top:    var(--space-1) }\n\n.pr1 { padding-right:  var(--space-1) }\n\n.pb1 { padding-bottom: var(--space-1) }\n\n.pl1 { padding-left:   var(--space-1) }\n\n.py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }\n\n.px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }\n\n.p2  { padding:        var(--space-2) }\n\n.pt2 { padding-top:    var(--space-2) }\n\n.pr2 { padding-right:  var(--space-2) }\n\n.pb2 { padding-bottom: var(--space-2) }\n\n.pl2 { padding-left:   var(--space-2) }\n\n.py2 { padding-top:    var(--space-2); padding-bottom: var(--space-2) }\n\n.px2 { padding-left:   var(--space-2); padding-right:  var(--space-2) }\n\n.p3  { padding:        var(--space-3) }\n\n.pt3 { padding-top:    var(--space-3) }\n\n.pr3 { padding-right:  var(--space-3) }\n\n.pb3 { padding-bottom: var(--space-3) }\n\n.pl3 { padding-left:   var(--space-3) }\n\n.py3 { padding-top:    var(--space-3); padding-bottom: var(--space-3) }\n\n.px3 { padding-left:   var(--space-3); padding-right:  var(--space-3) }\n\n.p4  { padding:        var(--space-4) }\n\n.pt4 { padding-top:    var(--space-4) }\n\n.pr4 { padding-right:  var(--space-4) }\n\n.pb4 { padding-bottom: var(--space-4) }\n\n.pl4 { padding-left:   var(--space-4) }\n\n.py4 { padding-top:    var(--space-4); padding-bottom: var(--space-4) }\n\n.px4 { padding-left:   var(--space-4); padding-right:  var(--space-4) }\n\n:root {\n  --space-1: .5rem;\n  --space-2: 1rem;\n  --space-3: 2rem;\n  --space-4: 4rem;\n}\n\n/* Basscss Grid */\n\n.col {\n  float: left;\n  box-sizing: border-box;\n}\n\n.col-right {\n  float: right;\n  box-sizing: border-box;\n}\n\n.col-1 {\n  width: calc(1/12 * 100%);\n}\n\n.col-2 {\n  width: calc(2/12 * 100%);\n}\n\n.col-3 {\n  width: calc(3/12 * 100%);\n}\n\n.col-4 {\n  width: calc(4/12 * 100%);\n}\n\n.col-5 {\n  width: calc(5/12 * 100%);\n}\n\n.col-6 {\n  width: calc(6/12 * 100%);\n}\n\n.col-7 {\n  width: calc(7/12 * 100%);\n}\n\n.col-8 {\n  width: calc(8/12 * 100%);\n}\n\n.col-9 {\n  width: calc(9/12 * 100%);\n}\n\n.col-10 {\n  width: calc(10/12 * 100%);\n}\n\n.col-11 {\n  width: calc(11/12 * 100%);\n}\n\n.col-12 {\n  width: 100%;\n}\n\n@media (min-width: 40em) {\n\n  .sm-col {\n    float: left;\n    box-sizing: border-box;\n  }\n\n  .sm-col-right {\n    float: right;\n    box-sizing: border-box;\n  }\n\n  .sm-col-1 {\n    width: calc(1/12 * 100%);\n  }\n\n  .sm-col-2 {\n    width: calc(2/12 * 100%);\n  }\n\n  .sm-col-3 {\n    width: calc(3/12 * 100%);\n  }\n\n  .sm-col-4 {\n    width: calc(4/12 * 100%);\n  }\n\n  .sm-col-5 {\n    width: calc(5/12 * 100%);\n  }\n\n  .sm-col-6 {\n    width: calc(6/12 * 100%);\n  }\n\n  .sm-col-7 {\n    width: calc(7/12 * 100%);\n  }\n\n  .sm-col-8 {\n    width: calc(8/12 * 100%);\n  }\n\n  .sm-col-9 {\n    width: calc(9/12 * 100%);\n  }\n\n  .sm-col-10 {\n    width: calc(10/12 * 100%);\n  }\n\n  .sm-col-11 {\n    width: calc(11/12 * 100%);\n  }\n\n  .sm-col-12 {\n    width: 100%;\n  }\n\n}\n\n@media (min-width: 52em) {\n\n  .md-col {\n    float: left;\n    box-sizing: border-box;\n  }\n\n  .md-col-right {\n    float: right;\n    box-sizing: border-box;\n  }\n\n  .md-col-1 {\n    width: calc(1/12 * 100%);\n  }\n\n  .md-col-2 {\n    width: calc(2/12 * 100%);\n  }\n\n  .md-col-3 {\n    width: calc(3/12 * 100%);\n  }\n\n  .md-col-4 {\n    width: calc(4/12 * 100%);\n  }\n\n  .md-col-5 {\n    width: calc(5/12 * 100%);\n  }\n\n  .md-col-6 {\n    width: calc(6/12 * 100%);\n  }\n\n  .md-col-7 {\n    width: calc(7/12 * 100%);\n  }\n\n  .md-col-8 {\n    width: calc(8/12 * 100%);\n  }\n\n  .md-col-9 {\n    width: calc(9/12 * 100%);\n  }\n\n  .md-col-10 {\n    width: calc(10/12 * 100%);\n  }\n\n  .md-col-11 {\n    width: calc(11/12 * 100%);\n  }\n\n  .md-col-12 {\n    width: 100%;\n  }\n\n}\n\n@media (min-width: 64em) {\n\n  .lg-col {\n    float: left;\n    box-sizing: border-box;\n  }\n\n  .lg-col-right {\n    float: right;\n    box-sizing: border-box;\n  }\n\n  .lg-col-1 {\n    width: calc(1/12 * 100%);\n  }\n\n  .lg-col-2 {\n    width: calc(2/12 * 100%);\n  }\n\n  .lg-col-3 {\n    width: calc(3/12 * 100%);\n  }\n\n  .lg-col-4 {\n    width: calc(4/12 * 100%);\n  }\n\n  .lg-col-5 {\n    width: calc(5/12 * 100%);\n  }\n\n  .lg-col-6 {\n    width: calc(6/12 * 100%);\n  }\n\n  .lg-col-7 {\n    width: calc(7/12 * 100%);\n  }\n\n  .lg-col-8 {\n    width: calc(8/12 * 100%);\n  }\n\n  .lg-col-9 {\n    width: calc(9/12 * 100%);\n  }\n\n  .lg-col-10 {\n    width: calc(10/12 * 100%);\n  }\n\n  .lg-col-11 {\n    width: calc(11/12 * 100%);\n  }\n\n  .lg-col-12 {\n    width: 100%;\n  }\n\n}\n\n.flex { display: flex }\n\n@media (min-width: 40em) {\n  .sm-flex { display: flex }\n}\n\n@media (min-width: 52em) {\n  .md-flex { display: flex }\n}\n\n@media (min-width: 64em) {\n  .lg-flex { display: flex }\n}\n\n.flex-column  { flex-direction: column }\n\n.flex-wrap    { flex-wrap: wrap }\n\n.items-start    { align-items: flex-start }\n\n.items-end      { align-items: flex-end }\n\n.items-center   { align-items: center }\n\n.items-baseline { align-items: baseline }\n\n.items-stretch  { align-items: stretch }\n\n.self-start    { align-self: flex-start }\n\n.self-end      { align-self: flex-end }\n\n.self-center   { align-self: center }\n\n.self-baseline { align-self: baseline }\n\n.self-stretch  { align-self: stretch }\n\n.justify-start   { justify-content: flex-start }\n\n.justify-end     { justify-content: flex-end }\n\n.justify-center  { justify-content: center }\n\n.justify-between { justify-content: space-between }\n\n.justify-around  { justify-content: space-around }\n\n.content-start   { align-content: flex-start }\n\n.content-end     { align-content: flex-end }\n\n.content-center  { align-content: center }\n\n.content-between { align-content: space-between }\n\n.content-around  { align-content: space-around }\n\n.content-stretch { align-content: stretch }\n\n/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */\n\n.flex-auto {\n  flex: 1 1 auto;\n  min-width: 0; /* 1 */\n  min-height: 0; /* 1 */\n}\n\n.flex-none { flex: none }\n\n.order-0 { order: 0 }\n\n.order-1 { order: 1 }\n\n.order-2 { order: 2 }\n\n.order-3 { order: 3 }\n\n.order-last { order: 99999 }\n\n/* Basscss Position */\n\n.relative { position: relative }\n\n.absolute { position: absolute }\n\n.fixed    { position: fixed }\n\n.top-0    { top: 0 }\n\n.right-0  { right: 0 }\n\n.bottom-0 { bottom: 0 }\n\n.left-0   { left: 0 }\n\n.z1 { z-index: var(--z1) }\n\n.z2 { z-index: var(--z2) }\n\n.z3 { z-index: var(--z3) }\n\n.z4 { z-index: var(--z4) }\n\n:root {\n  --z1: 1;\n  --z2: 2;\n  --z3: 3;\n  --z4: 4;\n}\n\n/* Basscss Border */\n\n.border {\n  border-style: solid;\n  border-width: var(--border-width);\n}\n\n.border-top {\n  border-top-style: solid;\n  border-top-width: var(--border-width);\n}\n\n.border-right {\n  border-right-style: solid;\n  border-right-width: var(--border-width);\n}\n\n.border-bottom {\n  border-bottom-style: solid;\n  border-bottom-width: var(--border-width);\n}\n\n.border-left {\n  border-left-style: solid;\n  border-left-width: var(--border-width);\n}\n\n.border-none { border: 0 }\n\n.rounded { border-radius: var(--border-radius) }\n\n.circle  { border-radius: 50% }\n\n.rounded-top    { border-radius: var(--border-radius) var(--border-radius) 0 0 }\n\n.rounded-right  { border-radius: 0 var(--border-radius) var(--border-radius) 0 }\n\n.rounded-bottom { border-radius: 0 0 var(--border-radius) var(--border-radius) }\n\n.rounded-left   { border-radius: var(--border-radius) 0 0 var(--border-radius) }\n\n.not-rounded { border-radius: 0 }\n\n:root {\n  --border-width: 1px;\n  --border-radius: 3px;\n}\n\n/* Basscss Hide */\n\n.hide {\n  position: absolute !important;\n  height: 1px;\n  width: 1px;\n  overflow: hidden;\n  clip: rect(1px, 1px, 1px, 1px);\n}\n\n@media (max-width: 40em) {\n  .xs-hide { display: none !important }\n}\n\n@media (min-width: 40em) and (max-width: 52em) {\n  .sm-hide { display: none !important }\n}\n\n@media (min-width: 52em) and (max-width: 64em) {\n  .md-hide { display: none !important }\n}\n\n@media (min-width: 64em) {\n  .lg-hide { display: none !important }\n}\n\n.display-none { display: none !important }\n\nhtml {\n  /*background-color: #11CC77;*/\n  height: 100%;\n  color: black;\n  font-size: 1rem;\n}\n\nbody { font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif }\n\nh2,h3 {\n  font-family: 'Inconsolata', 'Courier', sans-serif;\n  text-rendering: geometricPrecision;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\np a       { box-shadow: inset 0 -2px 0 #ccc; }\n\n/* p a:hover { box-shadow: inset 0 -2px 0 var(--purple); }*/\n\nh3 span,\nstrong    { color: #B10DC9;  }\n\na:focus,\n.btn:focus,\n.flex-grid a:focus {\n  outline: none;\n  border-color: #B10DC9;\n  box-shadow: 0 0 0 3px #B10DC9;\n  -webkit-transition: box-shadow .3s ease-out, border-color .2s ease-out;\n  transition: box-shadow .3s ease-out, border-color .2s ease-out;\n}\n\n.flex-grid {\n  -webkit-box-flex: 0 0 620px;\n  -webkit-flex: 0 0 620px;\n      -ms-flex: 0 0 620px;\n          flex: 0 0 620px;\n  margin-right: 1rem;\n}\n\n@media (max-width: 40em) {\n  .flex-grid {\n    display: block;\n    -webkit-box-flex: 0;\n    -webkit-flex: none;\n        -ms-flex: none;\n            flex: none;\n    width: 100%;\n    margin-right: none;\n  }\n}\n\n.divider:before {\n  content: '';\n  display: inline-block;\n  border-top: 2px solid gray;\n  width: 4rem;\n}\n\n.h0 {\n  font-size: 32px;\n  font-family: 'Inconsolata', 'Courier', sans-serif;\n}\n\n@media (max-width: 40em) {\n  .h0 { font-size: 48px }\n}\n\n@media (min-width: 48em) {\n  .h0 { font-size: 64px }\n}\n\n@media (min-width: 40em) {\n  .sm-px3{\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n}\n\n@media (min-width: 60em) {\n  .lg-px4{\n    padding-left: 8rem;\n    padding-right: 8rem;\n  }\n}\n", ""]);
+	exports.push([module.id, "/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden],\ntemplate {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active,\na:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb,\nstrong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton,\nhtml input[type=\"button\"], /* 1 */\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd,\nth {\n  padding: 0;\n}\n\n/*! Basscss | http://basscss.com | MIT License */\n\n/* Basscss Type Scale */\n\n.h1 { font-size: var(--h1) }\n\n.h2 { font-size: var(--h2) }\n\n.h3 { font-size: var(--h3) }\n\n.h4 { font-size: var(--h4) }\n\n.h5 { font-size: var(--h5) }\n\n.h6 { font-size: var(--h6) }\n\n:root {\n  --h1: 2rem;\n  --h2: 1.5rem;\n  --h3: 1.25rem;\n  --h4: 1rem;\n  --h5: .875rem;\n  --h6: .75rem;\n}\n\n/* Basscss Typography */\n\n.font-family-inherit { font-family: inherit }\n\n.font-size-inherit { font-size: inherit }\n\n.text-decoration-none { text-decoration: none }\n\n.bold    { font-weight: var(--bold-font-weight, bold) }\n\n.regular { font-weight: normal }\n\n.italic  { font-style: italic }\n\n.caps    { text-transform: uppercase; letter-spacing: var(--caps-letter-spacing); }\n\n.left-align   { text-align: left }\n\n.center       { text-align: center }\n\n.right-align  { text-align: right }\n\n.justify      { text-align: justify }\n\n.nowrap { white-space: nowrap }\n\n.break-word { word-wrap: break-word }\n\n.line-height-1 { line-height: var(--line-height-1) }\n\n.line-height-2 { line-height: var(--line-height-2) }\n\n.line-height-3 { line-height: var(--line-height-3) }\n\n.line-height-4 { line-height: var(--line-height-4) }\n\n.list-style-none { list-style: none }\n\n.underline { text-decoration: underline }\n\n.truncate {\n  max-width: 100%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n.list-reset {\n  list-style: none;\n  padding-left: 0;\n}\n\n:root {\n  --line-height-1: 1;\n  --line-height-2: 1.125;\n  --line-height-3: 1.25;\n  --line-height-4: 1.5;\n  --letter-spacing: 1;\n  --caps-letter-spacing: .2em;\n  --bold-font-weight: bold;\n}\n\n/* Basscss Layout */\n\n.inline       { display: inline }\n\n.block        { display: block }\n\n.inline-block { display: inline-block }\n\n.table        { display: table }\n\n.table-cell   { display: table-cell }\n\n.overflow-hidden { overflow: hidden }\n\n.overflow-scroll { overflow: scroll }\n\n.overflow-auto   { overflow: auto }\n\n.clearfix:before,\n.clearfix:after {\n  content: \" \";\n  display: table\n}\n\n.clearfix:after { clear: both }\n\n.left  { float: left }\n\n.right { float: right }\n\n.fit { max-width: 100% }\n\n.max-width-1 { max-width: var(--width-1) }\n\n.max-width-2 { max-width: var(--width-2) }\n\n.max-width-3 { max-width: var(--width-3) }\n\n.max-width-4 { max-width: var(--width-4) }\n\n.border-box { box-sizing: border-box }\n\n:root {\n  --width-1: 24rem;\n  --width-2: 32rem;\n  --width-3: 48rem;\n  --width-4: 64rem;\n}\n\n/* Basscss Align */\n\n.align-baseline { vertical-align: baseline }\n\n.align-top      { vertical-align: top }\n\n.align-middle   { vertical-align: middle }\n\n.align-bottom   { vertical-align: bottom }\n\n/* Basscss Margin */\n\n.m0  { margin:        0 }\n\n.mt0 { margin-top:    0 }\n\n.mr0 { margin-right:  0 }\n\n.mb0 { margin-bottom: 0 }\n\n.ml0 { margin-left:   0 }\n\n.mx0 { margin-left:   0; margin-right:  0 }\n\n.my0 { margin-top:    0; margin-bottom: 0 }\n\n.m1  { margin:        var(--space-1) }\n\n.mt1 { margin-top:    var(--space-1) }\n\n.mr1 { margin-right:  var(--space-1) }\n\n.mb1 { margin-bottom: var(--space-1) }\n\n.ml1 { margin-left:   var(--space-1) }\n\n.mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }\n\n.my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }\n\n.m2  { margin:        var(--space-2) }\n\n.mt2 { margin-top:    var(--space-2) }\n\n.mr2 { margin-right:  var(--space-2) }\n\n.mb2 { margin-bottom: var(--space-2) }\n\n.ml2 { margin-left:   var(--space-2) }\n\n.mx2 { margin-left:   var(--space-2); margin-right:  var(--space-2) }\n\n.my2 { margin-top:    var(--space-2); margin-bottom: var(--space-2) }\n\n.m3  { margin:        var(--space-3) }\n\n.mt3 { margin-top:    var(--space-3) }\n\n.mr3 { margin-right:  var(--space-3) }\n\n.mb3 { margin-bottom: var(--space-3) }\n\n.ml3 { margin-left:   var(--space-3) }\n\n.mx3 { margin-left:   var(--space-3); margin-right:  var(--space-3) }\n\n.my3 { margin-top:    var(--space-3); margin-bottom: var(--space-3) }\n\n.m4  { margin:        var(--space-4) }\n\n.mt4 { margin-top:    var(--space-4) }\n\n.mr4 { margin-right:  var(--space-4) }\n\n.mb4 { margin-bottom: var(--space-4) }\n\n.ml4 { margin-left:   var(--space-4) }\n\n.mx4 { margin-left:   var(--space-4); margin-right:  var(--space-4) }\n\n.my4 { margin-top:    var(--space-4); margin-bottom: var(--space-4) }\n\n.mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }\n\n.mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }\n\n.mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }\n\n.mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }\n\n.ml-auto { margin-left: auto }\n\n.mr-auto { margin-right: auto }\n\n.mx-auto { margin-left: auto; margin-right: auto; }\n\n:root {\n  --space-1: .5rem;\n  --space-2: 1rem;\n  --space-3: 2rem;\n  --space-4: 4rem;\n}\n\n/* Basscss Padding */\n\n.p0  { padding: 0 }\n\n.pt0 { padding-top: 0 }\n\n.pr0 { padding-right: 0 }\n\n.pb0 { padding-bottom: 0 }\n\n.pl0 { padding-left: 0 }\n\n.px0 { padding-left: 0; padding-right:  0 }\n\n.py0 { padding-top: 0;  padding-bottom: 0 }\n\n.p1  { padding:        var(--space-1) }\n\n.pt1 { padding-top:    var(--space-1) }\n\n.pr1 { padding-right:  var(--space-1) }\n\n.pb1 { padding-bottom: var(--space-1) }\n\n.pl1 { padding-left:   var(--space-1) }\n\n.py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }\n\n.px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }\n\n.p2  { padding:        var(--space-2) }\n\n.pt2 { padding-top:    var(--space-2) }\n\n.pr2 { padding-right:  var(--space-2) }\n\n.pb2 { padding-bottom: var(--space-2) }\n\n.pl2 { padding-left:   var(--space-2) }\n\n.py2 { padding-top:    var(--space-2); padding-bottom: var(--space-2) }\n\n.px2 { padding-left:   var(--space-2); padding-right:  var(--space-2) }\n\n.p3  { padding:        var(--space-3) }\n\n.pt3 { padding-top:    var(--space-3) }\n\n.pr3 { padding-right:  var(--space-3) }\n\n.pb3 { padding-bottom: var(--space-3) }\n\n.pl3 { padding-left:   var(--space-3) }\n\n.py3 { padding-top:    var(--space-3); padding-bottom: var(--space-3) }\n\n.px3 { padding-left:   var(--space-3); padding-right:  var(--space-3) }\n\n.p4  { padding:        var(--space-4) }\n\n.pt4 { padding-top:    var(--space-4) }\n\n.pr4 { padding-right:  var(--space-4) }\n\n.pb4 { padding-bottom: var(--space-4) }\n\n.pl4 { padding-left:   var(--space-4) }\n\n.py4 { padding-top:    var(--space-4); padding-bottom: var(--space-4) }\n\n.px4 { padding-left:   var(--space-4); padding-right:  var(--space-4) }\n\n:root {\n  --space-1: .5rem;\n  --space-2: 1rem;\n  --space-3: 2rem;\n  --space-4: 4rem;\n}\n\n/* Basscss Grid */\n\n.col {\n  float: left;\n  box-sizing: border-box;\n}\n\n.col-right {\n  float: right;\n  box-sizing: border-box;\n}\n\n.col-1 {\n  width: calc(1/12 * 100%);\n}\n\n.col-2 {\n  width: calc(2/12 * 100%);\n}\n\n.col-3 {\n  width: calc(3/12 * 100%);\n}\n\n.col-4 {\n  width: calc(4/12 * 100%);\n}\n\n.col-5 {\n  width: calc(5/12 * 100%);\n}\n\n.col-6 {\n  width: calc(6/12 * 100%);\n}\n\n.col-7 {\n  width: calc(7/12 * 100%);\n}\n\n.col-8 {\n  width: calc(8/12 * 100%);\n}\n\n.col-9 {\n  width: calc(9/12 * 100%);\n}\n\n.col-10 {\n  width: calc(10/12 * 100%);\n}\n\n.col-11 {\n  width: calc(11/12 * 100%);\n}\n\n.col-12 {\n  width: 100%;\n}\n\n@media (min-width: 40em) {\n\n  .sm-col {\n    float: left;\n    box-sizing: border-box;\n  }\n\n  .sm-col-right {\n    float: right;\n    box-sizing: border-box;\n  }\n\n  .sm-col-1 {\n    width: calc(1/12 * 100%);\n  }\n\n  .sm-col-2 {\n    width: calc(2/12 * 100%);\n  }\n\n  .sm-col-3 {\n    width: calc(3/12 * 100%);\n  }\n\n  .sm-col-4 {\n    width: calc(4/12 * 100%);\n  }\n\n  .sm-col-5 {\n    width: calc(5/12 * 100%);\n  }\n\n  .sm-col-6 {\n    width: calc(6/12 * 100%);\n  }\n\n  .sm-col-7 {\n    width: calc(7/12 * 100%);\n  }\n\n  .sm-col-8 {\n    width: calc(8/12 * 100%);\n  }\n\n  .sm-col-9 {\n    width: calc(9/12 * 100%);\n  }\n\n  .sm-col-10 {\n    width: calc(10/12 * 100%);\n  }\n\n  .sm-col-11 {\n    width: calc(11/12 * 100%);\n  }\n\n  .sm-col-12 {\n    width: 100%;\n  }\n\n}\n\n@media (min-width: 52em) {\n\n  .md-col {\n    float: left;\n    box-sizing: border-box;\n  }\n\n  .md-col-right {\n    float: right;\n    box-sizing: border-box;\n  }\n\n  .md-col-1 {\n    width: calc(1/12 * 100%);\n  }\n\n  .md-col-2 {\n    width: calc(2/12 * 100%);\n  }\n\n  .md-col-3 {\n    width: calc(3/12 * 100%);\n  }\n\n  .md-col-4 {\n    width: calc(4/12 * 100%);\n  }\n\n  .md-col-5 {\n    width: calc(5/12 * 100%);\n  }\n\n  .md-col-6 {\n    width: calc(6/12 * 100%);\n  }\n\n  .md-col-7 {\n    width: calc(7/12 * 100%);\n  }\n\n  .md-col-8 {\n    width: calc(8/12 * 100%);\n  }\n\n  .md-col-9 {\n    width: calc(9/12 * 100%);\n  }\n\n  .md-col-10 {\n    width: calc(10/12 * 100%);\n  }\n\n  .md-col-11 {\n    width: calc(11/12 * 100%);\n  }\n\n  .md-col-12 {\n    width: 100%;\n  }\n\n}\n\n@media (min-width: 64em) {\n\n  .lg-col {\n    float: left;\n    box-sizing: border-box;\n  }\n\n  .lg-col-right {\n    float: right;\n    box-sizing: border-box;\n  }\n\n  .lg-col-1 {\n    width: calc(1/12 * 100%);\n  }\n\n  .lg-col-2 {\n    width: calc(2/12 * 100%);\n  }\n\n  .lg-col-3 {\n    width: calc(3/12 * 100%);\n  }\n\n  .lg-col-4 {\n    width: calc(4/12 * 100%);\n  }\n\n  .lg-col-5 {\n    width: calc(5/12 * 100%);\n  }\n\n  .lg-col-6 {\n    width: calc(6/12 * 100%);\n  }\n\n  .lg-col-7 {\n    width: calc(7/12 * 100%);\n  }\n\n  .lg-col-8 {\n    width: calc(8/12 * 100%);\n  }\n\n  .lg-col-9 {\n    width: calc(9/12 * 100%);\n  }\n\n  .lg-col-10 {\n    width: calc(10/12 * 100%);\n  }\n\n  .lg-col-11 {\n    width: calc(11/12 * 100%);\n  }\n\n  .lg-col-12 {\n    width: 100%;\n  }\n\n}\n\n.flex { display: flex }\n\n@media (min-width: 40em) {\n  .sm-flex { display: flex }\n}\n\n@media (min-width: 52em) {\n  .md-flex { display: flex }\n}\n\n@media (min-width: 64em) {\n  .lg-flex { display: flex }\n}\n\n.flex-column  { flex-direction: column }\n\n.flex-wrap    { flex-wrap: wrap }\n\n.items-start    { align-items: flex-start }\n\n.items-end      { align-items: flex-end }\n\n.items-center   { align-items: center }\n\n.items-baseline { align-items: baseline }\n\n.items-stretch  { align-items: stretch }\n\n.self-start    { align-self: flex-start }\n\n.self-end      { align-self: flex-end }\n\n.self-center   { align-self: center }\n\n.self-baseline { align-self: baseline }\n\n.self-stretch  { align-self: stretch }\n\n.justify-start   { justify-content: flex-start }\n\n.justify-end     { justify-content: flex-end }\n\n.justify-center  { justify-content: center }\n\n.justify-between { justify-content: space-between }\n\n.justify-around  { justify-content: space-around }\n\n.content-start   { align-content: flex-start }\n\n.content-end     { align-content: flex-end }\n\n.content-center  { align-content: center }\n\n.content-between { align-content: space-between }\n\n.content-around  { align-content: space-around }\n\n.content-stretch { align-content: stretch }\n\n/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */\n\n.flex-auto {\n  flex: 1 1 auto;\n  min-width: 0; /* 1 */\n  min-height: 0; /* 1 */\n}\n\n.flex-none { flex: none }\n\n.order-0 { order: 0 }\n\n.order-1 { order: 1 }\n\n.order-2 { order: 2 }\n\n.order-3 { order: 3 }\n\n.order-last { order: 99999 }\n\n/* Basscss Position */\n\n.relative { position: relative }\n\n.absolute { position: absolute }\n\n.fixed    { position: fixed }\n\n.top-0    { top: 0 }\n\n.right-0  { right: 0 }\n\n.bottom-0 { bottom: 0 }\n\n.left-0   { left: 0 }\n\n.z1 { z-index: var(--z1) }\n\n.z2 { z-index: var(--z2) }\n\n.z3 { z-index: var(--z3) }\n\n.z4 { z-index: var(--z4) }\n\n:root {\n  --z1: 1;\n  --z2: 2;\n  --z3: 3;\n  --z4: 4;\n}\n\n/* Basscss Border */\n\n.border {\n  border-style: solid;\n  border-width: var(--border-width);\n}\n\n.border-top {\n  border-top-style: solid;\n  border-top-width: var(--border-width);\n}\n\n.border-right {\n  border-right-style: solid;\n  border-right-width: var(--border-width);\n}\n\n.border-bottom {\n  border-bottom-style: solid;\n  border-bottom-width: var(--border-width);\n}\n\n.border-left {\n  border-left-style: solid;\n  border-left-width: var(--border-width);\n}\n\n.border-none { border: 0 }\n\n.rounded { border-radius: var(--border-radius) }\n\n.circle  { border-radius: 50% }\n\n.rounded-top    { border-radius: var(--border-radius) var(--border-radius) 0 0 }\n\n.rounded-right  { border-radius: 0 var(--border-radius) var(--border-radius) 0 }\n\n.rounded-bottom { border-radius: 0 0 var(--border-radius) var(--border-radius) }\n\n.rounded-left   { border-radius: var(--border-radius) 0 0 var(--border-radius) }\n\n.not-rounded { border-radius: 0 }\n\n:root {\n  --border-width: 1px;\n  --border-radius: 3px;\n}\n\n/* Basscss Hide */\n\n.hide {\n  position: absolute !important;\n  height: 1px;\n  width: 1px;\n  overflow: hidden;\n  clip: rect(1px, 1px, 1px, 1px);\n}\n\n@media (max-width: 40em) {\n  .xs-hide { display: none !important }\n}\n\n@media (min-width: 40em) and (max-width: 52em) {\n  .sm-hide { display: none !important }\n}\n\n@media (min-width: 52em) and (max-width: 64em) {\n  .md-hide { display: none !important }\n}\n\n@media (min-width: 64em) {\n  .lg-hide { display: none !important }\n}\n\n.display-none { display: none !important }\n\nhtml {\n  /*background-color: #11CC77;*/\n  height: 100%;\n  color: black;\n  font-size: 1rem;\n}\n\nbody { font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif }\n\nh2,h3,footer {\n  font-family: 'Inconsolata', 'Courier', sans-serif;\n  text-rendering: geometricPrecision;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\np a       { box-shadow: inset 0 -2px 0 #ccc; }\n\n/* p a:hover { box-shadow: inset 0 -2px 0 var(--purple); }*/\n\nh3 span,\nstrong    { color: #B10DC9;  }\n\na:focus,\n.btn:focus,\n.flex-grid a:focus {\n  outline: none;\n  border-color: #B10DC9;\n  box-shadow: 0 0 0 3px #B10DC9;\n  -webkit-transition: box-shadow .3s ease-out, border-color .2s ease-out;\n  transition: box-shadow .3s ease-out, border-color .2s ease-out;\n}\n\n.flex-grid {\n  -webkit-box-flex: 0 0 620px;\n  -webkit-flex: 0 0 620px;\n      -ms-flex: 0 0 620px;\n          flex: 0 0 620px;\n  margin-right: 1rem;\n}\n\n@media (max-width: 40em) {\n  .flex-grid {\n    display: block;\n    -webkit-box-flex: 0;\n    -webkit-flex: none;\n        -ms-flex: none;\n            flex: none;\n    width: 100%;\n    margin-right: none;\n  }\n}\n\n.divider:before {\n  content: '';\n  display: inline-block;\n  border-top: 2px solid gray;\n  width: 4rem;\n}\n\n.h0 {\n  font-size: 32px;\n  font-family: 'Inconsolata', 'Courier', sans-serif;\n}\n\n@media (max-width: 40em) {\n  .h0 { font-size: 48px }\n}\n\n@media (min-width: 48em) {\n  .h0 { font-size: 64px }\n}\n\n@media (min-width: 40em) {\n  .sm-px3{\n    padding-left: 4rem;\n    padding-right: 4rem;\n  }\n}\n\n@media (min-width: 60em) {\n  .lg-px4{\n    padding-left: 8rem;\n    padding-right: 8rem;\n  }\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 256 */
+/* 258 */
 /***/ function(module, exports) {
 
 	/*
@@ -2262,7 +2394,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 257 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
