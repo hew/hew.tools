@@ -304,15 +304,10 @@ webpackJsonp([1],[
 	      'p',
 	      { className: 'h0' },
 	      'Matt',
-	      _react2.default.createElement(
-	        'strong',
-	        null,
-	        '//'
-	      ),
+	      _react2.default.createElement(Str, null),
 	      'hew Jones is a ',
 	      _react2.default.createElement('br', { className: 'lg-show' }),
 	      'designer',
-	      _react2.default.createElement(Str, null),
 	      _react2.default.createElement(Str, null),
 	      'developer '
 	    )
@@ -330,32 +325,12 @@ webpackJsonp([1],[
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'I specialize in modular styles, conversion-centered design, and Javascript-y things. '
+	      'I live in Vancouver.'
 	    ),
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      '( ',
-	      _react2.default.createElement(
-	        'small',
-	        null,
-	        '♥'
-	      ),
-	      ' ) ',
-	      _react2.default.createElement(
-	        'strong',
-	        null,
-	        '=>'
-	      ),
-	      ' { Babel ',
-	      _react2.default.createElement(Str, null),
-	      ' Node ',
-	      _react2.default.createElement(Str, null),
-	      ' PostCSS ',
-	      _react2.default.createElement(Str, null),
-	      ' React ',
-	      _react2.default.createElement(Str, null),
-	      ' RxJS } '
+	      'I specialize in modular styles, conversion-centered design, and Javascript stuff.'
 	    )
 	  );
 	};
@@ -373,7 +348,6 @@ webpackJsonp([1],[
 	      return _react2.default.createElement(
 	        'p',
 	        { key: i, className: 'm0 web-link' },
-	        _react2.default.createElement(Str, null),
 	        _react2.default.createElement(Str, null),
 	        ' ',
 	        _react2.default.createElement(
@@ -2287,7 +2261,7 @@ webpackJsonp([1],[
 	});
 	var siteData = exports.siteData = {
 	  source: 'http://github.com/hew/hew.github.io',
-	  navLinks: [{ href: '//github.com/hew', name: 'Github' }, { href: '//twitter.com/hvmmus', name: 'Twitter' }, { href: '/blog', name: 'Blog' }],
+	  navLinks: [{ href: '//github.com/hew', name: 'Github' }, { href: '//twitter.com/tahini', name: 'Twitter' }, { href: '/blog', name: 'Blog' }],
 	  projectLinks: [{
 	    href: '//conversionape.com',
 	    name: 'Conversion Ape',
