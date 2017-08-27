@@ -1,0 +1,107 @@
+{
+  "name": "hew.tools",
+  "version": "0.0.1",
+  "description": "Matt's personal website.",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
+    "start": "serve build -s -c 1",
+    "prestart": "npm run build",
+    "build": "cross-env NODE_ENV=production webpack --progress",
+    "prebuild": "mkdirp build && ncp src/assets build/assets",
+    "test": "npm run -s lint && jest --coverage",
+    "test:watch": "npm run -s test -- --watch",
+    "lint": "eslint src test"
+  },
+  "license": "MIT",
+  "author": "Matthew Jones <matt@hew.tools>",
+  "jest": {
+    "setupFiles": [
+      "./test/setup.js"
+    ],
+    "testURL": "http://localhost:8080",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css)$": "identity-obj-proxy",
+      "^react$": "preact-compat",
+      "^react-dom$": "preact-compat"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "babel": "^6.5.2",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.2",
+    "babel-jest": "^20.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.24.0",
+    "babel-runtime": "^6.11.6",
+    "copy-webpack-plugin": "^4.0.1",
+    "core-js": "^2.4.1",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.0",
+    "eslint": "^4.3.0",
+    "eslint-config-remitbri": "^5.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^20.0.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.0",
+    "json-loader": "^0.5.4",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "offline-plugin": "^4.7.0",
+    "postcss-loader": "^2.0.3",
+    "prettier": "^1.5.3",
+    "prettier-eslint-cli": "^4.1.1",
+    "raw-loader": "^0.5.1",
+    "regenerator-runtime": "^0.11.0",
+    "replace-bundle-webpack-plugin": "^1.0.0",
+    "script-ext-html-webpack-plugin": "^1.3.4",
+    "serve": "^6.0.0",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.4.4"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "css-wipe": "^4.3.0",
+    "decko": "^1.2.0",
+    "flow-bin": "^0.53.1",
+    "glamor": "^2.20.26",
+    "jax.js": "^1.0.4",
+    "lodash.throttle": "^4.1.1",
+    "palx": "^1.0.2",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.15.0",
+    "preact-context-provider": "^1.0.0",
+    "preact-motion": "^1.1.0",
+    "preact-render-to-string": "^3.6.0",
+    "preact-router": "^2.5.1",
+    "promise-polyfill": "^6.0.2",
+    "prop-types": "^15.5.10",
+    "simple-modular-scale": "^1.0.2"
+  }
+}

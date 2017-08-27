@@ -1,4 +1,14 @@
-# hew.github.io
-Personal site. Built with React.
+# hew.tools
 
-Source can be found [here](https://github.com/hew/hew.github.io/tree/dev).
+Hey welcome to my website.
+
+Technologies used: 
+
+* [Axs](http://jxnblk.com/axs/)
+* [Preact](https://github.com/developit/preact)
+* [preact-motion](https://github.com/BenoitZugmeyer/preact-motion)
+* [Palx](https://palx.jxnblk.com/)
+* [simple-modular-scale](https://github.com/jxnblk/simple-modular-scale)
+
+---
+License: MIT
