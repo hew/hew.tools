@@ -86,12 +86,12 @@
     "webpack-dev-server": "^2.4.4"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "classnames": "^2.2.5",
     "css-wipe": "^4.3.0",
     "decko": "^1.2.0",
     "flow-bin": "^0.53.1",
     "glamor": "^2.20.26",
-    "jax.js": "^1.0.4",
     "lodash.throttle": "^4.1.1",
     "palx": "^1.0.2",
     "preact": "^8.1.0",

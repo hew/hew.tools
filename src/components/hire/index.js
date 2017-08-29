@@ -28,19 +28,22 @@ export default class Hire extends Component {
               fontSize={[1, 0]}
               css={{ color: violet4, maxWidth: "1400px" }}
             >
-              i'm good at internets 
+             let's build internets
             </Text>
           </Animate>
           <Text is="h3" fontSize={[3, 2]} bold py2>
-            let's work together
+            occassionally I have time to pursue freelance projects.&nbsp;
+            <a href="mailto:matt@hew.tools">
+              <Text is="span" css={linkStyles}>holla</Text>
+            </a>.
           </Text>
           <Text is="h3" f4 py2>
             <Text is="span" css={{fontWeight: 'bold'}}>stuff I do:</Text>
             <br />
-            javascript salesforce<br />
+            salesforce javascript<br />
             react stuff<br />
-            conversion optimization<br />
-            landing pages
+            react native<br />
+            anything javascript
           </Text>
         </Box>
       </Box>

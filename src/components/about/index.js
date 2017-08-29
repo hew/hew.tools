@@ -10,6 +10,7 @@ export default class About extends Component {
   render(_, __, { axs }) {
     const { green4, violet4 } = axs.colors;
     const linkStyles = {
+      color: green4,
       cursor: "pointer",
       borderBottom: `2px dotted ${green4}`
     };
@@ -35,7 +36,7 @@ export default class About extends Component {
           </Text>
           <Text is="h3" f4 py2>
             ex-copywriter, marketer. passionate about javascript and the open web. 
-            mostly into react and functional stuff. always passionate about hummus.
+            mostly into react and functional stuff. i love hummus.
           </Text>
           <Text is="h3" f4 py2>
             i work at
