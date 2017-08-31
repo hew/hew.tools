@@ -6,7 +6,7 @@ import Provider from "preact-context-provider";
 
 const headerLinks = [
   { link: "/about", text: "about" },
-  { link: "/os", text: "open source" },
+  { link: "/os", text: "os" },
   { link: "/hire", text: "hire" },
   { link: "https://medium.com/@tahini", text: "writing", ext: true }
 ];
