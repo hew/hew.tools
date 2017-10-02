@@ -4,17 +4,21 @@ import { bind } from "decko";
 import { Motion, spring } from "preact-motion";
 import { colors } from "styles";
 // import { data } from "./data.js";
-import axios from 'axios';
+import jax from 'jax.js';
 import { square } from "../shapes";
 import Animate from "../motion";
 import CardList from "../card";
 
 export default class OpenSource extends Component {
   componentDidMount () {
-    axios('https://hewtools.herokuapp.com/').then(response => {
-      const { data } = response;
-      this.setState({ data })
-    })
+    jax('https://hewtools.herokuapp.com')
+      .then(data => {
+        const json = JSON.parse(data);
+        this.setState({ data: json });
+      })
+      .catch(status => {
+        console.error(`[Jax] Failed request: ${status}`);
+      })
   }
   state = {
     animateCards: false,
