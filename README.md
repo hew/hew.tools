@@ -1,6 +1,6 @@
 # hew.tools
 
-Hey welcome to my website.
+https://hew.tools
 
 Technologies used: 
 
