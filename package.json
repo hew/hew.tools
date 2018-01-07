@@ -23,6 +23,7 @@
     "gatsby-transformer-remark": "^1.7.1",
     "gatsby-transformer-sharp": "^1.6.1",
     "isemail": "^3.0.0",
+    "jax.js": "^1.0.4",
     "joi-browser": "^10.6.1",
     "lodash": "^4.15.0",
     "react-css-grid": "^2.0.0-0",
@@ -33,7 +34,7 @@
     "redux-modal": "^1.5.3",
     "reset-css": "^2.2.1",
     "styled-reset": "^0.1.2",
-    "styled-system": "^1.0.8"
+    "styled-system": "^1.1.1"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.2.0",

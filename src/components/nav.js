@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NavModal from '../components/nav-modal'
-import FormModal from '../components/form-modal'
+// import FormModal from '../components/form-modal'
 import Link from 'gatsby-link'
 import Button from './button'
 import Icon from 'react-geomicons'
@@ -10,7 +10,7 @@ import '../styles'
 // Wire it up to the modal
 import { connect } from 'react-redux'
 import { openNavModal, closeNavModal } from '../state/nav-modal-state'
-import { openFormModal, closeFormModal } from '../state/form-modal-state'
+// import { openFormModal, closeFormModal } from '../state/form-modal-state'
 
 class Nav extends Component {
 
@@ -55,11 +55,6 @@ class Nav extends Component {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a href="#" onClick={this.toggleFormModal} style={noBorder}>
-                  <Button ml={1}>Form/Modal</Button>
-                </a>
-              </li>
             </Row>
             <Flex display={['flex', 'none']} align='center' px={2} ml='auto'>
               <a style={{ position: 'relative', zIndex: '9', ...noBorder }} onClick={this.toggleNavModal}>
@@ -69,7 +64,6 @@ class Nav extends Component {
             <NavModal items={items} open={navModal.show} />
           </Flex>
         </Container>
-        <FormModal open={formModal.show} />
       </Flex>
     )
   }
@@ -81,7 +75,7 @@ export default connect(
   dispatch => ({ 
     openNavModal: i => dispatch(openNavModal(i)),
     closeNavModal: i => dispatch(closeNavModal(i)),
-    openFormModal: i => dispatch(openFormModal(i)),
-    closeFormModal: i => dispatch(closeFormModal(i))
+    // openFormModal: i => dispatch(openFormModal(i)),
+    // closeFormModal: i => dispatch(closeFormModal(i))
   })
 )(Nav)

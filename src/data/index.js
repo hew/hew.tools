@@ -1,9 +1,9 @@
 export default {
-  siteTitle: 'Paprika',
+  siteTitle: 'hew.tools',
   headerLinks: [
     { text: 'Home', link: '/' },
-    { text: 'More', link: '/more' }
+    { text: 'Open Source', link: '/open-source' }
     // More pages...
   ],
-  formId: 'form-resource'
+  formId: 'form-main'
 }

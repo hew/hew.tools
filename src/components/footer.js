@@ -4,9 +4,8 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <hr />
         <Flex>
-          <Box m={0} is="p" ml='auto'>Made by <a href="https://github.com/hew">hew</a></Box>
+          <Box m='4em 0' is="p" ml='auto'>Made by <a href="https://github.com/hew">hew</a></Box>
         </Flex>
       </Container>
     </footer>
