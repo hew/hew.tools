@@ -25,6 +25,7 @@ export default class OpenSource extends Component {
     const {data = []} = this.state;
     return (
       <Container>
+        <H1 color={color.purple[0]}>Open Source</H1>
         <Box w={1}>
           {data.map((r, i) => {
             return (

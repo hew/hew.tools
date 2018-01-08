@@ -4,8 +4,11 @@ const normalize = require('!raw-loader!./normalize.css')
 
 injectGlobal`
   ${normalize}
-  
-  * { box-sizing: border-box; }
+
+  * {
+    box-sizing: border-box; 
+    text-transform: lowercase; 
+  }
 
   body {
     font-family:

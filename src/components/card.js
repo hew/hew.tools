@@ -11,7 +11,6 @@ const CardFlex = styled.div`
 
 export default class Card extends Component {
   render() {
-    console.log(color.gray[1]);
     const {name = '', desc = '', href = '', stars = 0, forks = 0} = this.props;
     return (
       <a href={href}>
@@ -23,13 +22,13 @@ export default class Card extends Component {
               <Flex>
                 <Flex mr={1}>
                   <Box mr={1}>
-                    <Stars fill={color.red[1]} />
+                    <Stars fill={color.gray[4]} />
                   </Box>
                   <span>{stars}</span>
                 </Flex>
                 <Flex ml={1}>
                   <Box mr={1} style={{transform: 'translateY(2px)'}}>
-                    <Forks fill={color.red[1]} />
+                    <Forks fill={color.gray[4]} />
                   </Box>
                   <span>{forks}</span>
                 </Flex>

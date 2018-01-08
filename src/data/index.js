@@ -1,9 +1,10 @@
 export default {
   siteTitle: 'hew.tools',
   headerLinks: [
-    { text: 'Home', link: '/' },
-    { text: 'Open Source', link: '/open-source' }
+    {text: '/', link: '/'},
+    {text: 'OS', link: '/open-source'},
+    {text: 'Identity', link: '/identity'},
     // More pages...
   ],
-  formId: 'form-main'
-}
+  formId: 'form-main',
+};

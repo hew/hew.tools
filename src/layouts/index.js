@@ -1,27 +1,24 @@
-import React from 'react'
-import Nav from '../components/nav.js'
-import Footer from '../components/footer'
+import React from 'react';
+import Nav from '../components/nav.js';
+import Footer from '../components/footer';
 
 // Global Styles
-import '../styles'
+import '../styles';
 
-// Import (Marketing) Data
-import data from '../data'
+// Import Data
+import data from '../data';
 
-const Template = ({ children, location }) => {
-  const { headerLinks } = data
+const Template = ({children, location}) => {
+  const {headerLinks} = data;
 
   return (
-    <Box px={[2]}>
+    <Box px={[3]}>
       <nav>
         <Nav items={headerLinks} />
       </nav>
-      <main>
-        {children()}
-      </main>
-      <Footer />
+      <main style={{marginBottom: '2em'}}>{children()}</main>
     </Box>
-  )
-}
+  );
+};
 
-export default Template
+export default Template;
