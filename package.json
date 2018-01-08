@@ -8,7 +8,7 @@
     "css-wipe": "^4.3.0",
     "gatsby": "^1.9.76",
     "gatsby-link": "^1.6.8",
-    "gatsby-plugin-google-analytics": "^1.0.4",
+    "gatsby-plugin-google-analytics": "^1.0.15",
     "gatsby-plugin-manifest": "^1.0.4",
     "gatsby-plugin-netlify": "^1.0.4",
     "gatsby-plugin-offline": "^1.0.4",

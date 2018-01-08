@@ -33,14 +33,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46783407-3"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-46783407-3');
-          </script>
         </head>
         <body>
           {this.props.preBodyComponents}
