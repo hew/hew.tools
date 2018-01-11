@@ -1,0 +1,56 @@
+
+==================================================================
+https://keybase.io/tahini
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hew.tools
+  * I am tahini (https://keybase.io/tahini) on keybase.
+  * I have a public key ASCuxOEMAAGLHxNYGw2FgSsWAjdG6WW9UOuv1KvLKUVtbAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e232f3cae41dc3179b87050a19ff7ff6954d84ad3437be604d279528f0979ac90a",
+      "host": "keybase.io",
+      "kid": "0120aec4e10c00018b1f13581b0d85812b16023746e965bd50ebafd4abcb29456d6c0a",
+      "uid": "b974df55f0865156e97a17f0af0b3f19",
+      "username": "tahini"
+    },
+    "merkle_root": {
+      "ctime": 1515647759,
+      "hash": "9fca2212a25cd76175432acf81a13e6728b4dcd324a8cd42a0e4801c25c42054552f7424022d2ab66a8e436e8541395aee473788e15d00b013fb21ca858a8ace",
+      "hash_meta": "df5778511c1e74a7e7f70cb83237037ab5395695464c9d907acfdc393279c52a",
+      "seqno": 1913859
+    },
+    "service": {
+      "hostname": "hew.tools",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515647774,
+  "expire_in": 504576000,
+  "prev": "628ce4a93fe9f0d1c350ac0fe9092db3b18b5dd506b313248ff2cd6826cacd91",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgrsThDAABix8TWBsNhYErFgI3RullvVDrr9SryylFbWwKp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTIzMmYzY2FlNDFkYzMxNzliODcwNTBhMTlmZjdmZjY5NTRkODRhZDM0MzdiZTYwNGQyNzk1MjhmMDk3OWFjOTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWVjNGUxMGMwMDAxOGIxZjEzNTgxYjBkODU4MTJiMTYwMjM3NDZlOTY1YmQ1MGViYWZkNGFiY2IyOTQ1NmQ2YzBhIiwidWlkIjoiYjk3NGRmNTVmMDg2NTE1NmU5N2ExN2YwYWYwYjNmMTkiLCJ1c2VybmFtZSI6InRhaGluaSJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxNTY0Nzc1OSwiaGFzaCI6IjlmY2EyMjEyYTI1Y2Q3NjE3NTQzMmFjZjgxYTEzZTY3MjhiNGRjZDMyNGE4Y2Q0MmEwZTQ4MDFjMjVjNDIwNTQ1NTJmNzQyNDAyMmQyYWI2NmE4ZTQzNmU4NTQxMzk1YWVlNDczNzg4ZTE1ZDAwYjAxM2ZiMjFjYTg1OGE4YWNlIiwiaGFzaF9tZXRhIjoiZGY1Nzc4NTExYzFlNzRhN2U3ZjcwY2I4MzIzNzAzN2FiNTM5NTY5NTQ2NGM5ZDkwN2FjZmRjMzkzMjc5YzUyYSIsInNlcW5vIjoxOTEzODU5fSwic2VydmljZSI6eyJob3N0bmFtZSI6Imhldy50b29scyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTE1NjQ3Nzc0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjYyOGNlNGE5M2ZlOWYwZDFjMzUwYWMwZmU5MDkyZGIzYjE4YjVkZDUwNmIzMTMyNDhmZjJjZDY4MjZjYWNkOTEiLCJzZXFubyI6MjYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAZQ7VYsYYcMx2Gb106WPQTCxZZ6cMRRUlEgF3Ghu2cN9lN/gLfs1dJ+sj2sPGoYWJeYzM3bZNi8UfSXUFQ4PxAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICJluKRz5l5ja3y+drimOny0jUKaatFQKQiqJ25Tc1X7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tahini
+
+==================================================================
