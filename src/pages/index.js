@@ -4,10 +4,9 @@ const Home = () => (
   <Container>
     <Box>
       <H1 color={color.purple[0]}>matthew jones</H1>
-      <h2>ui developer + designer</h2>
+      <h2>product engineer</h2>
       <P w={[1, 1 / 2]}>
-        ex-copywriter, marketer. passionate about (compiling to) javascript and the open web.
-        into react, reasonml/ocaml, and hummus.
+        CTO @ <a href="https://protohack.com">protohack</a> & <a href="https://startupleague.io">startup league</a>.
       </P>
       <p>
         <a href="https://twitter.com/tahini">get in touch</a>
