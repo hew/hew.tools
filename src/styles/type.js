@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import { space, width, color, textAlign, fontSize } from 'styled-system'
+import { space, width, color, textAlign, fontSize, fontWeight } from 'styled-system'
 
+console.log(fontWeight);
 /*
  * NOTE: The current setup using the browser defaults somewhat negates the need to
  * use the `fontSize` attribute. Still, we'll include it just in case.
@@ -48,4 +49,5 @@ export const Span = styled.span`
   ${color};
   ${textAlign};
   ${fontSize};
+  ${fontWeight};
 `
