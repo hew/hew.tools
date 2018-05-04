@@ -104,7 +104,13 @@ const HireMe = () => (
           {/* / */}
         </P>
       </Box>
-      <H2 mt={3} mb={4}>
+      <Flex align='center'>
+      <H2>
+        <a href="/resume">My resume</a>
+      </H2>
+      <H4 ml={2}>(<a href="https://github.com/hew/fresh-resume-theme">theme</a>)</H4>
+      </Flex>
+      <H2 mb={4}>
         <a href="mailto:matt@hew.tools">Let&apos;s work together.</a>
       </H2>
     </Box>

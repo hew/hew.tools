@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Identity extends Component {
+export default class Resume extends Component {
   componentDidMount() {
     window.location = 'https://hew.github.io/resume'
   }
