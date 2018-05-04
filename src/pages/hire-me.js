@@ -1,26 +1,38 @@
 import React from 'react';
 
-const Home = () => (
+const underline = {textDecoration: `underline wavy ${color.purple[0]}`};
+
+const HireMe = () => (
   <Container>
     <Box>
       <H1 color={color.purple[0]}>hire me</H1>
       <Box w={[1, 2 / 3]}>
         <h2>about me</h2>
         <P>
-          i have been writing software for the past three years, mostly javascript:
-          Node, React, React Native, and Reason/OCaml. most of my time currently
-          is spent building{' '}
+          i have been writing software for the past three years, mostly
+          javascript: Node, React, React Native, and Reason/OCaml. most of my
+          time currently is spent building{' '}
           <a href="http://startupleague.io">startupleague.io</a>, where I am one
           of the co-founders and CTO.
         </P>
         <P>
-          I hack on{' '}
-          <a href="https://github.com/hew">open source</a>{' '}
-          and <a href="https://medium.com/@tahini">write</a> stuff
-          in my spare time. I also do freelance, which is probably why you are here.
+          I hack on <a href="https://github.com/hew">open source</a> and{' '}
+          <a href="https://medium.com/@tahini">write</a> stuff in my spare time.
+          I also do freelance, which is probably why you are here.
         </P>
 
         <h2>areas of specialty</h2>
+
+        <P>
+          {/* Core */}
+          <Span fontWeight="bold" style={underline}>
+            Core
+          </Span>: my core skillset is UI development: fetching data, mapping
+          that data to a list. Placing boxes within other boxes - sometimes
+          centering them. State architecture stores. All that fun stuff.
+          {/* / */}
+        </P>
+
         <P>
           {/* Animation */}
           <Span fontWeight="bold">Animation</Span>: my agency experience often
@@ -36,12 +48,12 @@ const Home = () => (
 
         <P>
           {/* Node */}
-          <Span fontWeight="bold">Node</Span>: in my current role, I&apos;m building
-          a node-based game server. I&apos;m particularly proficient with the 
-          {' '}<a href="https://feathersjs.com/">
-           feathers framework
-          </a> as well as <a href="https://socket.io">socket.io</a> because... 
-          that's what I'm using.
+          <Span fontWeight="bold">Node</Span>: in my current role, I&apos;m
+          building a node-based game server (don't worry; it's not that type of
+          game). As far as libraries go, I&apos;m particularly proficient with
+          the <a href="https://feathersjs.com/">feathers framework</a> as well
+          as <a href="https://socket.io">socket.io</a>. Anything{' '}
+          <a href="https://expressjs.com/">express-based</a>, really.
           {/* / */}
         </P>
 
@@ -49,10 +61,10 @@ const Home = () => (
           {/* Salesforce */}
           <Span fontWeight="bold">Salesforce</Span>: while working for{' '}
           <a href="https://klue.com">klue</a>, I integrated with Salesforce to
-          create a number of different user-facing features. This
-          was mostly done using the Canvas API, but I am familiar with all of
-          them. I also created{' '}
-          <a href="https://github.com/hew/jsforce-connect">jsforce-connect</a>{' '}.
+          create a number of different user-facing features. This was mostly
+          done using the Canvas API, but I am familiar with all of them. I also
+          created{' '}
+          <a href="https://github.com/hew/jsforce-connect">jsforce-connect</a> .
           {/* / */}
         </P>
 
@@ -77,18 +89,20 @@ const Home = () => (
             {' '}
             exploring using reason
           </a>{' '}
-          to generate react code.
+          to generate react code.{' '}
+          <a href="http://startupleague.io">startupleague.io</a>'s core product
+          front end is written in react-native, and uses <a href="https://expo.io/">expo</a> extensively.
           {/* / */}
         </P>
 
         <P>
           {/* Wordpress / Static Site */}
-          <Span fontWeight="bold">Wordpress/Static CMS</Span>: We can build you a Wordpress website. 
-          it might be the case that a <a href="https://jamstack.org/">static CMS</a> site would be better (and cheaper).
-          We can talk it over.
+          <Span fontWeight="bold">Wordpress/Static CMS</Span>: We can build you
+          a Wordpress website. it might be the case that a{' '}
+          <a href="https://jamstack.org/">static CMS</a> site would be better
+          (and cheaper). We can talk it over.
           {/* / */}
         </P>
-
       </Box>
       <H2 mt={3} mb={4}>
         <a href="mailto:matt@hew.tools">Let&apos;s work together.</a>
@@ -97,4 +111,4 @@ const Home = () => (
   </Container>
 );
 
-export default Home;
+export default HireMe;
