@@ -29,7 +29,7 @@ class Nav extends Component {
     const {formModal, navModal} = modal;
     const buttonStyles = {
       borderBottom: 'none',
-      padding: '16px',
+      padding: '16px 0',
       cursor: 'pointer',
       display: 'inline-block'
     };
@@ -40,7 +40,7 @@ class Nav extends Component {
           <Flex py={3} align="center">
             <Box mt={2}>
               <Link to="/" style={buttonStyles}>
-                {/* <H4>hew.tools</H4> */}
+                <H4>{"/"}</H4>
               </Link>
             </Box>
             <Row is="ul" display={['none', 'flex']} ml="auto">
