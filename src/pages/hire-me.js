@@ -1,4 +1,5 @@
 import React from 'react';
+import color from '../styles/color'
 
 const underline = {textDecoration: `underline wavy ${color.purple[0]}`};
 
@@ -18,7 +19,7 @@ const HireMe = () => (
         <P>
           I hack on <a href="https://github.com/hew">open source</a> and{' '}
           <a href="https://medium.com/@tahini">write</a> stuff in my spare time.
-          I also do freelance, which is probably why you are here.
+          I also do freelance, which is maybe why you are here.
         </P>
 
         <h2>areas of specialty</h2>
@@ -62,9 +63,7 @@ const HireMe = () => (
           <Span fontWeight="bold">Salesforce</Span>: while working for{' '}
           <a href="https://klue.com">klue</a>, I integrated with Salesforce to
           create a number of different user-facing features. This was mostly
-          done using the Canvas API, but I am familiar with all of them. I also
-          created{' '}
-          <a href="https://github.com/hew/jsforce-connect">jsforce-connect</a> .
+          done using the Canvas API, but I am familiar with all of them.
           {/* / */}
         </P>
 
