@@ -71,15 +71,15 @@ const HireMe = () => (
           {/* Style Systems */}
           <Span fontWeight="bold">Style Systems</Span>: I've been hacking and
           thinking on styling systems ever since I first started dabbling with
-          CSS as a web marketer. I specialize in atomic-based systems with an
-          emphasis on maintainability and performance.{' '}
-          <a href="https://github.com/hew/_min">_min</a> is one such example.
+          CSS as a web marketer. I specialize in react-based systems with an
+          emphasis on maintainability, reusability, and performance.{' '}
+          <a href="https://github.com/hew/_min">_min</a> is one such (wip) oss example.
           {/* / */}
         </P>
 
         <P>
-          {/* React (Native) */}
-          <Span fontWeight="bold">React (Native)</Span>: I have been writing
+          {/* React */}
+          <Span fontWeight="bold">React</Span>: I have been writing
           react almost daily since I got into software development. I have a few{' '}
           <a href="https://github.com/hew?utf8=%E2%9C%93&tab=repositories&q=react&type=&language=">
             react-based
@@ -89,8 +89,15 @@ const HireMe = () => (
             exploring using reason
           </a>{' '}
           to generate react code.{' '}
-          <a href="http://startupleague.io">startupleague.io</a>'s core product
+          {/* / */}
+        </P>
+
+        <P>
+          {/* React Native */}
+          <Span fontWeight="bold">React Native</Span>: 
+          My startup <a href="http://startupleague.io">startupleague.io</a>'s core product
           front end is written in react-native, and uses <a href="https://expo.io/">expo</a> extensively.
+          I have proven experience with authentication, state management, real-time architecture, and more.
           {/* / */}
         </P>
 
