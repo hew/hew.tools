@@ -1,7 +1,13 @@
 import React from 'react';
-import color from '../styles/color'
+import color from '../styles/color';
 
 const underline = {textDecoration: `underline wavy ${color.purple[0]}`};
+const outline = {
+  border: `2px solid ${color.purple[0]}`,
+  padding: `0.5em`,
+  margin: `0 0.5em`,
+  width: `4em`
+};
 
 const HireMe = () => (
   <Container>
@@ -25,97 +31,46 @@ const HireMe = () => (
         <h2>areas of specialty</h2>
 
         <P>
-          {/* Core */}
           <Span fontWeight="bold" style={underline}>
             Core
           </Span>: my core skillset is UI development: fetching data, mapping
           that data to a list. Placing boxes within other boxes - sometimes
           centering them. State architecture stores. All that fun stuff.
-          {/* / */}
         </P>
 
-        <P>
-          {/* Animation */}
-          <Span fontWeight="bold">Animation</Span>: my agency experience often
-          saw me working with web animations (and perfing them). This in-part
-          lead to my{' '}
-          <a href="https://github.com/hew/react-scroll-horizontal">
-            horizontal scroll library
-          </a>{' '}
-          for react. I specialize in react animations, but I have experience
-          with all the major libraies: GSAP, Velocity, etc.
-          {/* / */}
-        </P>
+        <Flex flexWrap='wrap'>
+          <Box style={outline}>
+            <Span fontWeight="bold">Node</Span>
+          </Box>
 
-        <P>
-          {/* Node */}
-          <Span fontWeight="bold">Node</Span>: in my current role, I&apos;m
-          building a node-based game server (don't worry; it's not that type of
-          game). As far as libraries go, I&apos;m particularly proficient with
-          the <a href="https://feathersjs.com/">feathers framework</a> as well
-          as <a href="https://socket.io">socket.io</a>. Anything{' '}
-          <a href="https://expressjs.com/">express-based</a>, really.
-          {/* / */}
-        </P>
+          <Box style={outline}>
+            <Span fontWeight="bold">Salesforce</Span>
+          </Box>
 
-        <P>
-          {/* Salesforce */}
-          <Span fontWeight="bold">Salesforce</Span>: while working for{' '}
-          <a href="https://klue.com">klue</a>, I integrated with Salesforce to
-          create a number of different user-facing features. This was mostly
-          done using the Canvas API, but I am familiar with all of them.
-          {/* / */}
-        </P>
+          <Box style={outline}>
+            <Span fontWeight="bold">Style Systems</Span>
+          </Box>
 
-        <P>
-          {/* Style Systems */}
-          <Span fontWeight="bold">Style Systems</Span>: I've been hacking and
-          thinking on styling systems ever since I first started dabbling with
-          CSS as a web marketer. I specialize in react-based systems with an
-          emphasis on maintainability, reusability, and performance.{' '}
-          <a href="https://github.com/hew/_min">_min</a> is one such (wip) oss example.
-          {/* / */}
-        </P>
+          <Box style={outline}>
+            <Span fontWeight="bold">React</Span>
+          </Box>
 
-        <P>
-          {/* React */}
-          <Span fontWeight="bold">React</Span>: I have been writing
-          react almost daily since I got into software development. I have a few{' '}
-          <a href="https://github.com/hew?utf8=%E2%9C%93&tab=repositories&q=react&type=&language=">
-            react-based
-          </a>, open source libraries and more recently have been
-          <a href="https://github.com/hew/reasonable-website">
-            {' '}
-            exploring using reason
-          </a>{' '}
-          to generate react code.{' '}
-          {/* / */}
-        </P>
+          <Box style={outline}>
+            <Span fontWeight="bold">React Native</Span>
+          </Box>
 
-        <P>
-          {/* React Native */}
-          <Span fontWeight="bold">React Native</Span>: 
-          My startup <a href="http://startupleague.io">startupleague.io</a>'s core product
-          front end is written in react-native, and uses <a href="https://expo.io/">expo</a> extensively.
-          I have proven experience with authentication, state management, real-time architecture, and more.
-          {/* / */}
-        </P>
+          <Box style={outline}>
+            <Span fontWeight="bold">Rails</Span>
+          </Box>
 
-        <P>
-          {/* Wordpress / Static Site */}
-          <Span fontWeight="bold">Wordpress/Static CMS</Span>: We can build you
-          a Wordpress website. it might be the case that a{' '}
-          <a href="https://jamstack.org/">static CMS</a> site would be better
-          (and cheaper). We can talk it over.
-          {/* / */}
-        </P>
+          <Box style={outline}>
+            <Span fontWeight="bold">Wordpress/Static CMS</Span>
+          </Box>
+        </Flex>
       </Box>
-      <Flex align='center'>
       <H2>
         <a href="/resume">My resume</a>
       </H2>
-      <H4 ml={2}>(<a href="https://github.com/hew/fresh-resume-theme">theme</a>)</H4>
-      </Flex>
       <H2 mb={4}>
         <a href="mailto:matt@hew.tools">Let&apos;s work together.</a>
       </H2>

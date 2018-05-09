@@ -5,6 +5,8 @@
   "author": "Matt Jones <matt@klue.com>",
   "private": "true",
   "dependencies": {
+    "clean-element": "^1.0.0",
+    "clean-tag": "^1.0.4",
     "css-wipe": "^4.3.0",
     "gatsby": "^1.9.76",
     "gatsby-link": "^1.6.8",
@@ -34,7 +36,7 @@
     "redux-modal": "^1.5.3",
     "reset-css": "^2.2.1",
     "styled-reset": "^0.1.2",
-    "styled-system": "^1.1.1"
+    "styled-system": "^2.2.5"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.2.0",

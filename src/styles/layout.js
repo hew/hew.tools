@@ -19,20 +19,8 @@ import {
   responsiveStyle,
 } from 'styled-system';
 
-const BaseComponent = props => {
-  const {is = 'div'} = props;
-
-  // Remove invalid props
-  const next = removeProps(props);
-
-  // TODO: This is getting a little messy but `cleanElement` isn't working...
-  delete next.is;
-  delete next.display;
-  delete next.width;
-  delete next.borderColor;
-
-  return React.createElement(is, ...next);
-};
+// import cleanElement from 'clean-element'
+import tag from 'clean-tag'
 
 // Custom helper
 const display = responsiveStyle({
@@ -40,7 +28,7 @@ const display = responsiveStyle({
   cssProperty: 'display',
 });
 
-export const Box = styled(BaseComponent)(
+export const Box = styled(tag)(
   [],
   width,
   fontSize,
@@ -51,18 +39,17 @@ export const Box = styled(BaseComponent)(
   borderColor,
   boxShadow,
   display,
+  flex,
+  alignItems,
+  justifyContent,
+  flexWrap,
+  flexDirection,
+  backgroundColor
 );
 
 // Here we have a duplicate display because the first is effective a default.
 export const Flex = Box.extend`
   display: flex;
-  ${display};
-  ${flex};
-  ${alignItems};
-  ${justifyContent};
-  ${flexWrap};
-  ${flexDirection};
-  ${backgroundColor},;
 `;
 
 export const Container = styled.div`

@@ -1,6 +1,7 @@
+import React from 'react';
 import { Row, Flex, Box, Container } from './layout'
 import { max_width, sm_screen, md_screen, lg_screen } from './sizes'
-import { H1, H2, H3, H4, P, Span } from './type'
+import { Text } from './type'
 import color from './color'
 import './global'
 
@@ -23,9 +24,9 @@ global.lg_screen = lg_screen
 
 global.color = color
 
-global.H1 = H1
-global.H2 = H2
-global.H3 = H3
-global.H4 = H4
-global.Span = Span
-global.P = P
+global.H1 = ({children, ...props}) => <Text {...props} is='h1'>{children}</Text> 
+global.H2 = ({children, ...props}) => <Text {...props} is='h2'>{children}</Text> 
+global.H3 = ({children, ...props}) => <Text {...props} is='h3'>{children}</Text> 
+global.H4 = ({children, ...props}) => <Text {...props} is='h4'>{children}</Text> 
+global.Span = ({children, ...props}) => <Text {...props} is='span'>{children}</Text> 
+global.P = ({children, ...props}) => <Text {...props} is='p'>{children}</Text> 

@@ -9,24 +9,9 @@ import {connect} from 'react-redux';
 import {openNavModal, closeNavModal} from '../state/nav-modal-state';
 
 class Nav extends Component {
-  toggleNavModal = e => {
-    e.preventDefault();
-
-    if (this.props.modal.navModal.show) {
-      this.props.closeNavModal();
-    } else {
-      this.props.openNavModal();
-    }
-  };
-
-  toggleFormModal = e => {
-    e.preventDefault();
-    this.props.openFormModal();
-  };
-
   render() {
     const {items = [], modal} = this.props;
-    const {formModal, navModal} = modal;
+    const {navModal} = modal;
     const buttonStyles = {
       borderBottom: 'none',
       padding: '16px 0',
