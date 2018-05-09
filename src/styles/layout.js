@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {max_width} from './sizes';
+import tag from 'clean-tag'
 import {
   space,
   width,
@@ -18,9 +19,6 @@ import {
   removeProps,
   responsiveStyle,
 } from 'styled-system';
-
-// import cleanElement from 'clean-element'
-import tag from 'clean-tag'
 
 // Custom helper
 const display = responsiveStyle({

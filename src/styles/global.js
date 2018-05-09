@@ -25,6 +25,7 @@ injectGlobal`
       "Arial",
       sans-serif;
       line-height: 1.3;
+      color: ${color.purple[1]}
   }
   html, body, #___gatsby, #___gatsby > div {
     height: 100%;
@@ -41,9 +42,10 @@ injectGlobal`
     display: block;
   }
   a {
-    text-decoration: none;
-    color: ${color.gray[0]};
-    border-bottom: 3px solid ${color.offWhite[0]};
+    text-decoration-color: ${color.gray[1]};
+    text-decoration-skip: underline;
+    text-decoration-style: solid;
+    color: ${color.purple[1]};
   }
   img {
     width: 100%;
@@ -53,7 +55,7 @@ injectGlobal`
     font-size: 17px;
   }
   mark {
-    background-color: ${color.offWhite[0]};
+    background-color: ${color.gray[0]};
     color: #000;
     font-family: monospace;
     padding: 0.25em;
