@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build && cd functions && npm install && cd .. && netlify-lambda build functions"
+  command = "yarn run build && cd functions && npm install && cd .. && netlify-lambda build functions"
   publish = "public"
   branch = "master"
   functions = "functions/"
