@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import NavModal from '../components/nav-modal';
 import Link from 'gatsby-link';
 import '../styles';
+import Icon from 'react-geomicons';
 
 // Wire it up to the modal
 import {connect} from 'react-redux';
