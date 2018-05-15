@@ -1,6 +1,6 @@
-import color from './color.js'
-import {injectGlobal} from 'styled-components'
-const normalize = require('!raw-loader!./normalize.css')
+import color from './color.js';
+import {injectGlobal} from 'styled-components';
+const normalize = require('!raw-loader!./normalize.css');
 
 injectGlobal`
   ${normalize}
@@ -42,10 +42,11 @@ injectGlobal`
     display: block;
   }
   a {
-    text-decoration-color: ${color.gray[1]};
-    text-decoration-skip: underline;
-    text-decoration-style: solid;
+    text-decoration: none; 
     color: ${color.purple[1]};
+  }
+  main a {
+    border-bottom: 2px solid ${color.gray[0]};
   }
   img {
     width: 100%;
@@ -64,4 +65,11 @@ injectGlobal`
     margin: 1.5em 0;
     opacity: 0.5;
   }
-`
+`;
+
+/* text-decoration-color: ${color.gray[1]}; */
+/* text-decoration-skip: underline; */
+/* text-decoration-style: solid; */
+// a[aria-current="true"] {
+//     border-bottom: 2px solid ${color.purple[0]};
+//   }

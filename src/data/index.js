@@ -1,8 +1,10 @@
 export default {
   siteTitle: 'hew.tools',
   headerLinks: [
-    {text: 'open source', link: '/open-source'},
-    {text: 'identity', link: 'https://keybase.io/tahini', external: true},
+    {text: '/', link: '/'},
+    {text: 'os', link: '/open-source'},
+    {text: 'hire', link: '/hire-me'},
+    {text: 'elsewhere', link: 'https://keybase.io/tahini', external: true},
   ],
   hireMe: {
     expertise: ['node', 'salesforce', 'react', 'react native', 'rails', 'static cms']

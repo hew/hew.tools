@@ -6,15 +6,12 @@ import '../styles';
 
 // Wire it up to the modal
 import {connect} from 'react-redux';
-import {openNavModal, closeNavModal} from '../state/nav-modal-state';
+import {toggleNavModal} from '../state/nav-modal-state';
 
 class Nav extends Component {
   render() {
-    const {items = [], modal} = this.props;
-    const {navModal} = modal;
+    const {items = [], isModalOpen} = this.props;
     const buttonStyles = {
-      borderBottom: 'none',
-      padding: '16px 0',
       cursor: 'pointer',
       display: 'inline-block'
     };
@@ -22,42 +19,49 @@ class Nav extends Component {
     return (
       <Flex>
         <Container>
-          <Flex py={3} align="center">
+          <Flex py={4} align="center">
             <Box mt={2}>
               <Link to="/" style={buttonStyles}>
-                <H4>{"/"}</H4>
+                {/* <H4>{'home'}</H4> */}
               </Link>
             </Box>
             <Row is="ul" display={['none', 'flex']} ml="auto">
-              {items.map((x, i) => !x.external ? (
-                <li key={i.toString()}>
-                  <Link
-                    activeClassName="--active"
-                    to={x.link}
-                    style={buttonStyles}>
-                    <H4 px={1}>{x.text}</H4>
-                  </Link>
-                </li>
-              ) : (
-                <li key={i.toString()}>
-                  <a href={x.link}>
-                    <H4 px={1}>{x.text}</H4>
-                  </a>
-                </li> )
-             )}
+              {items.map(
+                (x, i) =>
+                  !x.external ? (
+                    <li key={i.toString()}>
+                      <Link
+                        activeClassName="--active"
+                        to={x.link}
+                        style={buttonStyles}>
+                        <H4 m={0} px={2}>
+                          {x.text}
+                        </H4>
+                      </Link>
+                    </li>
+                  ) : (
+                    <li key={i.toString()}>
+                      <a href={x.link}>
+                        <H4 m={0} px={1}>
+                          {x.text}
+                        </H4>
+                      </a>
+                    </li>
+                  )
+              )}
             </Row>
             <Flex display={['flex', 'none']} align="center" ml="auto">
               <a
                 style={{
                   position: 'relative',
                   zIndex: '9',
-                  ...buttonStyles,
+                  ...buttonStyles
                 }}
-                onClick={this.toggleNavModal}>
+                onClick={() => this.props.toggleNavModal(!isModalOpen)}>
                 <Icon name="chevronDown" />
               </a>
             </Flex>
-            <NavModal items={items} open={navModal.show} />
+            <NavModal items={items} open={isModalOpen} />
           </Flex>
         </Container>
       </Flex>
@@ -66,9 +70,8 @@ class Nav extends Component {
 }
 
 export default connect(
-  store => ({modal: {navModal: store.navModal, formModal: store.formModal}}),
-  dispatch => ({
-    openNavModal: i => dispatch(openNavModal(i)),
-    closeNavModal: i => dispatch(closeNavModal(i)),
-  }),
+  (store) => ({isModalOpen: store.navModal.show}),
+  (dispatch) => ({
+    toggleNavModal: (i) => dispatch(toggleNavModal(i))
+  })
 )(Nav);

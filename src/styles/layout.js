@@ -48,6 +48,7 @@ export const Box = styled(tag)(
 // Here we have a duplicate display because the first is effective a default.
 export const Flex = Box.extend`
   display: flex;
+  ${display};
 `;
 
 export const Container = styled.div`
