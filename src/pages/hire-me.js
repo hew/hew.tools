@@ -50,7 +50,7 @@ class HireMe extends React.Component {
           <H1 f={7} color={color.purple[0]}>
             hire me
           </H1>
-          <P>I build web stuff. Depending on what you need, I might be the right fit for your company or product. If you want, check out the ol&apos; <a href="/resume">rezzy</a>, or see below for more.</P>
+          <P>I'm a javascript generalist with a focus on the front end. I've been writing software for around three years. previous to that, I was a writer/marketer. Depending on what you need, I might be the right fit for your company or product. click the boxes below for more info. feel free to also check out the ol&apos; <a href="/resume">rezzy</a>.</P>
           <H3>
             <a href="mailto:matt@hew.tools">contact me</a>
           </H3>
