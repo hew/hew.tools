@@ -26,7 +26,7 @@ export default class OpenSource extends Component {
     return (
       <Container>
         <H1 color={color.purple[0]}>Open Source</H1>
-        <Box w={1}>
+        <Box w={1} mb={4}>
           {data.map((r, i) => {
             return (
               <Card
@@ -40,6 +40,7 @@ export default class OpenSource extends Component {
             );
           })}
         </Box>
+        <Box py={4} />
       </Container>
     );
   }

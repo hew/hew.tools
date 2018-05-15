@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 import color from '../styles/color';
 import {hireMe} from '../data';
 import {Motion, spring} from 'react-motion';
@@ -9,15 +10,20 @@ import {connect} from 'react-redux';
 import {toggleModal} from '../state/modal-state';
 
 const underline = {textDecoration: `underline wavy ${color.yellow[0]}`};
-const outline = {
-  border: `1px solid ${color.gray[0]}`,
-  padding: `3em 0em`,
-  margin: `0.5em`,
-  width: `17em`,
-  display: `flex`,
-  alignItems: `center`,
-  justifyContent: `center`
-};
+
+const Outline = styled.div`
+  border: 2px solid ${color.gray[0]};
+  padding: 3em 0em;
+  margin: 0.5em;
+  width: 17em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.2s ease-in-out;
+  :hover {
+    border: 2px solid ${color.purple[0]};
+  }
+`;
 
 const HireMe = ({isModalOpen, toggleModal}) => (
   <Container>
@@ -27,9 +33,9 @@ const HireMe = ({isModalOpen, toggleModal}) => (
         <h2>areas of specialty</h2>
         <Flex flexWrap="wrap">
           {hireMe.expertise.map((item) => (
-            <Box style={outline} key={item.toString()} onClick={toggleModal}>
+            <Outline key={item.toString()} onClick={toggleModal}>
               <p>{item}</p>
-            </Box>
+            </Outline>
           ))}
         </Flex>
       </Box>
@@ -40,13 +46,13 @@ const HireMe = ({isModalOpen, toggleModal}) => (
         <a href="mailto:matt@hew.tools">Let&apos;s work together</a>
       </H2>
     </Box>
-   <Modal component={null} open={isModalOpen} />
+    <Modal component={null} open={isModalOpen} />
   </Container>
 );
 
 export default connect(
-  (store) => ({isModalOpen: store.modal.show }),
+  (store) => ({isModalOpen: store.modal.show}),
   (dispatch) => ({
-    toggleModal: (i) => dispatch(toggleModal(i)),
+    toggleModal: (i) => dispatch(toggleModal(i))
   })
 )(HireMe);

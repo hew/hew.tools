@@ -22,7 +22,7 @@ class Nav extends Component {
           <Flex py={4} align="center">
             <Box mt={2}>
               <Link to="/" style={buttonStyles}>
-                {/* <H4>{'home'}</H4> */}
+                 <H4>{'/'}</H4>
               </Link>
             </Box>
             <Row is="ul" display={['none', 'flex']} ml="auto">
