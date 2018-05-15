@@ -1,7 +1,7 @@
 export default {
   siteTitle: 'hew.tools',
   headerLinks: [
-    {text: 'os', link: '/open-source'},
+    {text: 'os', link: 'https://github.com/hew', external: true},
     {text: 'hire', link: '/hire-me'},
     {text: 'elsewhere', link: 'https://keybase.io/tahini', external: true},
   ],
