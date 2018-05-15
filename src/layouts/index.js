@@ -12,11 +12,12 @@ const Template = ({children, location}) => {
   const {headerLinks} = data;
 
   return (
-    <Box px={[3]}>
+    <Box px={[4, 5]}>
       <nav>
         <Nav items={headerLinks} />
       </nav>
-      <main style={{marginBottom: '2em'}}>{children()}</main>
+      <main>{children()}</main>
+      <Box py={4} />
     </Box>
   );
 };

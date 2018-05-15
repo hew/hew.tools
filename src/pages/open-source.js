@@ -25,7 +25,7 @@ export default class OpenSource extends Component {
     const {data = []} = this.state;
     return (
       <Container>
-        <H1 color={color.purple[0]}>Open Source</H1>
+        <H1 f={7} color={color.purple[0]}>open source</H1>
         <Box w={1} mb={4}>
           {data.map((r, i) => {
             return (
@@ -40,7 +40,6 @@ export default class OpenSource extends Component {
             );
           })}
         </Box>
-        <Box py={4} />
       </Container>
     );
   }

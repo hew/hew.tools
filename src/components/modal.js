@@ -17,90 +17,111 @@ const modalStyles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    zIndex: 10
   },
   content: {
-    position: 'relative',
+    position: 'absolute',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     border: 'none',
     background: 'transparent',
-    width: '80%',
-    height: '100%',
-    maxWidth: '65em'
+    padding: 0
   }
 };
 
-const line = 500;
-const basePerspective = line * 2;
-const sidePerspective = line;
-const squareSize = {width: line, height: line};
+const _Modal = ({
+  text,
+  toggleModal,
+  isModalOpen,
+  toggleAnimation,
+  Component = () => null
+}) => {
+  const line = 500;
+  const basePerspective = line * 2;
+  const sidePerspective = line;
+  const squareSize = {width: line, height: line};
 
-const side = {
-  ...squareSize,
-  perspective: `${sidePerspective}px`,
-  position: 'absolute',
-  backfaceVisibility: 'inherit'
-};
+  const side = {
+    ...squareSize,
+    perspective: `${sidePerspective}px`,
+    position: 'absolute',
+    backfaceVisibility: 'inherit'
+  };
 
-const base = {
-  ...squareSize,
-  // perspective: `${basePerspective}px`
-};
+  const base = {
+    ...squareSize
+    // perspective: `${basePerspective}px`
+  };
 
-const closeButtonStyles = {
-  position: 'absolute',
-  top: '0',
-  cursor: 'pointer',
-  right: '20px'
-};
+  const closeButtonStyles = {
+    position: 'absolute',
+    top: '0',
+    cursor: 'pointer',
+    right: toggleAnimation ? '20px' : '0px'
+  };
 
-const _Modal = ({toggleModal, isModalOpen, Component = () => null}) => {
-  const defaultStyle = { z: 0 };
-  const tween = { z: isModalOpen ? spring(355) : spring(0) };
+  const defaultStyle = {z: 0};
+  const tween = {z: isModalOpen ? spring(355) : spring(0)};
+
+  console.log(text, 'text');
   return (
     <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
-      <Motion defaultStyle={defaultStyle} style={tween}>
-        {({z}) => (
-          <div
-            style={{
-              transform: `rotate3d(1, 1, 1, ${z}deg)`,
-              transformStyle: 'preserve-3d',
-              outline: '2px solid #BEADD7',
-              ...base
-            }}>
+      {toggleAnimation ? (
+        <Motion defaultStyle={defaultStyle} style={tween}>
+          {({z}) => (
             <div
               style={{
-                ...side,
-                // border: `4px solid ${color.purple[0]}`,
-                border: `3px solid black`,
-                backgroundColor: 'white',
-                transform: `translateZ(150px)`
+                transform: `rotate3d(1, 1, 1, ${z}deg)`,
+                transformStyle: 'preserve-3d',
+                outline: '2px solid #BEADD7',
+                ...base
               }}>
-              <H3 style={closeButtonStyles} onClick={toggleModal}>
-                close
-              </H3>
-              {Component()}
+              <div
+                style={{
+                  ...side,
+                  // border: `4px solid ${color.purple[0]}`,
+                  border: `3px solid black`,
+                  backgroundColor: 'white',
+                  transform: `translateZ(150px)`,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                <H3 style={closeButtonStyles} onClick={toggleModal}>
+                  close
+                </H3>
+                <p>{text}</p>
+              </div>
+              <div
+                style={{
+                  ...side,
+                  backgroundColor: `${color.purple[0]}`,
+                  transform: `rotateY(180deg) translateZ(150px)`,
+                  border: '3px solid black'
+                }}
+              />
             </div>
-            <div
-              style={{
-                ...side,
-                backgroundColor: `${color.purple[0]}`,
-                transform: `rotateY(180deg) translateZ(150px)`,
-                border: '3px solid black'
-              }}
-            />
-          </div>
-        )}
-      </Motion>
+          )}
+        </Motion>
+      ) : (
+        <Flex
+          alignItems="center"
+          style={{position: 'relative', width: '100%', height: '100%'}}>
+          <H3 style={closeButtonStyles} onClick={toggleModal}>
+            close
+          </H3>
+          <p>{text}</p>
+        </Flex>
+      )}
     </Modal>
   );
 };
 
 export default connect(
-  (store) => ({isModalOpen: store.modal.show}),
+  (store) => ({isModalOpen: store.modal.show, text: store.modal.text}),
   (dispatch) => ({
     toggleModal: (i) => dispatch(toggleModal(i))
   })

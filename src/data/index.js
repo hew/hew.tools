@@ -6,7 +6,14 @@ export default {
     {text: 'elsewhere', link: 'https://keybase.io/tahini', external: true},
   ],
   hireMe: {
-    expertise: ['node', 'salesforce', 'react', 'react native', 'rails', 'static cms']
+    expertise: [
+      {short: 'node', long: 'something longer blah blah blah.'}, 
+      {short: 'salesforce', long: 'something longer blah blah blah.'}, 
+      {short: 'react', long: 'something longer blah blah blah.'}, 
+      {short: 'react native', long: 'something longer blah blah blah.'},
+      {short: 'rails', long: 'something longer blah blah blah.' },
+      {short: 'JAM Stack', long: 'something longer blah blah blah.' },
+    ],
   },
   formId: 'form-main'
 };
