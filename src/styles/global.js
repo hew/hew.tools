@@ -27,6 +27,9 @@ injectGlobal`
       line-height: 1.3;
       color: ${color.purple[1]}
   }
+  body.ReactModal__Body--open {
+    overflow: hidden;
+  }
   html, body, #___gatsby, #___gatsby > div {
     height: 100%;
     display: flex;
@@ -45,7 +48,8 @@ injectGlobal`
     text-decoration: none; 
     color: ${color.purple[1]};
   }
-  main a {
+  main a,
+  .ReactModalPortal a {
     border-bottom: 2px solid ${color.gray[0]};
   }
   img {

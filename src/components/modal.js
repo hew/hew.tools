@@ -10,115 +10,138 @@ import {Motion, spring} from 'react-motion';
 import {connect} from 'react-redux';
 import {toggleModal} from '../state/modal-state.js';
 
-// Not sure how to SC this one, so we stick with js styles
-const modalStyles = {
-  overlay: {
-    backgroundColor: 'white',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: 10
-  },
-  content: {
-    position: 'absolute',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    border: 'none',
-    background: 'transparent',
-    padding: 0
+class _Modal extends React.Component {
+  state = {toggleAnimation: true};
+  componentDidMount() {
+    this.calculateDiameter();
+    window.addEventListener('resize', this.calculateDiameter);
   }
-};
 
-const _Modal = ({
-  text,
-  toggleModal,
-  isModalOpen,
-  toggleAnimation,
-  Component = () => null
-}) => {
-  const line = 500;
-  const basePerspective = line * 2;
-  const sidePerspective = line;
-  const squareSize = {width: line, height: line};
-
-  const side = {
-    ...squareSize,
-    perspective: `${sidePerspective}px`,
-    position: 'absolute',
-    backfaceVisibility: 'inherit'
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+  calculateDiameter = () => {
+    if (window.matchMedia('(min-width: 650px)').matches) {
+      this.setState((state) => ({toggleAnimation: true}));
+    } else {
+      this.setState((state) => ({toggleAnimation: false}));
+    }
   };
+  render() {
+    const {text, toggleModal, isModalOpen, Component = () => null} = this.props;
 
-  const base = {
-    ...squareSize
-    // perspective: `${basePerspective}px`
-  };
+    const {toggleAnimation} = this.state;
 
-  const closeButtonStyles = {
-    position: 'absolute',
-    top: '0',
-    cursor: 'pointer',
-    right: toggleAnimation ? '20px' : '0px'
-  };
+    const modalStyles = {
+      overlay: {
+        backgroundColor: 'white',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        zIndex: 10
+      },
+      content: {
+        top: '20px',
+        left: '20px',
+        right: '20px',
+        bottom: '20px',
+        position: 'absolute',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        border: 'none',
+        background: 'transparent',
+        padding: '20px',
+        border: toggleAnimation ? 'none' : `3px solid ${color.purple[1]}`
+      }
+    };
 
-  const defaultStyle = {z: 0};
-  const tween = {z: isModalOpen ? spring(355) : spring(0)};
+    const line = 500;
+    // const basePerspective = line * 2;
+    const sidePerspective = line;
+    const squareSize = {width: line, height: line};
 
-  console.log(text, 'text');
-  return (
-    <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
-      {toggleAnimation ? (
-        <Motion defaultStyle={defaultStyle} style={tween}>
-          {({z}) => (
-            <div
-              style={{
-                transform: `rotate3d(1, 1, 1, ${z}deg)`,
-                transformStyle: 'preserve-3d',
-                outline: '2px solid #BEADD7',
-                ...base
-              }}>
+    const side = {
+      ...squareSize,
+      perspective: `${sidePerspective}px`,
+      position: 'absolute',
+      backfaceVisibility: 'inherit'
+    };
+
+    const base = {
+      ...squareSize,
+      transformStyle: 'preserve-3d',
+      outline: '2px solid #BEADD7'
+    };
+
+    const side1 = {
+      ...side,
+      border: `3px solid black`,
+      backgroundColor: 'white',
+      transform: `translateZ(150px)`,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 16px'
+    };
+
+    const side2 = {
+      ...side,
+      backgroundColor: `${color.purple[0]}`,
+      transform: `rotateY(180deg) translateZ(150px)`,
+      border: '3px solid black'
+    };
+
+    const closeButtonStyles = {
+      position: 'absolute',
+      cursor: 'pointer',
+      top: toggleAnimation ? '0' : '-20px',
+      right: toggleAnimation ? '20px' : '0px'
+    };
+
+    const mobileInnerStyles = {
+      position: 'relative',
+      width: '100%',
+      height: '100%'
+    };
+
+    const motionDefaultStyle = {z: 0};
+    const tween = {z: spring(355)};
+
+    return (
+      <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
+        {toggleAnimation ? (
+          <Motion defaultStyle={motionDefaultStyle} style={tween}>
+            {({z}) => (
               <div
                 style={{
-                  ...side,
-                  // border: `4px solid ${color.purple[0]}`,
-                  border: `3px solid black`,
-                  backgroundColor: 'white',
-                  transform: `translateZ(150px)`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
+                  transform: `rotate3d(1, 1, 1, ${z}deg)`,
+                  ...base
                 }}>
-                <H3 style={closeButtonStyles} onClick={toggleModal}>
-                  close
-                </H3>
-                <p>{text}</p>
+                <div style={side2} />
+                <div style={side1}>
+                  <H3 style={closeButtonStyles} onClick={toggleModal}>
+                    close
+                  </H3>
+            <H4 f={4} dangerouslySetInnerHTML={{__html: text}}></H4>
+                </div>
               </div>
-              <div
-                style={{
-                  ...side,
-                  backgroundColor: `${color.purple[0]}`,
-                  transform: `rotateY(180deg) translateZ(150px)`,
-                  border: '3px solid black'
-                }}
-              />
-            </div>
-          )}
-        </Motion>
-      ) : (
-        <Flex
-          alignItems="center"
-          style={{position: 'relative', width: '100%', height: '100%'}}>
-          <H3 style={closeButtonStyles} onClick={toggleModal}>
-            close
-          </H3>
-          <p>{text}</p>
-        </Flex>
-      )}
-    </Modal>
-  );
-};
+            )}
+          </Motion>
+        ) : (
+          <Flex alignItems="center" style={mobileInnerStyles}>
+            <H3 style={closeButtonStyles} onClick={toggleModal}>
+              close
+            </H3>
+            <H4 f={4} dangerouslySetInnerHTML={{__html: text}}></H4>
+          </Flex>
+        )}
+      </Modal>
+    );
+  }
+}
 
 export default connect(
   (store) => ({isModalOpen: store.modal.show, text: store.modal.text}),

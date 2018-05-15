@@ -28,7 +28,7 @@ const Outline = styled.div`
   }
   :hover {
     border: 3px solid ${color.purple[0]};
-    
+
     h4 {
       transform: translateY(-0.5em);
     }
@@ -41,47 +41,34 @@ const Outline = styled.div`
 `;
 
 class HireMe extends React.Component {
-  state = {toggleAnimation: true };
-  componentDidMount() {
-    this.calculateDiameter();
-  }
-  calculateDiameter = () => {
-    if (window.matchMedia("(min-width: 650px)").matches) {
-      console.log('matches');
-      this.setState((state) => ({toggleAnimation: true }));
-    }
-    else {
-      this.setState((state) => ({toggleAnimation: false }));
-    }
-  }
   render() {
     const {isModalOpen, toggleModal} = this.props;
-    const {toggleAnimation} = this.state;
 
-    console.log(toggleAnimation, 'toggleAnimation');
     return (
-  <Container>
-    <Box>
-      <H1 f={7} color={color.purple[0]}>hire me</H1>
-      If you want, check out the ol'
-        <a href="/resume">My resume</a>
-      <H3>
-        <a href="mailto:matt@hew.tools">Let&apos;s work together</a>
-      </H3>
-      <Box>
-        <h2>areas of specialty</h2>
-        <Flex flexWrap="wrap" ml='-8px'>
-          {hireMe.expertise.map((item) => (
-            <Outline key={item.short.toString()} onClick={() => toggleModal({text: item.long})}>
-              <H4>{item.short}</H4>
-            </Outline>
-          ))}
-        </Flex>
-      </Box>
-    </Box>
-    <Modal toggleAnimation={toggleAnimation} component={null} open={isModalOpen} />
-  </Container>      
-        );
+      <Container>
+        <Box>
+          <H1 f={7} color={color.purple[0]}>
+            hire me
+          </H1>
+          <P>I build web stuff. Depending on what you need, I might be the right fit for your company or product. If you want, check out the ol&apos; <a href="/resume">rezzy</a>, or see below for more.</P>
+          <H3>
+            <a href="mailto:matt@hew.tools">contact me</a>
+          </H3>
+          <Box>
+            <Flex flexWrap="wrap" ml="-8px">
+              {hireMe.expertise.map((item) => (
+                <Outline
+                  key={item.short.toString()}
+                  onClick={() => toggleModal({text: item.long})}>
+                  <H4>{item.short}</H4>
+                </Outline>
+              ))}
+            </Flex>
+          </Box>
+        </Box>
+        <Modal open={isModalOpen} />
+      </Container>
+    );
   }
 }
 
