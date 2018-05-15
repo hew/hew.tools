@@ -12,7 +12,7 @@ import {toggleModal} from '../state/modal-state';
 const underline = {textDecoration: `underline wavy ${color.yellow[0]}`};
 
 const Outline = styled.div`
-  border: 2px solid ${color.gray[0]};
+  border: 3px solid black;
   padding: 3em 0em;
   margin: 0.5em;
   width: 17em;
@@ -20,8 +20,15 @@ const Outline = styled.div`
   align-items: center;
   justify-content: center;
   transition: border 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
   :hover {
-    border: 2px solid ${color.purple[0]};
+    border: 3px solid ${color.purple[0]};
+  }
+  :after {
+    content: '';
+    position: absolute;
+    border: 1px solid gray;
   }
 `;
 
@@ -34,7 +41,7 @@ const HireMe = ({isModalOpen, toggleModal}) => (
         <Flex flexWrap="wrap">
           {hireMe.expertise.map((item) => (
             <Outline key={item.toString()} onClick={toggleModal}>
-              <p>{item}</p>
+              <H4>{item}</H4>
             </Outline>
           ))}
         </Flex>

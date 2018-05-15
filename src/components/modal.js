@@ -13,7 +13,7 @@ import {toggleModal} from '../state/modal-state.js';
 // Not sure how to SC this one, so we stick with js styles
 const modalStyles = {
   overlay: {
-    backgroundColor: 'transparent',
+    backgroundColor: 'white',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -28,49 +28,26 @@ const modalStyles = {
     border: 'none',
     background: 'transparent',
     width: '80%',
-    height: '80%',
+    height: '100%',
     maxWidth: '65em'
   }
 };
 
-const modalInnerStyles = {
-  // position: 'absolute',
-  // top: 0,
-  // bottom: 0,
-  // right: 0,
-  // left: 0,
-  // display: 'flex',
-  height: '100px',
-  width: '100px',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  border: 'none',
-  background: 'white',
-  overflow: 'auto',
-  WebkitOverflowScrolling: 'touch',
-  borderRadius: '4px',
-  outline: `5px solid ${color.purple[0]}`,
-  padding: '20px',
-  maxWidth: '65em',
-  perspective: '1000px'
-};
-
-const line = '500px';
-const basePerspective = line + 50;
-const sidePerspective = line / 2;
+const line = 500;
+const basePerspective = line * 2;
+const sidePerspective = line;
 const squareSize = {width: line, height: line};
 
 const side = {
   ...squareSize,
-  ...sidePerspective,
+  perspective: `${sidePerspective}px`,
   position: 'absolute',
   backfaceVisibility: 'inherit'
 };
 
 const base = {
   ...squareSize,
-  ...basePerspective
+  // perspective: `${basePerspective}px`
 };
 
 const closeButtonStyles = {
@@ -81,24 +58,15 @@ const closeButtonStyles = {
 };
 
 const _Modal = ({toggleModal, isModalOpen, Component = () => null}) => {
-  const defaultStyle = {
-    t: 0,
-    z: 0,
-    s: 0
-  };
-  const tween = {
-    t: isModalOpen ? spring(1) : spring(0),
-    z: isModalOpen ? spring(355) : spring(0),
-    s: isModalOpen ? spring(50) : spring(0)
-  };
+  const defaultStyle = { z: 0 };
+  const tween = { z: isModalOpen ? spring(355) : spring(0) };
   return (
     <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
       <Motion defaultStyle={defaultStyle} style={tween}>
-        {({t, z, s}) => (
+        {({z}) => (
           <div
             style={{
               transform: `rotate3d(1, 1, 1, ${z}deg)`,
-              opacity: t,
               transformStyle: 'preserve-3d',
               outline: '2px solid #BEADD7',
               ...base
@@ -107,7 +75,7 @@ const _Modal = ({toggleModal, isModalOpen, Component = () => null}) => {
               style={{
                 ...side,
                 // border: `4px solid ${color.purple[0]}`,
-                 border: `4px solid black`,
+                border: `3px solid black`,
                 backgroundColor: 'white',
                 transform: `translateZ(150px)`
               }}>
@@ -121,7 +89,7 @@ const _Modal = ({toggleModal, isModalOpen, Component = () => null}) => {
                 ...side,
                 backgroundColor: `${color.purple[0]}`,
                 transform: `rotateY(180deg) translateZ(150px)`,
-                border: '2px solid black'
+                border: '3px solid black'
               }}
             />
           </div>
