@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Modal from 'react-modal';
 import Link from 'gatsby-link';
-import Icon from 'react-geomicons';
 import '../styles';
 import {Motion, spring} from 'react-motion';
 

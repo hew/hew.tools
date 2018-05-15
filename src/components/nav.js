@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import NavModal from '../components/nav-modal';
 import Link from 'gatsby-link';
-import Icon from 'react-geomicons';
 import '../styles';
 
 // Wire it up to the modal
