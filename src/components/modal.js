@@ -110,7 +110,11 @@ class _Modal extends React.Component {
     const tween = {z: spring(355)};
 
     return (
-      <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
+      <Modal
+        appElement={document.getElementById('___gatsby')}
+        isOpen={isModalOpen}
+        contentLabel="Modal"
+        style={modalStyles}>
         {toggleAnimation ? (
           <Motion defaultStyle={motionDefaultStyle} style={tween}>
             {({z}) => (
@@ -124,7 +128,7 @@ class _Modal extends React.Component {
                   <H3 style={closeButtonStyles} onClick={toggleModal}>
                     close
                   </H3>
-            <H4 f={4} dangerouslySetInnerHTML={{__html: text}}></H4>
+                  <H4 f={4} dangerouslySetInnerHTML={{__html: text}} />
                 </div>
               </div>
             )}
@@ -134,7 +138,7 @@ class _Modal extends React.Component {
             <H3 style={closeButtonStyles} onClick={toggleModal}>
               close
             </H3>
-            <H4 f={4} dangerouslySetInnerHTML={{__html: text}}></H4>
+            <H4 f={4} dangerouslySetInnerHTML={{__html: text}} />
           </Flex>
         )}
       </Modal>
