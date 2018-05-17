@@ -12,6 +12,7 @@ import {toggleModal} from '../state/modal-state.js';
 class _Modal extends React.Component {
   state = {toggleAnimation: true};
   componentDidMount() {
+    Modal.setAppElement(document.getElementById('___gatsby'));
     this.calculateDiameter();
     window.addEventListener('resize', this.calculateDiameter);
   }
@@ -56,6 +57,8 @@ class _Modal extends React.Component {
         border: toggleAnimation ? 'none' : `3px solid ${color.purple[1]}`
       }
     };
+
+    const underline = {textDecoration: `underline wavy ${color.purple[0]}`};
 
     const line = 500;
     // const basePerspective = line * 2;
@@ -110,11 +113,7 @@ class _Modal extends React.Component {
     const tween = {z: spring(355)};
 
     return (
-      <Modal
-        appElement={document.getElementById('___gatsby')}
-        isOpen={isModalOpen}
-        contentLabel="Modal"
-        style={modalStyles}>
+      <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
         {toggleAnimation ? (
           <Motion defaultStyle={motionDefaultStyle} style={tween}>
             {({z}) => (
@@ -128,7 +127,9 @@ class _Modal extends React.Component {
                   <H3 style={closeButtonStyles} onClick={toggleModal}>
                     close
                   </H3>
-                  <H4 f={4} dangerouslySetInnerHTML={{__html: text}} />
+                  <Box>
+                    <P f={3} dangerouslySetInnerHTML={{__html: text}} />
+                  </Box>
                 </div>
               </div>
             )}
@@ -138,7 +139,7 @@ class _Modal extends React.Component {
             <H3 style={closeButtonStyles} onClick={toggleModal}>
               close
             </H3>
-            <H4 f={4} dangerouslySetInnerHTML={{__html: text}} />
+            <P f={3} dangerouslySetInnerHTML={{__html: text}} />
           </Flex>
         )}
       </Modal>

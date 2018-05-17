@@ -9,7 +9,6 @@ import Modal from '../components/modal';
 import {connect} from 'react-redux';
 import {toggleModal} from '../state/modal-state';
 
-const underline = {textDecoration: `underline wavy ${color.yellow[0]}`};
 
 const Outline = styled.div`
   border: 3px solid ${color.purple[1]};
@@ -23,13 +22,13 @@ const Outline = styled.div`
   position: relative;
   cursor: pointer;
 
-  h4 {
+  h3 {
     transition: transform 0.2s ease-in-out;
   }
   :hover {
     border: 3px solid ${color.purple[0]};
 
-    h4 {
+    h3 {
       transform: translateY(-0.5em);
     }
   }
@@ -50,21 +49,21 @@ class HireMe extends React.Component {
           <H1 f={7} color={color.purple[0]}>
             hire me
           </H1>
-          <P>I'm a javascript generalist with a focus on the front end. I've been writing software for around three years. previous to that, I was a writer/marketer. Depending on what you need, I might be the right fit for your company or product. click the boxes below for more info. feel free to also check out the ol&apos; <a href="/resume">rezzy</a>.</P>
-          <H3>
-            <a href="mailto:matt@hew.tools">contact me</a>
-          </H3>
+          <P>I'm a javascript specialist available for contract work. click the boxes to learn more.</P>
           <Box>
             <Flex flexWrap="wrap" ml="-8px">
               {hireMe.expertise.map((item) => (
                 <Outline
                   key={item.short.toString()}
                   onClick={() => toggleModal({text: item.long})}>
-                  <H4>{item.short}</H4>
+                  <H3>{item.short}</H3>
                 </Outline>
               ))}
             </Flex>
           </Box>
+          <H3>
+            <a href="mailto:matt@hew.tools">let's chat</a>
+          </H3>
         </Box>
         <Modal open={isModalOpen} />
       </Container>
