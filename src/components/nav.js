@@ -28,7 +28,15 @@ class Nav extends Component {
             <Row is="ul" display={['none', 'flex']} ml="auto">
               {items.map(
                 (x, i) =>
-                  !x.external ? (
+                  x.external ? (
+                    <li key={i.toString()}>
+                      <a href={x.link}>
+                        <H4 m={0} px={1}>
+                          {x.text}
+                        </H4>
+                      </a>
+                    </li>
+                  ) : (
                     <li key={i.toString()}>
                       <Link
                         activeClassName="--active"
@@ -38,14 +46,6 @@ class Nav extends Component {
                           {x.text}
                         </H4>
                       </Link>
-                    </li>
-                  ) : (
-                    <li key={i.toString()}>
-                      <a href={x.link}>
-                        <H4 m={0} px={1}>
-                          {x.text}
-                        </H4>
-                      </a>
                     </li>
                   )
               )}

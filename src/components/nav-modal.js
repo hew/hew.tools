@@ -30,25 +30,42 @@ const modalStyles = {
   }
 };
 
-const NavModal = ({open = false, items}) => {
-  const handleClick = (evt) => {
+class NavModal extends React.Component {
+  handleClick = (evt) => {
     evt.persist();
     toggleModal();
   };
-
-  return (
-    <Modal isOpen={open} contentLabel="Modal" style={modalStyles}>
-      <ul style={{padding: 0}}>
-        {items.map((x, i) => (
-          <li key={i} style={{margin: '1em 0'}}>
-            <Link onClick={handleClick} to={x.link}>
-              <h2>{x.text}</h2>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </Modal>
-  );
-};
+  componentDidMount() {
+    Modal.setAppElement(document.getElementById('___gatsby'));
+  }
+  render() {
+    const {open = false, items} = this.props;
+    return (
+      <Modal isOpen={open} contentLabel="Modal" style={modalStyles}>
+        <ul style={{padding: 0}}>
+          {items.map(
+            (x, i) =>
+              x.external ? (
+                <li key={i.toString()} style={{margin: '1em 0'}}>
+                  <a href={x.link}>
+                    <H2>{x.text}</H2>
+                  </a>
+                </li>
+              ) : (
+                <li key={i.toString()} style={{margin: '1em 0'}}>
+                  <Link
+                    activeClassName="--active"
+                    to={x.link}
+                    onClick={this.handleClick}>
+                    <H2>{x.text}</H2>
+                  </Link>
+                </li>
+              )
+          )}
+        </ul>
+      </Modal>
+    );
+  }
+}
 
 export default NavModal;

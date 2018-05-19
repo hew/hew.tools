@@ -9,7 +9,7 @@
     "clean-tag": "^1.0.4",
     "css-wipe": "^4.3.0",
     "gatsby": "^1.9.260",
-    "gatsby-link": "^1.6.8",
+    "gatsby-link": "^1.6.44",
     "gatsby-plugin-google-analytics": "^1.0.15",
     "gatsby-plugin-manifest": "^1.0.4",
     "gatsby-plugin-netlify": "^1.0.4",

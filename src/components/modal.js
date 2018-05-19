@@ -9,6 +9,34 @@ import {Motion, spring} from 'react-motion';
 import {connect} from 'react-redux';
 import {toggleModal} from '../state/modal-state.js';
 
+const modalStyles = {
+  overlay: {
+    position: 'absolute',
+    backgroundColor: 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 10
+  },
+  content: {
+    top: '20px',
+    left: '20px',
+    right: '20px',
+    bottom: '20px',
+    position: 'absolute',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    border: 'none',
+    background: 'transparent',
+    padding: '20px',
+    border: `3px solid ${color.purple[1]}`,
+    overflow: 'none'
+  }
+};
+
 class _Modal extends React.Component {
   state = {toggleAnimation: true};
   componentDidMount() {
@@ -31,32 +59,6 @@ class _Modal extends React.Component {
     const {text, toggleModal, isModalOpen, Component = () => null} = this.props;
 
     const {toggleAnimation} = this.state;
-
-    const modalStyles = {
-      overlay: {
-        backgroundColor: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: 10
-      },
-      content: {
-        top: '20px',
-        left: '20px',
-        right: '20px',
-        bottom: '20px',
-        position: 'absolute',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        border: 'none',
-        background: 'transparent',
-        padding: '20px',
-        border: toggleAnimation ? 'none' : `3px solid ${color.purple[1]}`
-      }
-    };
 
     const underline = {textDecoration: `underline wavy ${color.purple[0]}`};
 
