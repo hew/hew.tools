@@ -11,7 +11,7 @@ import {toggleModal} from '../state/modal-state.js';
 
 const modalStyles = {
   overlay: {
-    position: 'absolute',
+    position: 'fixed',
     backgroundColor: 'white',
     display: 'flex',
     flexDirection: 'column',
