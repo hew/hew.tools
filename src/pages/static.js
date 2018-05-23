@@ -4,24 +4,25 @@ import color from '../styles/color';
 import {hireMe} from '../data';
 import {Motion, spring} from 'react-motion';
 
-class Serverless extends React.Component {
+class Static extends React.Component {
   render() {
 
     return (
       <Container>
         <Box>
           <H1 f={7} color={color.purple[0]}>
-            web hosting is essentially free
+            static is the next evolution of cms
           </H1>
-          <P>if you are still paying for Wordpress hosting, or Squarespace, you might want to reconsider a headless CMS with a static website. Get all of what you are used to, without the pain of worrying about scaling as your business grows.</P>
+          <P>if you are still paying for Wordpress hosting, or Squarespace, you might want to reconsider a headless CMS with a static website.</P>
           <H2>benefits of static sites</H2>
           <ul>
-            <li>No server costs!</li>
-            <li>Instant website load times</li>
+            <li>free hosting forever</li>
+            <li>generally only pay anything when profitable</li>
+            <li>instant page load times</li>
             <li>easy scaling</li>
           </ul>
 
-          <H2>Serverless sites I build</H2>
+          <H2>static CMS sites I build</H2>
           <ul>
             <li>Small business</li>
             <li>Landing pages</li>
@@ -37,4 +38,4 @@ class Serverless extends React.Component {
   }
 }
 
-export default Serverless;
+export default Static;
