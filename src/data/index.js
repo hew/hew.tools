@@ -10,7 +10,7 @@ export default {
       {
         short: 'static CMS',
         long:
-          'Three words: <strong>no server fees</strong>. If the bulk of your website costs are going to hosting Wordpress, or paying for Squarespace, <a href="mailto:matt@hew.tools">we should chat</a> about a static site CMS, otherwise known as the JAM Stack. Check out my <a href="/static">my static cms page</a> to learn more.'
+          'If you are paying for Wordpress, or Squarespace, <a href="mailto:matt@hew.tools">we should chat</a> about a static CMS, the next generation of website. The reasons to switch are many. Check out my <a href="/static">my static cms page</a> to learn more.'
       },
       {
         short: 'react native',

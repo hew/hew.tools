@@ -17,7 +17,7 @@ class Static extends React.Component {
           <H2>benefits of static sites</H2>
           <ul>
             <li>free hosting forever</li>
-            <li>generally only pay anything when profitable</li>
+            <li>only pay anything when profitable</li>
             <li>instant page load times</li>
             <li>easy scaling</li>
           </ul>
