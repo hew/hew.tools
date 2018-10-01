@@ -24,7 +24,7 @@ injectGlobal`
       "Helvetica Neue",
       "Arial",
       sans-serif;
-      line-height: 1.3;
+      line-height: 1.7;
       color: ${color.purple[1]}
   }
   body.ReactModal__Body--open {

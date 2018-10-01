@@ -3,16 +3,17 @@ import React from 'react';
 const Home = () => (
   <Container>
     <Box>
-      <H1 f={7} color={color.purple[0]}>matthew jones</H1>
-      <h2>builds products</h2>
-      <P w={[1, 1 / 2]}>
-        CTO @ <a href="https://protohack.com">protohack</a> & <a href="https://startupleague.io">startup league</a>.
-        hummus and free web enthusiast. ex-marketer, philosopher.
+      <H1 f={7} color={color.purple[0]}>
+        matthew jones
+      </H1>
+      <h2 w={[1, 1 / 2]}>javascript and reasonml generalist</h2>
+      <P mt={4} w={[1, 2 / 3]}>
+        cto @{' '}
+        <a href="https://startupleague.io">startupleague.io</a>. hummus, basketball,
+        and bad jokes, all the way down. hailing from Vancouver, Canada. If you want, check out some{' '}
+        <a href="https://twitter.com/tahini">open sauce</a>, or get in touch{' '}
+        <a href="https://twitter.com/tahini">on twitter.</a>
       </P>
-      <p>
-        <a href="https://twitter.com/tahini">get in touch</a>
-        <br />
-      </p>
     </Box>
   </Container>
 );

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import NavModal from '../components/nav-modal';
 import Link from 'gatsby-link';
 import '../styles';
-import Icon from 'react-geomicons';
+// import Icon from 'react-geomicons';
 
 // Wire it up to the modal
 import {connect} from 'react-redux';
@@ -22,7 +22,7 @@ class Nav extends Component {
           <Flex py={4} align="center">
             <Box mt={2}>
               <Link to="/" style={buttonStyles}>
-                 <H4>{'/'}</H4>
+              {/*<H4>{'/'}</H4>*/}
               </Link>
             </Box>
             <Row is="ul" display={['none', 'flex']} ml="auto">
@@ -58,7 +58,7 @@ class Nav extends Component {
                   ...buttonStyles
                 }}
                 onClick={() => this.props.toggleNavModal(!isModalOpen)}>
-                <Icon name="chevronDown" />
+                <span style={{fontSize: '28px', color: '#d2d4d2'}}>▼</span>
               </a>
             </Flex>
             <NavModal items={items} open={isModalOpen} />
