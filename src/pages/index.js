@@ -11,7 +11,7 @@ const Home = () => (
         cto @{' '}
         <a href="https://startupleague.io">startupleague.io</a>. hummus, basketball,
         and bad jokes, all the way down. hailing from Vancouver, Canada. If you want, check out some{' '}
-        <a href="https://twitter.com/tahini">open sauce</a>, or get in touch{' '}
+        <a href="https://github.com/hew">open source</a>, or get in touch{' '}
         <a href="https://twitter.com/tahini">on twitter.</a>
       </P>
     </Box>
