@@ -1,0 +1,30 @@
+{
+  "name": "hew.tools",
+  "reason": {
+    "react-jsx": 2
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "ppx-flags": [
+      "let-anything/lib/bs/native/let_anything.native"
+  ],
+  "bs-dependencies": [
+    "bs-react-native",
+    "reason-react",
+    "styled-functors",
+    "bs-react-navigation"
+  ],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "suffix": ".js",
+  "refmt": 3
+}
