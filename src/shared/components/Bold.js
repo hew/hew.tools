@@ -29,7 +29,7 @@ function make(f, center, $staropt$star, children) {
                               f,
                               undefined,
                               center,
-                              Js_primitive.some(Style$BsReactNative.combine(Styles.Font[/* fontBoldItalic */5], styl)),
+                              Js_primitive.some(Style$BsReactNative.combine(Styles.Font[/* fontBoldItalic */4], styl)),
                               undefined,
                               undefined,
                               undefined,

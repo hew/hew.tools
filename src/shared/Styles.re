@@ -21,7 +21,6 @@ module Color = {
 
 module Font = {
   let textCenter = style([textAlign(Center)]);
-  let serif = style([fontFamily("WitmanDisplayBold")]);
   let fontWeightNormal = style([fontWeight(`Normal)]);
   let fontWeightBold = style([fontWeight(`Bold)]);
   let fontItalic = style([fontStyle(Italic)]);

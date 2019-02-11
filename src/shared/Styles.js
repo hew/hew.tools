@@ -48,11 +48,6 @@ var textCenter = Style$BsReactNative.style(/* :: */[
       /* [] */0
     ]);
 
-var serif = Style$BsReactNative.style(/* :: */[
-      Style$BsReactNative.fontFamily("WitmanDisplayBold"),
-      /* [] */0
-    ]);
-
 var fontWeightNormal = Style$BsReactNative.style(/* :: */[
       Style$BsReactNative.fontWeight(/* Normal */-453122489),
       /* [] */0
@@ -88,7 +83,6 @@ var opacity30 = Style$BsReactNative.style(/* :: */[
 
 var Font = /* module */[
   /* textCenter */textCenter,
-  /* serif */serif,
   /* fontWeightNormal */fontWeightNormal,
   /* fontWeightBold */fontWeightBold,
   /* fontItalic */fontItalic,

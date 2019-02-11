@@ -19,7 +19,7 @@ let make = () => {
   setCustomText(
     customTextProps(
       ~underlineColorAndroid="#00000000",
-      ~style=Style.style([Style.fontFamily("Secular One")]),
+      ~style=Style.style([Style.fontFamily("Komika")]),
     ),
   );
 

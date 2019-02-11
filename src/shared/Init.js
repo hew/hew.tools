@@ -8,7 +8,7 @@ function make(param) {
   ReactNativeGlobalProps.setCustomText({
         underlineColorAndroid: "#00000000",
         style: Style$BsReactNative.style(/* :: */[
-              Style$BsReactNative.fontFamily("Secular One"),
+              Style$BsReactNative.fontFamily("Komika"),
               /* [] */0
             ])
       });
