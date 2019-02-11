@@ -1,16 +1,16 @@
 bs_package_flags = -bs-package-name hew.tools
-src_root_dir = /Users/hew/Code/hew.tools
-bsc = /Users/hew/Code/hew.tools/node_modules/bs-platform/lib/bsc.exe
-bsdep = /Users/hew/Code/hew.tools/node_modules/bs-platform/lib/bsb_helper.exe
+src_root_dir = /Users/hew/Code/hew-current
+bsc = /Users/hew/Code/hew-current/node_modules/bs-platform/lib/bsc.exe
+bsdep = /Users/hew/Code/hew-current/node_modules/bs-platform/lib/bsb_helper.exe
 warnings = -w -30-40+6+7+27+32..39+44+45+101
-bsc_flags = -nostdlib -I '/Users/hew/Code/hew.tools/node_modules/bs-platform/lib/ocaml' -bs-super-errors -color always
-ppx_flags = -ppx '/Users/hew/Code/hew.tools/node_modules/let-anything/lib/bs/native/let_anything.native'
-bs_package_includes = -I /Users/hew/Code/hew.tools/node_modules/bs-react-native/lib/ocaml -I /Users/hew/Code/hew.tools/node_modules/reason-react/lib/ocaml -I /Users/hew/Code/hew.tools/node_modules/styled-functors/lib/ocaml -I /Users/hew/Code/hew.tools/node_modules/bs-react-navigation/lib/ocaml
+bsc_flags = -nostdlib -I '/Users/hew/Code/hew-current/node_modules/bs-platform/lib/ocaml' -bs-super-errors -color always
+ppx_flags = -ppx '/Users/hew/Code/hew-current/node_modules/let-anything/lib/bs/native/let_anything.native'
+bs_package_includes = -I /Users/hew/Code/hew-current/node_modules/bs-react-native/lib/ocaml -I /Users/hew/Code/hew-current/node_modules/reason-react/lib/ocaml -I /Users/hew/Code/hew-current/node_modules/styled-functors/lib/ocaml -I /Users/hew/Code/hew-current/node_modules/bs-react-navigation/lib/ocaml
 bs_package_dev_includes = 
 namespace = 
 bsb_dir_group = 0
-refmt = /Users/hew/Code/hew.tools/node_modules/bs-platform/lib/refmt.exe
-reason_react_jsx = -ppx '/Users/hew/Code/hew.tools/node_modules/bs-platform/lib/reactjs_jsx_ppx_2.exe'
+refmt = /Users/hew/Code/hew-current/node_modules/bs-platform/lib/refmt.exe
+reason_react_jsx = -ppx '/Users/hew/Code/hew-current/node_modules/bs-platform/lib/reactjs_jsx_ppx_2.exe'
 refmt_flags = --print binary
 bsc_lib_includes = -I src/web -I src/shared/screens -I src/shared/components -I src/shared
 rule build_ast_and_module_sets_from_re

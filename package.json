@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "site:build": "react-scripts build",
+    "build": "npm run bs:build && npm run site:build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "npx bsb -make-world -clean-world -w"
+    "watch": "npx bsb -make-world -clean-world -w",
+    "bs:build": "npx bsb -make-world -clean-world"
   },
   "dependencies": {
     "@react-navigation/web": "^1.0.0-alpha.7",
