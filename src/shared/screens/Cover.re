@@ -20,9 +20,9 @@ let make = (~navigation: Routes.navigation, _children) => {
           </T>
           <T f={`size(1.7)} center=true> {"Javascript & Reason" |> str} </T>
           <Box p={`py(8.)}> <Icons name="bolt" size=30 color="gray" /> </Box>
-          <Bold f={`size(4.8)} center=true> {"Matthew JONES" |> str} </Bold>
+          <Bold f={`size(4.8)} center=true> {"Matthew Jones" |> str} </Bold>
           <T p={`py(8.)} f={`size(1.4)} center=true> {"in" |> str} </T>
-          <Bold f={`size(3.)} center=true> {"Personal Site: 3" |> str} </Bold>
+          <Bold f={`size(3.)} center=true> {"Personal Site: 4" |> str} </Bold>
           <T p={`py(3.)} center=true color="gray">
             {"(This time it's personal)" |> str}
           </T>
