@@ -28,7 +28,7 @@
     "styled-functors": "0.0.10"
   },
   "devDependencies": {
-    "bs-platform": "4.0.7",
+    "bs-platform": "4.0.8",
     "resize-observer-polyfill": "^1.5.1",
     "let-anything": "github:jaredly/let-anything"
   },
