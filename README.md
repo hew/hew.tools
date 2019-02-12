@@ -2,35 +2,40 @@
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-## Technologies Used
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3df7fbe8-af9f-48e3-9e6f-77813ce7077b/deploy-status)](https://app.netlify.com/sites/hewtools/deploys)
 
- * Reason React
- * React Native
- * hew/styled-functors
- * (bs-)react-navigation
+## Status: WIP
 
-## Quick Facts
+This is done enough for public consumption, but still somewhat a work-in-progress. Notably: 
+
+  * **Functionality**. The web-based router bindings - which I hacked together by forking [bs-react-navigation](https://github.com/callstackincubator/bs-react-navigation), are not complete.
+  * **Performance**. The animation library I'm using isn't optimized for web-based consumption.
+
+## Abstract / Motivations
 
  * 100% Written in reasonml
  * 100% React Native (Web)
- * 100% a blast to build
 
-## Motivations
+The idea here is type safety and universality.
 
-I wanted to demonstrate how to write type-safe, x-platform UI code using Reasonml.
+With the UI, using react-native-web, and (something like) styled-functors (I'm still not sold on that API).
 
-## Project Structure 
+With the routing, react-navigation is at a point with their web-based router where you can have a unified API in Reason land, and adjust the bindings to target the underlying router, depending on the platform.
 
-* `src/shared` - components & logic that are shared across the different platforms.
-* `src/[web/mobile]` - platform-specific code.
+## FAQs
+
+#### Why React Native Web over Dom?
+
+This was somewhat extracted from some work stuff, where we go with Web, because of it's stability.
+
+#### Why Not Use Revery?
+
+Again, mostly for work reasons. This was an opportunity for me to think over some ideas.
 
 ## Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), which gives you the following scripts:
+This project was bootstrapped with Create React App, which gives you its development [scripts](https://github.com/facebook/create-react-app).
 
-* `npm start` Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000).
-* `npm run watch` - Compiles Reason code (needed to run `npm start`)
-* `npm test` Launches the test runner in the interactive watch mode.
-* `npm run build` Builds the app for production to the `build` folder.
-* `npm run eject` **Note: this is a one-way operation. Once you `eject`, you can’t go back! So don't ever use this and then commit the changes to master.**
+--- 
 
+LICENSE MIT

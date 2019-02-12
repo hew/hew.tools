@@ -1,1 +1,0 @@
-src/shared/screens/Conclusion.cmj : src/shared/components/Btn.cmj src/shared/components/Epitath.cmj src/shared/components/Icons.cmj src/shared/components/Menu.cmj src/shared/components/MenuButton.cmj src/shared/Routes.cmj src/shared/State.cmj src/shared/Utils.cmj
