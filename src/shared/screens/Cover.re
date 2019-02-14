@@ -29,7 +29,7 @@ let make = (~navigation: Routes.navigation, _children) => {
           <Box p={`py(8.)} />
           <Btn
             onPress={_evt => navigation.navigate(Story)}
-            title="Watch Trailer"
+            title="Read More"
           />
         </Flex>
       </Flex>;

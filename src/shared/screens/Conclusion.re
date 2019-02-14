@@ -32,7 +32,7 @@ let make = (~navigation: Routes.navigation, _children) => {
                   |> ignore
                 )
             }
-            title="Freelance"
+            title="Hire Me!"
           />
           <Box m={`mt(4.)} />
           <Btn.Secondary
