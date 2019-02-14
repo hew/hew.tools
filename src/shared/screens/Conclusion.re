@@ -27,12 +27,12 @@ let make = (~navigation: Routes.navigation, _children) => {
             onPress={
               _evt =>
                 Js.Promise.(
-                  Linking.openURL("mailto:matt@hew.tools")
-                  |> then_(_ => Js.log("opened link to email") |> resolve)
+                  Linking.openURL("https://www.notion.so/hew/Hire-Matthew-Jones-bf740054244d445093c3405ac4020ff5")
+                  |> then_(_ => Js.log("opened link to freelance page") |> resolve)
                   |> ignore
                 )
             }
-            title="Let's Chat!"
+            title="Freelance"
           />
           <Box m={`mt(4.)} />
           <Btn.Secondary
