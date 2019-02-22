@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/tahini
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hew.tools
+  * I am tahini (https://keybase.io/tahini) on keybase.
+  * I have a public key ASAlZXryoUxOHa2ltgiu-dzZcc09HOS-ieB4Mju-oIBDAwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e232f3cae41dc3179b87050a19ff7ff6954d84ad3437be604d279528f0979ac90a",
+      "host": "keybase.io",
+      "kid": "012025657af2a14c4e1dada5b608aef9dcd971cd3d1ce4be89e078323bbea08043030a",
+      "uid": "b974df55f0865156e97a17f0af0b3f19",
+      "username": "tahini"
+    },
+    "merkle_root": {
+      "ctime": 1550868673,
+      "hash": "84edc1a319fb8285ee2bd78e3f8178d1d45cccac6af866b320bb6d4c8e23110040e0dde23cf1c61d9dc38d0797cc4ca5cfa1e2b912218c639435cf13620767cf",
+      "hash_meta": "648addf9da806c75720e0ce123ac2bacfbed5924c8056dacb34755ad7c96004b",
+      "seqno": 4813845
+    },
+    "service": {
+      "entropy": "DdP/ljwmSfIaoa/+A3jIqg+z",
+      "hostname": "hew.tools",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1550868690,
+  "expire_in": 504576000,
+  "prev": "c41987e11be4a09c7dc3e34877fa10be2b12f2df33121a2ea9b240c659a77aea",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJWV68qFMTh2tpbYIrvnc2XHNPRzkvongeDI7vqCAQwMKp3BheWxvYWTESpcCJsQgxBmH4RvkoJx9w+NId/oQvisS8t8zEhouqbJAxlmneurEIKFO+7qbtndXZgrhpTZl19gnKXcaT6SDEZKlSch0SxxgAgHCo3NpZ8RApM1iwaatAYmOGO3oKZssNsJtGCAxxMS41X4zjUpHLbWLCZTIjW936XQbUwjrU+iuso2RJjjCEaqOccuDbsUBCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDK2ARkZyMlZ8wbNx3A8vSotQJXbhd8htmYZNKvHyfRGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tahini
+
+==================================================================
