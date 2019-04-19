@@ -2,7 +2,8 @@
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3df7fbe8-af9f-48e3-9e6f-77813ce7077b/deploy-status)](https://app.netlify.com/sites/hewtools/deploys)
+> Just messing around with universal components n' stuff.
+
 
 ## Status: WIP
 

@@ -7,8 +7,8 @@
     "build": "npm run bs:build && npm run site:build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "npx bsb -make-world -clean-world -w",
-    "bs:build": "npx bsb -make-world -clean-world"
+    "watch": "bsb -make-world -clean-world -w",
+    "bs:build": "bsb -make-world -clean-world"
   },
   "dependencies": {
     "@react-navigation/web": "^1.0.0-alpha.7",
@@ -28,9 +28,8 @@
     "styled-functors": "0.0.10"
   },
   "devDependencies": {
-    "bs-platform": "4.0.8",
-    "resize-observer-polyfill": "^1.5.1",
-    "let-anything": "github:jaredly/let-anything"
+    "bs-platform": "4.0.18",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "eslintConfig": {
     "extends": "react-app"

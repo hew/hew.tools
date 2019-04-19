@@ -11,7 +11,7 @@
     "-bs-super-errors"
   ],
   "ppx-flags": [
-      "let-anything/lib/bs/native/let_anything.native"
+      "./let_anything.native"
   ],
   "bs-dependencies": [
     "bs-react-native",
