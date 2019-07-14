@@ -25,7 +25,7 @@
     "gatsby-transformer-remark": "^1.7.1",
     "gatsby-transformer-sharp": "^1.6.1",
     "jax.js": "^1.0.4",
-    "lodash": "^4.15.0",
+    "lodash": "^4.17.13",
     "netlify-lambda": "^0.4.0",
     "react-geomicons": "^2.1.0",
     "react-helmet": "^5.2.0",
