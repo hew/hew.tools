@@ -1,17 +1,14 @@
+const path = require('path')
+
 module.exports = {
-  siteMetadata: {
-    title: 'hew.tools',
-    author: 'Matthew Jones'
-  },
   plugins: [
-    // 'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet', 
+    'gatsby-plugin-mdx',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        trackingId: "UA-46783407-3",
-        anonymize: true,
+        name: 'posts',
+        path: path.resolve('src/posts'),
       }
-    }
+    },
   ]
 }

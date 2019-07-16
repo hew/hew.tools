@@ -1,34 +1,42 @@
-# hew.tools
 
-My personal website: [https://hew.tools](https://hew.tools).
+# gatsby-theme-blank
 
-## Technologies:
+**WIP** A bare-bones, unstyled MDX blog theme for Gatsby
 
-* Gatsby.js
-* React (Preact Compat)
-* Styled Components
-* Styled System
-* Built with [Paprika](https://github.com/hew/paprika)
-* Optimized to Deploy to Netlify
+This theme in intended for use as a base (i.e. parent) theme which can be used to create custom blog themes.
 
-## Using Styled System
+## Usage
 
-Almost all of the site is a mixture of `<Box>` and `<Flex>` elements. Note the arrays for responsive properties.
-
-```js
-  // Row, 50% Columns
-  <Flex wrap justify="center">
-    <Box width={[1, 1/2]}>
-      <P>
-        Chickpeas.
-      </P>
-    </Box>
-    <Box width={[1, 1/2]}>
-      <P>
-        Tahini.
-      </P>
-    </Box>
-  </Flex>
+```sh
+npm i gatsby-theme-blank
 ```
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hew/hew.tools)
+In your own theme's `gatsby-config.js`, add this theme to the `plugins` array.
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    'gatsby-theme-blank',
+  ]
+}
+```
+
+Add other plugins as needed, and shadow these components to customize the presentation layer:
+
+- `src/gatsby-theme-blank/components/posts.js`: root-level index page
+- `src/gatsby-theme-blank/components/post.js`: post detail page
+
+In the consuming site, add `.mdx` files to the `src/posts/` directory to add blog posts.
+
+**Notes:**
+
+- The implementation details in `gatsby-node.js` are likely to change in the near future, but the outward API should stay the same.
+- Posts are ordered by an exported `date` value *or* a `date` frontmatter field
+- Titles are derived from the first heading found in the MDX document
+
+This theme does **not**:
+
+- Include any styling
+- Include features like RSS, authors, image processing, etc.
+- Include any additional theme options
