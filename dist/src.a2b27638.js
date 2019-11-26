@@ -29512,8 +29512,7 @@ var Reset = function Reset() {
   return _react.default.createElement(_core.Global, {
     styles: {
       body: {
-        margin: '0',
-        backgroundColor: 'lightGray'
+        margin: '0'
       },
       'h1, h2, h3, h4, h5, h6': {
         margin: 0
@@ -29557,15 +29556,29 @@ function App() {
   }, (0, _themeUi.jsx)(_theme.Reset, null), (0, _themeUi.jsx)(_themeUi.Styled.h1, {
     sx: {
       color: 'primary',
-      mb: 3
+      mb: 2
     }
-  }, "Matthew Jones"), (0, _themeUi.jsx)(_themeUi.Styled.p, null, "I'm a fullstack, product type. Currently, CTO", ' ', (0, _themeUi.jsx)(_themeUi.Styled.a, {
+  }, "Matthew Jones"), (0, _themeUi.jsx)(_themeUi.Styled.p, {
+    sx: {
+      mb: 4
+    }
+  }, "Front end / mobile developer."), (0, _themeUi.jsx)(_themeUi.Styled.h4, null, "Links"), (0, _themeUi.jsx)(_themeUi.Styled.p, {
+    sx: {
+      color: 'text'
+    }
+  }, (0, _themeUi.jsx)(_themeUi.Styled.a, {
     sx: {
       color: 'text',
       borderBottom: '2px solid #d2d4d2'
     },
-    href: "https://playqup.com"
-  }, "@playqup"), ".")));
+    href: "https://github.com/hew"
+  }, "github"), "\xA0 / \xA0", (0, _themeUi.jsx)(_themeUi.Styled.a, {
+    sx: {
+      color: 'text',
+      borderBottom: '2px solid #d2d4d2'
+    },
+    href: "https://twitter/tahini"
+  }, "twitter"))));
 }
 
 var rootElement = document.getElementById('root');
@@ -29599,7 +29612,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60374" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58684" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

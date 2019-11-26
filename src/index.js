@@ -9,13 +9,17 @@ function App() {
     <ThemeProvider>
       <Layout sx={{p: 3}}>
         <Reset />
-        <S.h1 sx={{color: 'primary', mb: 3}}>Matthew Jones</S.h1>
-        <S.p>
-          I'm a fullstack, product type. Currently, CTO{' '}
-          <S.a sx={{color: 'text', borderBottom: '2px solid #d2d4d2'}} href="https://playqup.com">
-            @playqup
+        <S.h1 sx={{color: 'primary', mb: 2}}>Matthew Jones</S.h1>
+        <S.p sx={{mb: 4}}>Front end / mobile developer.</S.p>
+        <S.h4>Links</S.h4>
+        <S.p sx={{color: 'text'}}>
+          <S.a sx={{color: 'text', borderBottom: '2px solid #d2d4d2'}} href="https://github.com/hew">
+            github
           </S.a>
-          .
+          &nbsp; / &nbsp;
+          <S.a sx={{color: 'text', borderBottom: '2px solid #d2d4d2'}} href="https://twitter/tahini">
+            twitter
+          </S.a>
         </S.p>
       </Layout>
     </ThemeProvider>
