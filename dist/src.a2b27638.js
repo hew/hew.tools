@@ -29577,8 +29577,14 @@ function App() {
       color: 'text',
       borderBottom: '2px solid #d2d4d2'
     },
-    href: "https://twitter/tahini"
-  }, "twitter"))));
+    href: "https://twitter.com/tahini"
+  }, "twitter"), "\xA0 / \xA0", (0, _themeUi.jsx)(_themeUi.Styled.a, {
+    sx: {
+      color: 'text',
+      borderBottom: '2px solid #d2d4d2'
+    },
+    href: "https://medium.com/@tahini"
+  }, "medium"))));
 }
 
 var rootElement = document.getElementById('root');

@@ -17,8 +17,12 @@ function App() {
             github
           </S.a>
           &nbsp; / &nbsp;
-          <S.a sx={{color: 'text', borderBottom: '2px solid #d2d4d2'}} href="https://twitter/tahini">
+          <S.a sx={{color: 'text', borderBottom: '2px solid #d2d4d2'}} href="https://twitter.com/tahini">
             twitter
+          </S.a>
+          &nbsp; / &nbsp;
+          <S.a sx={{color: 'text', borderBottom: '2px solid #d2d4d2'}} href="https://medium.com/@tahini">
+            medium
           </S.a>
         </S.p>
       </Layout>
