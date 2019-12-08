@@ -2,64 +2,74 @@
 
 import {Global} from '@emotion/core';
 import React, {memo} from 'react';
-import {jsx, useThemeUI, ThemeProvider as TP, Styled} from 'theme-ui';
-import {base} from '@theme-ui/presets';
+import {jsx, useThemeUI, ThemeProvider, Styled} from 'theme-ui';
+import {swiss} from '@theme-ui/presets';
 
-const custom = {
-  colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#9a67e1',
-    secondary: '#05a',
-    accent: '#609',
-    muted: '#f6f6f6f'
+// Some styles are easier to just declare in an actual styles file
+import './styles.css';
+
+const theme = {
+  ...swiss,
+  styles: {
+    ...swiss.styles,
+    root: {},
+    ol: {
+      margin: 0,
+      padding: 0,
+      listStyleType: "none"
+    },
+    li: {
+      display: 'inline-block',
+      height: '100%',
+      padding: '0.5em 0'
+    }
   },
-  fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'system-ui, sans-serif',
-    monospace: 'Menlo, monospace'
+  layout: {
+    main: {
+      flex: '1 1 auto',
+    },
+    section: {
+      flex: '1 1 auto', 
+      overflow: 'hidden',
+    },
+    nav: {
+      justifyContent: 'center', 
+      width: '100%',
+      minHeight: '50px',
+      display: "flex"
+    },
+    footer: {
+      minHeight: "50px",
+      display: 'flex',
+      minWwidth: 0
+    }
   },
-  fontWeights: {
-    body: 400,
-    heading: 800,
-    bold: 800
-  },
-  lineHeights: {
-    body: 1.5,
-    heading: 1.125
+  text: {
+    link: {
+      color: 'red',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      minWwidth: 0,
+      display: 'flex'
+    }
   }
 };
-
-const theme = Object.assign(base, custom);
-
-const ThemeProvider = memo(({children, ...props}) => (
-  <TP theme={theme} {...props}>
-    <Styled.root>{children}</Styled.root>
-  </TP>
-));
 
 const Reset = () =>
   React.createElement(Global, {
     styles: {
       body: {
-        margin: '0',
+        margin: '0'
       },
-      'h1, h2, h3, h4, h5, h6': {
-        margin: 0
-      },
-      small: {
-        fontSize: '100%'
-      },
-      a: {
-        textDecoration: 'none'
-      },
-      button: {
-        border: 0,
-        padding: 0,
-        fontSize: '100%',
-        backgroundColor: 'transparent'
-      }
+      a: {textDecoration: 'none', color: swiss.colors.primary, fontWeight: 'bold'}
     }
   });
 
-export {useThemeUI as useTheme, Reset, ThemeProvider as default};
+const CustomThemeProvider = memo(({children, ...props}) => (
+  <ThemeProvider theme={theme} {...props}>
+    <Reset />
+    <Styled.root>{children}</Styled.root>
+  </ThemeProvider>
+));
+
+export {useThemeUI as useTheme, CustomThemeProvider as default};
