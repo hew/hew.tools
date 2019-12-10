@@ -1,23 +1,43 @@
 /** @jsx jsx */
 import 'babel-polyfill';
 import ReactDOM from 'react-dom';
-import {jsx, Layout, Header} from 'theme-ui';
-import {Box, Flex, Text} from '@theme-ui/components';
-import {BrowserRouter as Router, Switch, Route, Link, useLocation, useHistory} from 'react-router-dom';
+import {jsx, Layout, Styled as s} from 'theme-ui';
+import {Box, Text} from '@theme-ui/components';
+import {BrowserRouter as Router, Switch, Route, useLocation, useHistory} from 'react-router-dom';
 import ThemeProvider from './theme';
 import Home from './home';
 import About from './about';
-import Example from './example';
+import Wavy from './wavy';
 import {useTransition, animated} from 'react-spring';
 
-import {Ol, Li, Section, Main, Nav, Footer} from './elements';
+import {Ol, Li, Section, Main, Header, Nav, Footer, Link} from './elements';
+
+const Navigation = () => (
+  <Nav>
+    <Ol>
+      <Li>
+        <Box>
+          <Text variant="link">
+            <Link a="/home">Home</Link>
+          </Text>
+        </Box>
+      </Li>
+      <Li>
+        <Box mr={4}>
+          <Text variant="link">
+            <Link a="/about">About</Link>
+          </Text>
+        </Box>
+      </Li>
+    </Ol>
+  </Nav>
+);
 
 const AnimatedRoutes = () => {
   const location = useLocation();
   const history = useHistory();
   const transitions = useTransition(location, (location) => location.pathname, {
     from: (previous) => {
-      console.log(previous);
       return {
         opacity: 0,
         transform: `translate3d(${
@@ -40,8 +60,7 @@ const AnimatedRoutes = () => {
     position: 'absolute',
     overflow: 'hidden',
     width: '100%',
-    top: '50px',
-    bottom: '50px',
+    height: '100%'
   };
   return transitions.map(({item: location, props, key}, idx) => (
     <animated.div
@@ -59,7 +78,7 @@ const AnimatedRoutes = () => {
           <About navigate={(route) => history.push(route)} />
         </Route>
         <Route path="/">
-          <Home navigate={(route) => history.push(route)} />
+          <s.h1>home</s.h1>
         </Route>
       </Switch>
     </animated.div>
@@ -71,32 +90,35 @@ function App() {
     <ThemeProvider>
       <Layout>
         <Router>
-          <Header px={2}>
-            <Nav>
-              <Ol>
-                <Li>
-                  <Box px={3} py={2}>
-                    <Text variant="link">
-                      <Link to="/about">About</Link>
-                    </Text>
-                  </Box>
-                </Li>
-                <Li>
-                  <Box px={3} py={2}>
-                    <Text variant="link">
-                      <Link to="/home">Home</Link>
-                    </Text>
-                  </Box>
-                </Li>
-              </Ol>
-            </Nav>
+          <Header>
+            {/* <Navigation />*/}
           </Header>
-          <main sx={{variant: 'layout.main'}}>
+          <Main>
             <Section>
-              <AnimatedRoutes />
+              <Home />
             </Section>
-          </main>
-          <Footer>beep</Footer>
+            <Section>
+              <Wavy />
+              <div sx={{maxWidth: 500, textAlign: 'center'}}>
+                <s.h1>About Me</s.h1>
+                <s.p sx={{mb: 5}}>
+                  I'm a software developer from Vancouver, Canada. I've been building for the web/mobile for the
+                  past four years. I'm big into Javascript, Reason, and Rust. Outside of work, I love to watch
+                  b-ball + news, and hang out with my dog, Winston.
+                </s.p>
+              </div>
+            </Section>
+            {/*
+              <Section>
+              <AnimatedRoutes />
+              </Section>
+            */}
+          </Main>
+          <Footer>
+            <s.a sx={{px: 4}} href="">
+              Source
+            </s.a>
+          </Footer>
         </Router>
       </Layout>
     </ThemeProvider>

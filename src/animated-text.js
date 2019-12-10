@@ -1,6 +1,9 @@
-import React, {useRef, useState, useEffect, useCallback} from 'react';
+/** @jsx jsx */
+import {jsx} from 'theme-ui';
+import {useRef, useState, useEffect, useCallback} from 'react';
 import {useTransition, animated} from 'react-spring';
 import {Text, Box} from '@theme-ui/components';
+import {deep} from '@theme-ui/presets';
 
 export default ({text, callback}) => {
   const ref = useRef([]);
@@ -11,15 +14,13 @@ export default ({text, callback}) => {
       height: 0,
       innerHeight: 0,
       transform: 'perspective(600px) rotateX(0deg)',
-      color: '#8fa5b6'
+      color: deep.colors.background
     },
     enter: [
-      {opacity: 1, height: 80, innerHeight: 80},
-      // {transform: 'perspective(600px) rotateX(180deg)', color: '#28d79f'},
-      // {transform: 'perspective(600px) rotateX(0deg)'}
+      {opacity: 1, height: 80, innerHeight: 80, color: deep.colors.primary},
     ],
-    leave: [{color: '#c23369'}, {innerHeight: 0}, {opacity: 0, height: 0}],
-    update: {color: 'pink'}
+    leave: [{color: "#282828a8"}, {innerHeight: 0}, {opacity: 0, height: 0}],
+    update: [{color: deep.colors.secondary}]
   });
 
   const onExit = useCallback(key => {
@@ -33,15 +34,15 @@ export default ({text, callback}) => {
     ref.current.map(clearTimeout);
     ref.current = [];
     set([]);
-    ref.current.push(setTimeout(() => (text.first ? set(text.first) : null), 1000));
-    ref.current.push(setTimeout(() => (text.second ? set(text.second) : null ), 3000));
-    ref.current.push(setTimeout(() => (text.third ? set(text.third) : null), 6000));
+    ref.current.push(setTimeout(() => (text.first ? set(text.first) : null), 750));
+    ref.current.push(setTimeout(() => (text.second ? set(text.second) : null ), 1800));
+    ref.current.push(setTimeout(() => (text.third ? set(text.third) : null), 2400));
   }, []);
 
   useEffect(() => void reset(), []);
 
   return (
-    <div>
+    <div sx={{minWidth: 350, width: "100%"}}>
       {transitions.map(({item, props: {innerHeight, ...rest}, key}) => (
         <animated.div  key={key} style={{...itemStyles, ...rest}} onClick={_ => onExit(item)}>
           <animated.div style={{overflow: 'hidden', height: innerHeight}}>{item}</animated.div>

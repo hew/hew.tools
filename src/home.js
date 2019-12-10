@@ -1,19 +1,19 @@
-import React, {useRef, useState, useEffect, useCallback} from 'react';
+/** @jsx jsx */
+import {jsx} from 'theme-ui';
 import AnimatedText from './animated-text';
 import Wrapper from './wrapper.js';
 import Modal from './modal';
 import ToggleContent from './toggle-content';
 
 const text = {
-  first: ['React', 'Web', 'Apps'],
-  second: ['React', 'Native', 'Apps'],
-  third: ['React', 'Native', 'Web']
+  first: ['Matthew', 'Jones'],
+  second: ['Matthew', 'Jones', 'Software', 'Developer']
 };
 
 export default ({navigate}) => {
   return (
-    <Wrapper>
+    <div sx={{p: 5, width: "100%"}}>
       <AnimatedText text={text} callback={() => console.log('this is the callback')} />
-    </Wrapper>
+    </div>
   );
 };

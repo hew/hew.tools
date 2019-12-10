@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import {jsx} from 'theme-ui';
-import {Box} from '@theme-ui/components';
+import { useCallback  } from 'react';
 import {useTimeout} from 'react-use';
+import {useSpring, animated as a, interpolate} from 'react-spring';
 
 export const Delay = ({ms = 1200, children}) => {
   const [isReady] = useTimeout(ms);
@@ -10,8 +11,17 @@ export const Delay = ({ms = 1200, children}) => {
 };
 
 export default ({children, border = true}) => {
+  const [{st, xy}, set] = useSpring(() => ({st: 0, xy: [0, 0]}));
+  const interpBg = xy.interpolate(
+    (x, y) => `perspective(400px)`
+  );
+	const onMove = useCallback(({ clientX: x, clientY: y  }) => set({ xy: [x - window.innerWidth / 2, y - window.innerHeight / 2]  }), [])
+  console.log('moving', xy);
+  console.log('interp', interpBg);
+        <div style={{ transform: interpBg }} />
   return (
     <div
+			onMouseMove={onMove}
       sx={{
         p: 4,
         position: 'relative',
@@ -21,9 +31,16 @@ export default ({children, border = true}) => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Box sx={{overflow: 'hidden', width: '100%', height: '100%', border: border ? '2px solid hsl(10, 80%, 50%)' : 'none'}}>
+      <div
+        sx={{
+          overflow: 'hidden',
+          width: '100%',
+          height: '100%',
+          border: border ? '2px solid #282828a8' : 'none',
+          p: 4,
+        }}>
         <Delay>{children}</Delay>
-      </Box>
+      </div>
     </div>
   );
 };

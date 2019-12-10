@@ -3,45 +3,70 @@
 import {Global} from '@emotion/core';
 import React, {memo} from 'react';
 import {jsx, useThemeUI, ThemeProvider, Styled} from 'theme-ui';
-import {swiss} from '@theme-ui/presets';
+import {deep} from '@theme-ui/presets';
 
 // Some styles are easier to just declare in an actual styles file
 import './styles.css';
 
 const theme = {
-  ...swiss,
+  ...deep,
+  fonts: {
+    text: 'Helvetica Neue',
+    heading: 'Passion One'
+  },
   styles: {
-    ...swiss.styles,
+    ...deep.styles,
     root: {},
     ol: {
       margin: 0,
       padding: 0,
-      listStyleType: "none"
+      listStyleType: 'none'
     },
     li: {
       display: 'inline-block',
       height: '100%',
       padding: '0.5em 0'
+    },
+    h1: {
+      ...deep.styles.h1,
+      color: 'secondary'
+    },
+    h4: {
+      ...deep.styles.h4,
+      color: 'primary'
+    },
+    p: {
+      ...deep.styles.p,
+      fontFamily: "text",
+      fontSize: 3,
+      color: 'text'
     }
   },
   layout: {
     main: {
-      flex: '1 1 auto',
+      flex: '1 1 auto'
     },
     section: {
-      flex: '1 1 auto', 
-      overflow: 'hidden',
+      minHeight: '500px',
+      position: 'relative',
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column'
+    },
+    header: {
+      minHeight: '5em'
     },
     nav: {
-      justifyContent: 'center', 
+      justifyContent: 'flex-end',
       width: '100%',
       minHeight: '50px',
-      display: "flex"
+      display: 'flex'
     },
     footer: {
-      minHeight: "50px",
+      mt: 6,
+      minHeight: '50px',
       display: 'flex',
-      minWwidth: 0
+      justifyContent: 'flex-end',
     }
   },
   text: {
@@ -59,9 +84,10 @@ const Reset = () =>
   React.createElement(Global, {
     styles: {
       body: {
-        margin: '0'
+        margin: '0',
+        backgroundColor: deep.colors.background
       },
-      a: {textDecoration: 'none', color: swiss.colors.primary, fontWeight: 'bold'}
+      a: {textDecoration: 'none', color: deep.colors.primary, fontWeight: 'bold', fontSize: 20}
     }
   });
 
@@ -72,4 +98,4 @@ const CustomThemeProvider = memo(({children, ...props}) => (
   </ThemeProvider>
 ));
 
-export {useThemeUI as useTheme, CustomThemeProvider as default};
+export {theme, useThemeUI as useTheme, CustomThemeProvider as default};
