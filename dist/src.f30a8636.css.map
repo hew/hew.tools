@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,EACE,qBACF,CAEA,WAEE,uBACF","file":"src.f30a8636.css","sourceRoot":"..","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody,\n#root {\n  font-family: 'Passion One';\n}\n"]}

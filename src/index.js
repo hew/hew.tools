@@ -115,7 +115,7 @@ function App() {
             */}
           </Main>
           <Footer>
-            <s.a sx={{px: 4}} href="">
+            <s.a sx={{px: 4}} href="https://github.com/hew/hew.tools">
               Source
             </s.a>
           </Footer>
