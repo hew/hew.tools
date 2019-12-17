@@ -58586,13 +58586,9 @@ var _themeUi = require("theme-ui");
 
 var _react = require("react");
 
-var _reactDom = _interopRequireDefault(require("react-dom"));
-
 var _reactSpring = require("react-spring");
 
 var _theme = require("./theme");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
@@ -58603,6 +58599,25 @@ function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 // import {debounce} from './helpers';
+var handleWindowResize = function handleWindowResize() {
+  var _useState = (0, _react.useState)(window.innerHeight),
+      _useState2 = _slicedToArray(_useState, 2),
+      height = _useState2[0],
+      setHeight = _useState2[1];
+
+  var resize = function resize() {
+    return setHeight(window.innerHeight);
+  };
+
+  (0, _react.useEffect)(function () {
+    window.addEventListener('resize', resize);
+    return function () {
+      return window.removeEventListener('resize', resize);
+    };
+  });
+  return height;
+};
+
 var _default = function _default() {
   var _useSpring = (0, _reactSpring.useSpring)(function () {
     return {
@@ -58616,6 +58631,7 @@ var _default = function _default() {
       s = _useSpring2$.s,
       set = _useSpring2[1];
 
+  var windowHeight = handleWindowResize();
   (0, _react.useEffect)(function () {
     var handleScroll = function handleScroll() {
       return set({
@@ -58626,15 +58642,15 @@ var _default = function _default() {
 
     window.addEventListener('scroll', handleScroll);
     return function () {
-      return window.removeEventListener('scroll', debounce(handleScroll));
+      return window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // If you remove this, things go 🍌🍌🍌
-
+  }, []);
+  console.log(windowHeight);
   var interp = y.interpolate(function (o) {
-    return "".concat(300 - o, "px");
+    return "".concat(windowHeight - 2 * (o + windowHeight / 100), "px");
   });
   var interpScale = s.interpolate(function (o) {
-    return "scale(".concat(o <= 190.0 ? 1 + o / 500 : 1.0 + 190.0 / 500, ")");
+    return "scale(".concat(o <= 190.0 ? 1 + o / 500 : 1.0 + 190.50 / 500, ")");
   });
   return (0, _themeUi.jsx)(_reactSpring.animated.div, {
     style: {
@@ -58660,13 +58676,13 @@ var _default = function _default() {
     strokeWidth: "5",
     strokeLinecap: "round",
     strokeDashoffset: interp,
-    strokeDasharray: "300px",
+    strokeDasharray: windowHeight,
     d: "M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"
   }))));
 };
 
 exports.default = _default;
-},{"theme-ui":"node_modules/theme-ui/dist/index.esm.js","react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-spring":"node_modules/react-spring/web.js","./theme":"src/theme.js"}],"src/elements.js":[function(require,module,exports) {
+},{"theme-ui":"node_modules/theme-ui/dist/index.esm.js","react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./theme":"src/theme.js"}],"src/elements.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -58958,7 +58974,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60229" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51389" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
