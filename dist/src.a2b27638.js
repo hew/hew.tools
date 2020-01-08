@@ -49963,6 +49963,9 @@ var AnimatedTextMobile = function AnimatedTextMobile(_ref2) {
   }, []);
   (0, _react.useEffect)(function () {
     play();
+    return function () {
+      ref.current.map(clearTimeout);
+    };
   }, []);
   return (0, _themeUi.jsx)("div", {
     sx: {
@@ -50029,6 +50032,9 @@ var AnimatedText = function AnimatedText(_ref4) {
   }, []);
   (0, _react.useEffect)(function () {
     play();
+    return function () {
+      ref.current.map(clearTimeout);
+    };
   }, []);
   return (0, _themeUi.jsx)("div", {
     sx: {
@@ -50212,6 +50218,8 @@ module.exports = "/apple-icon.0168b340.png";
 module.exports = "/react-native-icon.7412d967.png";
 },{}],"assets/bazaar-portrait.png":[function(require,module,exports) {
 module.exports = "/bazaar-portrait.a61c9da2.png";
+},{}],"assets/qup-screenshot.png":[function(require,module,exports) {
+module.exports = "/qup-screenshot.37818c57.png";
 },{}],"src/portfolio.js":[function(require,module,exports) {
 "use strict";
 
@@ -50233,6 +50241,8 @@ var _appleIcon = _interopRequireDefault(require("../assets/apple-icon.png"));
 var _reactNativeIcon = _interopRequireDefault(require("../assets/react-native-icon.png"));
 
 var _bazaarPortrait = _interopRequireDefault(require("../assets/bazaar-portrait.png"));
+
+var _qupScreenshot = _interopRequireDefault(require("../assets/qup-screenshot.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -50348,17 +50358,24 @@ var _default = function _default() {
     logo: _crossbreedPortraitSkinny.default,
     bg: "primary"
   }), (0, _themeUi.jsx)(PortfolioItem, {
+    title: "QUP",
+    projectDesc: "QUP is a real-time game for high school students to raise money for the activities they love.",
+    link: "https://playqup.com",
+    logo: _qupScreenshot.default,
+    bg: "gray",
+    isRN: true
+  }), (0, _themeUi.jsx)(PortfolioItem, {
     title: "Bazaar",
     projectDesc: "Bazaar is a React Native (Web) boilerplate to start working with AWS quickly and easily.",
     link: "https://github.com/hew/Bazaar",
     logo: _bazaarPortrait.default,
-    bg: "gray",
+    bg: "secondary",
     isRN: true
   }));
 };
 
 exports.default = _default;
-},{"react":"node_modules/react/index.js","theme-ui":"node_modules/theme-ui/dist/index.esm.js","./animated-text":"src/animated-text.js","../assets/crossbreed-portrait-skinny.png":"assets/crossbreed-portrait-skinny.png","../assets/apple-icon.png":"assets/apple-icon.png","../assets/react-native-icon.png":"assets/react-native-icon.png","../assets/bazaar-portrait.png":"assets/bazaar-portrait.png"}],"src/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","theme-ui":"node_modules/theme-ui/dist/index.esm.js","./animated-text":"src/animated-text.js","../assets/crossbreed-portrait-skinny.png":"assets/crossbreed-portrait-skinny.png","../assets/apple-icon.png":"assets/apple-icon.png","../assets/react-native-icon.png":"assets/react-native-icon.png","../assets/bazaar-portrait.png":"assets/bazaar-portrait.png","../assets/qup-screenshot.png":"assets/qup-screenshot.png"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 require("babel-polyfill");

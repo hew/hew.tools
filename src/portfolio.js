@@ -6,6 +6,7 @@ import crossbreedScreenshot from '../assets/crossbreed-portrait-skinny.png';
 import appleLogo from '../assets/apple-icon.png';
 import rnLogo from '../assets/react-native-icon.png';
 import bazaarScreenshot from '../assets/bazaar-portrait.png';
+import qupScreenshot from '../assets/qup-screenshot.png';
 
 const Link = ({children, ...props}) => (
   <a {...props} sx={{variant: 'text.link'}}>
@@ -69,11 +70,19 @@ export default () => {
         bg="primary"
       />
       <PortfolioItem
+        title="QUP"
+        projectDesc="QUP is a real-time game for high school students to raise money for the activities they love."
+        link="https://playqup.com"
+        logo={qupScreenshot}
+        bg="gray"
+        isRN={true}
+      />
+      <PortfolioItem
         title="Bazaar"
         projectDesc="Bazaar is a React Native (Web) boilerplate to start working with AWS quickly and easily."
         link="https://github.com/hew/Bazaar"
         logo={bazaarScreenshot}
-        bg="gray"
+        bg="secondary"
         isRN={true}
       />
     </>

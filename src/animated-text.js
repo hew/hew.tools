@@ -60,6 +60,10 @@ const AnimatedTextMobile = ({text, isMobile}) => {
 
   useEffect(() => {
     play();
+
+    return () => {
+      ref.current.map(clearTimeout);
+    }
   }, []);
 
   return (
@@ -95,6 +99,10 @@ const AnimatedText = ({text, isMobile}) => {
 
   useEffect(() => {
     play();
+
+    return () => {
+      ref.current.map(clearTimeout);
+    }
   }, []);
 
   return (
