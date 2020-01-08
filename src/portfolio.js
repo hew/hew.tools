@@ -64,9 +64,11 @@ export default () => {
       <s.div sx={{variant: 'layout.square'}}>
         <AnimatedText text={text} callback={(route) => console.log('route', route)} />
       </s.div>
+      {/* temp hack */}
+      <span id="crossbreed" /> 
       <PortfolioItem
         title="Crossbreed"
-        link="#"
+        link="#crossbreed"
         projectDesc="Crossbreed lets you search your favorite strains to discover their genetics, and more."
         logo={crossbreedScreenshot}
         bg="primary"
