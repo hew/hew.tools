@@ -3,8 +3,6 @@ import {jsx} from 'theme-ui';
 import {useCallback, useEffect, useState, useRef} from 'react';
 import {useSpring, animated as a, interpolate} from 'react-spring';
 import {theme} from './theme';
-// import {debounce} from './helpers';
-
 
 const handleWindowResize = () => {
   const [height, setHeight] = useState(window.innerHeight);
@@ -30,8 +28,6 @@ export default () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []); 
-
-  console.log(windowHeight);
 
   const interp = y.interpolate((o) => `${(windowHeight - 2 * (o + windowHeight / 100))}px`);
   const interpScale = s.interpolate((o) => `scale(${o <= 190.0 ? 1 + o / 500 : 1.0 + 190.50 / 500})`);

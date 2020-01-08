@@ -16,66 +16,142 @@ const theme = {
   },
   styles: {
     ...deep.styles,
-    root: {},
+    root: {
+      height: '100%',
+      display: 'flex',
+      flex: '1 1 auto',
+      justifyContent: 'center',
+    },
+    Layout: {
+      flex: '1 1 auto',
+      display: 'flex',
+    },
+    Header: {
+      width: '100%',
+    },
+    Main: {
+      position: 'relative'
+    },
+    Container: {
+      width: '100%',
+      maxWidth: '72em',
+      display: 'flex',
+      flexDirection: 'column',
+      py: 0
+    },
+    Footer: {
+      display: 'flex',
+      width: '100%',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      py: 4
+    },
     ol: {
       margin: 0,
       padding: 0,
-      listStyleType: 'none'
+      listStyleType: 'none',
+      display: 'flex',
+      alignItems: 'center'
     },
     li: {
       display: 'inline-block',
-      height: '100%',
-      padding: '0.5em 0'
     },
     h1: {
-      ...deep.styles.h1,
       color: 'secondary'
     },
     h4: {
-      ...deep.styles.h4,
-      color: 'primary'
+      color: 'text',
+      fontWeight: '200'
     },
     p: {
-      ...deep.styles.p,
-      fontFamily: "text",
-      fontSize: 3,
+      fontFamily: 'text',
+      fontSize: 2,
       color: 'text'
     }
   },
   layout: {
-    main: {
-      flex: '1 1 auto'
+    square: {
+      height: ['auto', '800px'],
+      minHeight: '400px',
+      width: '100%',
+      display: 'flex'
     },
-    section: {
-      minHeight: '500px',
-      position: 'relative',
+    fill: {
+      height: '100%',
+      width: '100%',
+      minWidth: 0,
       display: 'flex',
+      flex: '1 1 auto',
+      flexDirection: 'column',
       alignItems: 'center',
-      flexDirection: 'column'
+      justifyContent: 'center',
     },
-    header: {
-      minHeight: '5em'
+    portfolio: {
+      article: {
+        display: 'flex',
+        flex: '1 1 auto',
+        flexDirection: ['column', 'row'],
+        minWidth: 0,
+        alignItems: 'center',
+        justifyContent: 'center', 
+        px: 4, 
+        py: 5, 
+      },
+      image: {
+        width: ['275px', '350px'],
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        mb: [2, 0],
+        px: [0, 5]
+      }
+    },
+    info: {
+      display: 'flex',
+      flex: '1 1 auto',
+      flexDirection: ['column', 'row'],
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     nav: {
       justifyContent: 'flex-end',
       width: '100%',
-      minHeight: '50px',
-      display: 'flex'
-    },
-    footer: {
-      mt: 6,
-      minHeight: '50px',
       display: 'flex',
-      justifyContent: 'flex-end',
-    }
+      py: 4
+    },
   },
   text: {
+    portfolio: {
+      title: {
+        ...deep.styles.h1,
+        color: 'highlight',
+        m: 0
+      },
+      platform: {
+        ...deep.styles.h2,
+        color: 'muted',
+        m: 0
+      },
+      url: {
+        ...deep.styles.h3,
+        m: 0
+      }
+    },
+    hero: {
+      title: {
+        fontSize: ['0.7em', '1.2em'],
+        fontWeight: '800',
+        textTransform: 'uppercase',
+        lineHeight: ['40px', '80px'],
+        margin: 0,
+        color: 'inherit',
+      }
+    },
     link: {
-      color: 'red',
+      ...deep.styles.h3,
+      color: 'muted',
       textDecoration: 'none',
-      fontWeight: 'bold',
-      minWwidth: 0,
-      display: 'flex'
+      borderBottom: '1px solid white',
     }
   }
 };

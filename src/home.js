@@ -1,19 +1,19 @@
 /** @jsx jsx */
-import {jsx} from 'theme-ui';
+import React from 'react'; // required for fragments
+import {jsx, Styled as s} from 'theme-ui';
 import AnimatedText from './animated-text';
-import Wrapper from './wrapper.js';
-import Modal from './modal';
-import ToggleContent from './toggle-content';
 
 const text = {
   first: ['Matthew', 'Jones'],
-  second: ['Matthew', 'Jones', 'Software', 'Developer']
+  second: ['Matthew', 'Jones', 'Mobile', 'Developer']
 };
 
 export default ({navigate}) => {
   return (
-    <div sx={{p: 5, width: "100%"}}>
+    <>
+      <s.div sx={{variant: 'layout.square'}}>
       <AnimatedText text={text} callback={() => console.log('this is the callback')} />
-    </div>
+      </s.div>
+    </>
   );
 };
