@@ -10,6 +10,7 @@ import './styles.css';
 
 const theme = {
   ...deep,
+  breakpoints: ['40em', '52em', '64em'],
   fonts: {
     text: 'Helvetica Neue',
     heading: 'Passion One'
@@ -166,6 +167,8 @@ const Reset = () =>
       a: {textDecoration: 'none', color: deep.colors.primary, fontWeight: 'bold', fontSize: 20}
     }
   });
+
+  console.log("theme", theme)
 
 const CustomThemeProvider = memo(({children, ...props}) => (
   <ThemeProvider theme={theme} {...props}>

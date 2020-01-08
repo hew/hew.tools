@@ -19,8 +19,7 @@ export default () => {
         <s.div sx={{variant: 'layout.fill'}}>
           <div sx={{px: 4, maxWidth: 500, textAlign: 'center'}}>
             <s.h3 sx={{color: 'primary', fontFamily: 'text'}}>
-              I'm a software developer from Vancouver, Canada. I've been building for the web/mobile
-              for the past four years.
+              I'm a software developer from Vancouver, Canada. I work with React Native and Swift to create amazing mobile experiences.
             </s.h3>
           </div>
         </s.div>

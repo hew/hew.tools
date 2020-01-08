@@ -47497,6 +47497,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var theme = _objectSpread({}, _presets.deep, {
+  breakpoints: ['40em', '52em', '64em'],
   fonts: {
     text: 'Helvetica Neue',
     heading: 'Passion One'
@@ -47657,6 +47658,7 @@ var Reset = function Reset() {
   });
 };
 
+console.log("theme", theme);
 var CustomThemeProvider = (0, _react.memo)(function (_ref) {
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);
@@ -49718,7 +49720,139 @@ const apply = merge(createAnimatedComponent, false);
 exports.apply = apply;
 const extendedAnimated = apply(domElements);
 exports.a = exports.animated = extendedAnimated;
-},{"@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","react":"node_modules/react/index.js"}],"src/animated-text.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","react":"node_modules/react/index.js"}],"src/hooks.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.useWindowSize = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _theme = require("./theme");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var useWindowSize = function useWindowSize() {
+  var isClient = (typeof window === "undefined" ? "undefined" : _typeof(window)) === 'object';
+
+  function getSize() {
+    return {
+      width: isClient ? window.innerWidth : undefined,
+      height: isClient ? window.innerHeight : undefined,
+      isMobile: window.matchMedia("(max-width: ".concat(_theme.theme.breakpoints[0], ")")).matches
+    };
+  }
+
+  var _useState = (0, _react.useState)(getSize),
+      _useState2 = _slicedToArray(_useState, 2),
+      windowSize = _useState2[0],
+      setWindowSize = _useState2[1];
+
+  (0, _react.useEffect)(function () {
+    if (!isClient) {
+      return false;
+    }
+
+    function handleResize() {
+      setWindowSize(getSize());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return function () {
+      return window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty array ensures that effect is only run on mount and unmount
+
+  return windowSize;
+};
+
+exports.useWindowSize = useWindowSize;
+},{"react":"node_modules/react/index.js","./theme":"src/theme.js"}],"src/wavy.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _themeUi = require("theme-ui");
+
+var _react = require("react");
+
+var _reactSpring = require("react-spring");
+
+var _theme = require("./theme");
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var handleWindowResize = function handleWindowResize() {
+  var _useState = (0, _react.useState)(window.innerHeight),
+      _useState2 = _slicedToArray(_useState, 2),
+      height = _useState2[0],
+      setHeight = _useState2[1];
+
+  var resize = function resize() {
+    return setHeight(window.innerHeight);
+  };
+
+  (0, _react.useEffect)(function () {
+    window.addEventListener('resize', resize);
+    return function () {
+      return window.removeEventListener('resize', resize);
+    };
+  });
+  return height;
+};
+
+var _default = function _default() {
+  // const [{y, s}, set] = useSpring(() => ({y: window.scrollY, s: 1.0}));
+  // const windowHeight = handleWindowResize();
+  // useEffect(() => {
+  //   const handleScroll = () => set({y: window.scrollY / 3, s: window.scrollY / 2});
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []); 
+  // const interp = y.interpolate((o) => `${(windowHeight - 2 * (o + windowHeight / 100))}px`);
+  // const interpScale = s.interpolate((o) => `scale(${o <= 190.0 ? 1 + o / 500 : 1.0 + 190.50 / 500})`);
+  return (0, _themeUi.jsx)(_reactSpring.animated.div, {
+    style: {
+      padding: '5em 0'
+    }
+  }, (0, _themeUi.jsx)(_reactSpring.animated.svg, {
+    style: {
+      width: 100
+    },
+    viewBox: "5 0 100 80"
+  }, (0, _themeUi.jsx)("g", null, (0, _themeUi.jsx)(_reactSpring.animated.path, {
+    id: "wave",
+    fill: "none",
+    stroke: _theme.theme.colors.muted,
+    strokeWidth: "5",
+    strokeLinecap: "round",
+    d: "M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"
+  }))));
+};
+
+exports.default = _default;
+},{"theme-ui":"node_modules/theme-ui/dist/index.esm.js","react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","./theme":"src/theme.js"}],"src/animated-text.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49733,6 +49867,12 @@ var _react = require("react");
 var _reactSpring = require("react-spring");
 
 var _presets = require("@theme-ui/presets");
+
+var _hooks = require("./hooks");
+
+var _wavy = _interopRequireDefault(require("./wavy"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -49768,17 +49908,10 @@ var itemStyles = {
   cursor: 'pointer'
 };
 
-var _default = function _default(_ref) {
-  var text = _ref.text,
-      callback = _ref.callback;
-  var ref = (0, _react.useRef)([]);
-
-  var _useState = (0, _react.useState)([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      items = _useState2[0],
-      set = _useState2[1];
-
-  var transitions = (0, _reactSpring.useTransition)(items, null, {
+var animationTransitions = function animationTransitions(_ref) {
+  var isMobile = _ref.isMobile,
+      items = _ref.items;
+  return (0, _reactSpring.useTransition)(items, null, {
     from: {
       opacity: 0,
       height: 0,
@@ -49788,15 +49921,31 @@ var _default = function _default(_ref) {
     },
     enter: [{
       opacity: 1,
-      height: window.matchMedia('(max-width: 40em)').matches ? 40 : 80,
-      innerHeight: window.matchMedia('(max-width: 40em)').matches ? 40 : 80,
-      lineHeight: window.matchMedia('(max-width: 40em)').matches ? 40 : 80,
+      height: isMobile ? 40 : 80,
+      innerHeight: isMobile ? 40 : 80,
+      lineHeight: isMobile ? 40 : 80,
       color: _presets.deep.colors.primary
     }],
     // leave: [{color: '#282828a8'}, {innerHeight: 0}, {opacity: 0, height: 0}],
     update: [{
       color: _presets.deep.colors.secondary
     }]
+  });
+};
+
+var AnimatedTextMobile = function AnimatedTextMobile(_ref2) {
+  var text = _ref2.text,
+      isMobile = _ref2.isMobile;
+  var ref = (0, _react.useRef)([]);
+
+  var _useState = (0, _react.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      items = _useState2[0],
+      set = _useState2[1];
+
+  var transitions = animationTransitions({
+    isMobile: isMobile,
+    items: items
   });
   var play = (0, _react.useCallback)(function () {
     ref.current.map(clearTimeout);
@@ -49813,7 +49962,7 @@ var _default = function _default(_ref) {
     }, 2400));
   }, []);
   (0, _react.useEffect)(function () {
-    return void play();
+    play();
   }, []);
   return (0, _themeUi.jsx)("div", {
     sx: {
@@ -49827,12 +49976,12 @@ var _default = function _default(_ref) {
     sx: {
       mb: 6
     }
-  }, transitions.map(function (_ref2) {
-    var item = _ref2.item,
-        _ref2$props = _ref2.props,
-        innerHeight = _ref2$props.innerHeight,
-        rest = _objectWithoutProperties(_ref2$props, ["innerHeight"]),
-        key = _ref2.key;
+  }, transitions.map(function (_ref3) {
+    var item = _ref3.item,
+        _ref3$props = _ref3.props,
+        innerHeight = _ref3$props.innerHeight,
+        rest = _objectWithoutProperties(_ref3$props, ["innerHeight"]),
+        key = _ref3.key;
 
     return (0, _themeUi.jsx)(_reactSpring.animated.div, {
       key: key,
@@ -49850,8 +49999,117 @@ var _default = function _default(_ref) {
   }))));
 };
 
+var AnimatedText = function AnimatedText(_ref4) {
+  var text = _ref4.text,
+      isMobile = _ref4.isMobile;
+  var ref = (0, _react.useRef)([]);
+
+  var _useState3 = (0, _react.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      items = _useState4[0],
+      set = _useState4[1];
+
+  var transitions = animationTransitions({
+    isMobile: isMobile,
+    items: items
+  });
+  var play = (0, _react.useCallback)(function () {
+    ref.current.map(clearTimeout);
+    ref.current = [];
+    set([]);
+    ref.current.push(setTimeout(function () {
+      return text.first ? set(text.first) : null;
+    }, 750));
+    ref.current.push(setTimeout(function () {
+      return text.second ? set(text.second) : null;
+    }, 1800));
+    ref.current.push(setTimeout(function () {
+      return text.third ? set(text.third) : null;
+    }, 2400));
+  }, []);
+  (0, _react.useEffect)(function () {
+    play();
+  }, []);
+  return (0, _themeUi.jsx)("div", {
+    sx: {
+      variant: 'layout.square'
+    }
+  }, (0, _themeUi.jsx)("div", {
+    sx: {
+      variant: 'layout.fill'
+    }
+  }, (0, _themeUi.jsx)(_themeUi.Container, {
+    sx: {
+      mb: 6
+    }
+  }, transitions.map(function (_ref5) {
+    var item = _ref5.item,
+        _ref5$props = _ref5.props,
+        innerHeight = _ref5$props.innerHeight,
+        rest = _objectWithoutProperties(_ref5$props, ["innerHeight"]),
+        key = _ref5.key;
+
+    return (0, _themeUi.jsx)(_reactSpring.animated.div, {
+      key: key,
+      style: _objectSpread({}, itemStyles, {}, rest)
+    }, (0, _themeUi.jsx)(_reactSpring.animated.div, {
+      style: {
+        overflow: 'hidden',
+        height: innerHeight
+      }
+    }, (0, _themeUi.jsx)(_themeUi.Styled.h1, {
+      sx: {
+        variant: 'text.hero.title'
+      }
+    }, item)));
+  }))));
+};
+
+var _default = function _default(_ref6) {
+  var text = _ref6.text;
+
+  var _useWindowSize = (0, _hooks.useWindowSize)(),
+      width = _useWindowSize.width,
+      isMobile = _useWindowSize.isMobile;
+
+  var _useState5 = (0, _react.useState)(undefined),
+      _useState6 = _slicedToArray(_useState5, 2),
+      renderMobile = _useState6[0],
+      setRenderMobile = _useState6[1];
+
+  (0, _react.useEffect)(function () {
+    if (isMobile && !renderMobile) {
+      setRenderMobile(true);
+    } else if (!isMobile && renderMobile) {
+      setRenderMobile(false);
+    }
+  }, []);
+  (0, _react.useEffect)(function () {
+    if (isMobile && !renderMobile) {
+      setRenderMobile(true);
+    } else if (!isMobile && !renderMobile) {
+      setRenderMobile(false);
+    } else if (!isMobile && renderMobile) {
+      setRenderMobile(false);
+    }
+  }, [isMobile]);
+
+  if (renderMobile === undefined) {
+    console.log(width, isMobile);
+    return (0, _themeUi.jsx)(_wavy.default, null);
+  }
+
+  return renderMobile ? (0, _themeUi.jsx)(AnimatedTextMobile, {
+    text: text,
+    isMobile: isMobile
+  }) : (0, _themeUi.jsx)(AnimatedText, {
+    text: text,
+    isMobile: isMobile
+  });
+};
+
 exports.default = _default;
-},{"theme-ui":"node_modules/theme-ui/dist/index.esm.js","react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","@theme-ui/presets":"node_modules/@theme-ui/presets/dist/index.esm.js"}],"src/home.js":[function(require,module,exports) {
+},{"theme-ui":"node_modules/theme-ui/dist/index.esm.js","react":"node_modules/react/index.js","react-spring":"node_modules/react-spring/web.js","@theme-ui/presets":"node_modules/@theme-ui/presets/dist/index.esm.js","./hooks":"src/hooks.js","./wavy":"src/wavy.js"}],"src/home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49942,7 +50200,7 @@ var _default = function _default() {
       color: 'primary',
       fontFamily: 'text'
     }
-  }, "I'm a software developer from Vancouver, Canada. I've been building for the web/mobile for the past four years.")))));
+  }, "I'm a software developer from Vancouver, Canada. I work with React Native and Swift to create amazing mobile experiences.")))));
 };
 
 exports.default = _default;
