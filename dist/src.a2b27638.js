@@ -50326,14 +50326,7 @@ var PortfolioItem = function PortfolioItem(_ref2) {
     }
   }, (0, _themeUi.jsx)(_themeUi.Box, null, (0, _themeUi.jsx)(Link, {
     href: link
-  }, "Link")), (0, _themeUi.jsx)(_themeUi.Box, {
-    sx: {
-      px: 3
-    }
-  }, (0, _themeUi.jsx)(Link, {
-    href: "#modal",
-    onClick: moreAction
-  }, "More"))))));
+  }, "Link"))))));
 };
 
 var text = {

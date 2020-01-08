@@ -39,11 +39,13 @@ const PortfolioItem = ({bg = 'primary', isRN = false, title, projectDesc, logo, 
             <Box>
               <Link href={link}>Link</Link>
             </Box>
-            <Box sx={{px: 3}}>
+            {/*
+              <Box sx={{px: 3}}>
               <Link href="#modal" onClick={moreAction}>
-                More
+              More
               </Link>
-            </Box>
+              </Box>
+            */}
           </Flex>
         </div>
       </div>
