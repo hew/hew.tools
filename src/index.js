@@ -5,6 +5,7 @@ import {jsx, Layout, Container, Header, Main, Footer, Styled as s} from 'theme-u
 import {Box, Text} from '@theme-ui/components';
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import ThemeProvider from './theme';
+import Head from './head'
 import Home from './home';
 import About from './about';
 import Portfolio from './portfolio';
@@ -59,6 +60,7 @@ const Routes = () => {
 function App() {
   return (
     <ThemeProvider>
+      <Head />
       <Layout>
           <Router>
             <Header>
