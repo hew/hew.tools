@@ -59,21 +59,20 @@ const Routes = () => {
 function App() {
   return (
     <ThemeProvider>
-      <Head />
       <Layout>
-          <Router>
-            <Header>
-              <Navigation />
-            </Header>
-            <Main>
-                <Routes />
-            </Main>
-            <Footer>
-              <s.a sx={{px: 4}} href="https://github.com/hew/hew.tools">
-                Source
-              </s.a>
-            </Footer>
-          </Router>
+        <Router>
+          <Header>
+            <Navigation />
+          </Header>
+          <Main>
+            <Routes />
+          </Main>
+          <Footer>
+            <s.a sx={{px: 4}} href="https://github.com/hew/hew.tools">
+              Source
+            </s.a>
+          </Footer>
+        </Router>
       </Layout>
     </ThemeProvider>
   );
