@@ -6,6 +6,12 @@ import {deep} from '@theme-ui/presets';
 import {useWindowSize} from './hooks';
 import Wavy from './wavy';
 
+/*
+* TODO: 
+*
+* This component works, but it's a bit of a shit show currently. Clean this up.
+*/
+
 const itemStyles = {
   position: 'relative',
   overflow: 'hidden',

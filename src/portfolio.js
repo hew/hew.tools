@@ -65,10 +65,9 @@ export default () => {
         <AnimatedText text={text} callback={(route) => console.log('route', route)} />
       </s.div>
       {/* temp hack */}
-      <span id="crossbreed" /> 
       <PortfolioItem
         title="Crossbreed"
-        link="#crossbreed"
+        link="https://crossbreed.app"
         projectDesc="Crossbreed lets you search your favorite strains to discover their genetics, and more."
         logo={crossbreedScreenshot}
         bg="primary"
