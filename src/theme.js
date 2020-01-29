@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
 import {Global} from '@emotion/core';
-import React, {memo} from 'react';
+import {memo, createElement} from 'react';
 import {jsx, useThemeUI, ThemeProvider, Styled} from 'theme-ui';
 import {deep} from '@theme-ui/presets';
 
@@ -12,7 +12,7 @@ const theme = {
   ...deep,
   breakpoints: ['40em', '52em', '64em'],
   fonts: {
-    text: 'Helvetica Neue',
+    text: 'Ubuntu',
     heading: 'Passion One'
   },
   styles: {
@@ -22,13 +22,14 @@ const theme = {
       display: 'flex',
       flex: '1 1 auto',
       justifyContent: 'center',
+      backgroundColor: "background"
     },
     Layout: {
       flex: '1 1 auto',
-      display: 'flex',
+      display: 'flex'
     },
     Header: {
-      width: '100%',
+      width: '100%'
     },
     Main: {
       position: 'relative'
@@ -55,7 +56,7 @@ const theme = {
       alignItems: 'center'
     },
     li: {
-      display: 'inline-block',
+      display: 'inline-block'
     },
     h1: {
       color: 'secondary'
@@ -85,7 +86,7 @@ const theme = {
       flex: '1 1 auto',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
     portfolio: {
       article: {
@@ -94,9 +95,9 @@ const theme = {
         flexDirection: ['column', 'row'],
         minWidth: 0,
         alignItems: 'center',
-        justifyContent: 'center', 
-        px: 4, 
-        py: 5, 
+        justifyContent: 'center',
+        px: 4,
+        py: 5
       },
       image: {
         width: ['275px', '350px'],
@@ -112,14 +113,14 @@ const theme = {
       flex: '1 1 auto',
       flexDirection: ['column', 'row'],
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
     nav: {
       justifyContent: 'flex-end',
       width: '100%',
       display: 'flex',
       py: 4
-    },
+    }
   },
   text: {
     portfolio: {
@@ -145,30 +146,28 @@ const theme = {
         textTransform: 'uppercase',
         lineHeight: ['40px', '80px'],
         margin: 0,
-        color: 'inherit',
+        color: 'inherit'
       }
     },
     link: {
-      ...deep.styles.h3,
-      color: 'muted',
+      fontSize: 2,
+      fontFamily: "text",
+      color: 'primary',
       textDecoration: 'none',
-      borderBottom: '1px solid white',
+      borderBottom: '1px solid',
+      borderBottomColor: 'accent'
     }
   }
 };
 
 const Reset = () =>
-  React.createElement(Global, {
+  createElement(Global, {
     styles: {
-      body: {
-        margin: '0',
-        backgroundColor: deep.colors.background
-      },
-      a: {textDecoration: 'none', color: deep.colors.primary, fontWeight: 'bold', fontSize: 20}
+      '*': {boxSizing: 'border-box'},
+      body: {margin: '0'},
+      a: {textDecoration: 'none', color: 'inherit'}
     }
   });
-
-  console.log("theme", theme)
 
 const CustomThemeProvider = memo(({children, ...props}) => (
   <ThemeProvider theme={theme} {...props}>

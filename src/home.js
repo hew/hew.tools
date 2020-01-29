@@ -12,7 +12,7 @@ export default ({navigate}) => {
   return (
     <>
       <s.div sx={{variant: 'layout.square'}}>
-      <AnimatedText text={text} callback={() => console.log('this is the callback')} />
+        <AnimatedText text={text} callback={() => console.log('this is the callback')} />
       </s.div>
     </>
   );

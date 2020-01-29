@@ -1,7 +1,7 @@
 {
-  "name": "theme-ui-starter",
+  "name": "hew.tools",
   "version": "1.0.0",
-  "description": "A sandbox configured with Theme UI, including the `base` theme.",
+  "description": "hew's website",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -13,6 +13,7 @@
     "@theme-ui/components": "^0.2.50",
     "@theme-ui/presets": "^0.2.44",
     "babel-polyfill": "^6.26.0",
+    "prettier": "^1.19.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-modal": "^3.11.1",
@@ -20,7 +21,8 @@
     "react-spring": "^8.0.27",
     "react-use": "^13.10.1",
     "resize-observer-polyfill": "^1.5.1",
-    "theme-ui": "0.2.0"
+    "theme-ui": "0.2.0",
+    "wrench": "https://github.com/hew/wrench"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",

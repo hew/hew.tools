@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import React from 'react'; // required for fragments
-import {jsx, Styled as s, Container} from 'theme-ui';
+import {jsx, Styled as s} from 'theme-ui';
 import AnimatedText from './animated-text';
-// import Wavy from './wavy';
 
 const text = {
   first: ['React', 'Native'],
