@@ -8,6 +8,8 @@ import ThemeProvider from './theme'
 import Home from './home'
 import About from './about'
 import Portfolio from './portfolio'
+import githubLogo from '../assets/github.svg';
+import twitterLogo from '../assets/twitter.svg';
 
 const Navigation = () => (
   <nav sx={{variant: 'layout.nav'}}>
@@ -66,9 +68,14 @@ function App() {
             <Routes />
           </Main>
           <Footer>
-            <span sx={{variant: 'text.link', mr: 2, mr: 4}}>
-              <a href="https://github.com/hew/hew.tools">
-              Source
+            <span sx={{mr: 3}}>
+              <a href="https://twitter.com/tahini">
+                <img src={twitterLogo} sx={{variant: 'icon'}} />
+              </a>
+            </span>
+            <span sx={{mr: 4}}>
+              <a href="https://github.com/hew">
+                <img src={githubLogo} sx={{variant: 'icon'}} />
               </a>
             </span>
           </Footer>

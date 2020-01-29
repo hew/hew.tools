@@ -157,6 +157,11 @@ const theme = {
       borderBottom: '1px solid',
       borderBottomColor: 'accent'
     }
+  },
+  icon: {
+    display: 'inline-block',
+    width: 25,
+    height: 25
   }
 };
 
