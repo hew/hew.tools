@@ -5,7 +5,7 @@ import AnimatedText from './animated-text';
 
 const text = {
   first: ['Matthew', 'Jones'],
-  second: ['Matthew', 'Jones', 'Mobile', 'Developer']
+  second: ['Matthew', 'Jones', 'Founder', 'Builder']
 };
 
 export default ({navigate}) => {

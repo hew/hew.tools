@@ -1,28 +1,28 @@
 /** @jsx jsx */
 import React from 'react'; // required for fragments
-import {jsx, Styled as s} from 'theme-ui';
+import { jsx, Styled as s } from 'theme-ui';
 import AnimatedText from './animated-text';
 
 const text = {
   first: ['React', 'Native'],
-  second: ['React', 'Native', 'Web', 'IOS']
+  second: ['React', 'Native', 'Web', 'IOS'],
 };
 
 export default () => {
   return (
     <>
-      <s.div sx={{variant: 'layout.square'}}>
-        <AnimatedText text={text} callback={(route) => console.log('route', route)} />
+      <s.div sx={{ variant: 'layout.square' }}>
+        <AnimatedText text={text} callback={route => console.log('route', route)} />
       </s.div>
-      <s.div sx={{variant: 'layout.square'}}>
-        <s.div sx={{variant: 'layout.fill'}}>
-          <div sx={{px: 4, maxWidth: 500, textAlign: 'center'}}>
-            <s.h3 sx={{color: 'primary', fontFamily: 'text'}}>
-              I'm a software developer from Vancouver, Canada. I work with React Native and Swift to create amazing mobile experiences.
-            </s.h3>
+      <article sx={{ variant: 'layout.square' }}>
+        <div sx={{ variant: 'layout.portfolio.article', bg: 'gray' }}>
+          <div sx={{ px: 4, maxWidth: 625, textAlign: 'center' }}>
+            <s.h2 sx={{ variant: 'text.portfolio.platform', color: 'secondary', fontFamily: 'Ubuntu' }}>
+              I'm a web & mobile developer. Currently working at the Snapchat-accelerated <a sx={{borderBottom: '2px solid white'}} href="https://cash.live">cash.live</a>. Previously, I co-founded and helped to build <a sx={{borderBottom: '2px solid white'}} href="https://getsoftserve.com">getsoftserve.com</a>.
+            </s.h2>
           </div>
-        </s.div>
-      </s.div>
+        </div>
+      </article>
     </>
   );
 };

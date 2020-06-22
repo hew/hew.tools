@@ -38,7 +38,7 @@ const PortfolioItem = ({bg = 'primary', isRN = false, title, projectDesc, logo, 
 
 const text = {
   first: ['Portfolio'],
-  second: ['My', 'Mobile', 'Portfolio']
+  second: ['My', '(Mobile)', 'Portfolio']
 };
 
 
@@ -50,14 +50,14 @@ const Portfolio = () => (
     <PortfolioItem
       title="Crossbreed"
       link="https://crossbreed.app"
-      projectDesc="Crossbreed lets you search your favorite strains to discover their genetics, and more."
+      projectDesc="Crossbreed lets you search your favorite cannabis strains to discover their genetics, and more."
       logo={crossbreedScreenshot}
       bg="primary"
     />
     <PortfolioItem
       title="QUP"
       projectDesc="QUP is a real-time game for high school students to raise money for the activities they love."
-      link="https://playqup.com"
+      link="https://getsoftserve.com"
       logo={qupScreenshot}
       bg="gray"
       isRN={true}

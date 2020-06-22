@@ -42,11 +42,11 @@ const theme = {
       py: 0
     },
     Footer: {
+      height: '5em',
       display: 'flex',
       width: '100%',
       justifyContent: 'flex-end',
       alignItems: 'center',
-      py: 4
     },
     ol: {
       margin: 0,
