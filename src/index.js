@@ -31,7 +31,7 @@ const Navigation = () => (
       <s.li>
         <Box px={2} mr={4}>
           <span sx={{variant: 'text.link'}}>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio">Projects</Link>
           </span>
         </Box>
       </s.li>

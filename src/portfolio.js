@@ -37,8 +37,8 @@ const PortfolioItem = ({bg = 'primary', isRN = false, title, projectDesc, logo, 
 );
 
 const text = {
-  first: ['Portfolio'],
-  second: ['My', '(Mobile)', 'Portfolio']
+  first: ['Projects'],
+  second: ['My', 'Projects']
 };
 
 

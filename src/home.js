@@ -4,8 +4,8 @@ import {jsx, Styled as s} from 'theme-ui';
 import AnimatedText from './animated-text';
 
 const text = {
-  first: ['Matthew', 'Jones'],
-  second: ['Matthew', 'Jones', 'Founder', 'Builder']
+  first: ['Matthew'],
+  second: ['Matthew', 'Jones']
 };
 
 export default ({navigate}) => {
