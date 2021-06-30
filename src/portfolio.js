@@ -45,9 +45,9 @@ const PortfolioItem = ({ bg = 'primary', isRN = false, title, projectDesc, logo,
 
 const Portfolio = () => (
   <Fragment>
-    <s.div sx={{ variant: 'layout.square' }}>
-      <AnimatedText text={text} callback={route => console.log('route', route)} />
-    </s.div>
+    <header sx={{ variant: 'layout.square' }}>
+      <AnimatedText text={text} />
+    </header>
     <PortfolioItem
       title="Crossbreed"
       link="https://crossbreed.app"

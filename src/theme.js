@@ -27,28 +27,21 @@ const theme = {
   styles: {
     ...deep.styles,
     root: {
-      height: '100%',
       display: 'flex',
       flex: '1 1 auto',
-      justifyContent: 'center',
       backgroundColor: 'background',
+      fontFamily: 'text'
     },
     // @theme-ui/components
     Layout: {
       flex: '1 1 auto',
-      display: 'flex',
     },
     Header: {
       width: '100%',
     },
-    Main: {
-      position: 'relative',
-    },
+    Main: {},
     Container: {
-      width: '100%',
       maxWidth: '72em',
-      display: 'flex',
-      flexDirection: 'column',
       py: 0,
     },
     Footer: {
@@ -75,32 +68,16 @@ const theme = {
       fontWeight: '200',
     },
     p: {
-      fontFamily: 'text',
       fontSize: 2,
       color: 'text',
     },
   },
   layout: {
-    square: {
-      display: 'flex',
-      width: '100%',
-      height: 'auto',
-      minHeight: '400px',
-    },
-    fill: {
-      display: 'flex',
-      flex: '1 1 auto',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100%',
-      width: '100%',
-      minWidth: 0,
-    },
     portfolio: {
       article: {
         display: 'flex',
         flex: '1 1 auto',
+        flexDirection: ['column', 'row'],
         alignItems: 'center',
         justifyContent: 'center',
         minWidth: 0,
@@ -108,29 +85,14 @@ const theme = {
         py: 5,
       },
       image: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: ['275px', '350px'],
-        mb: [2, 0],
-        px: [0, 5],
+        mr: 4,
         img: {
-          maxHeight: ['250px', 'none'],
+          maxHeight: ['300px', '500px'],
         },
       },
     },
-    info: {
-      display: 'flex',
-      flex: '1 1 auto',
-      flexDirection: ['column', 'row'],
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
     nav: {
-      display: 'flex',
-      flex: 1,
-      justifyContent: 'flex-end',
-      width: '100%',
+      ml: 'auto',
       py: 3,
     },
   },
@@ -146,10 +108,6 @@ const theme = {
         color: 'muted',
         m: 0,
       },
-      textLink: {
-        textDecoration: '2px solid underline !important',
-        textDecorationColor: 'white',
-      },
       url: {
         ...deep.styles.h3,
         m: 0,
@@ -160,17 +118,16 @@ const theme = {
         fontSize: ['1.05em', '1.2em'],
         fontWeight: '800',
         textTransform: 'uppercase',
-        // lineHeight: ['50px', '80px'],
         lineHeight: '80px',
-        margin: 0,
         color: 'inherit',
+        margin: 0,
       },
     },
     about: {
       color: 'secondary',
       fontFamily: 'Ubuntu',
       fontWeight: '800',
-      fontSize: ['1.5em', '2.75em'],
+      fontSize: ['2.0em', '2.75em'],
       m: 0,
     },
     link: {

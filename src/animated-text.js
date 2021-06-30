@@ -45,7 +45,6 @@ const animationTransitions = ({ items }) =>
         color: deep.colors.primary,
       },
     ],
-    // leave: [{color: '#282828a8'}, {innerHeight: 0}, {opacity: 0, height: 0}],
     update: [{ color: deep.colors.secondary }],
   });
 
@@ -72,18 +71,16 @@ export default ({ text }) => {
   }, []);
 
   return (
-    <div sx={{ variant: 'layout.square' }}>
-      <div sx={{ variant: 'layout.fill' }}>
-        <Container sx={{ py: 5 }}>
-          {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-            <animated.div key={key} style={{ ...itemStyles, ...rest }}>
-              <animated.div style={{ overflow: 'hidden', height: innerHeight }}>
-                <s.h1 sx={{ variant: 'text.hero.title' }}>{item}</s.h1>
-              </animated.div>
+    <div sx={{ minHeight: '450px' }}>
+      <Container sx={{ py: 5 }}>
+        {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+          <animated.div key={key} style={{ ...itemStyles, ...rest }}>
+            <animated.div style={{ overflow: 'hidden', height: innerHeight }}>
+              <s.h1 sx={{ variant: 'text.hero.title' }}>{item}</s.h1>
             </animated.div>
-          ))}
-        </Container>
-      </div>
+          </animated.div>
+        ))}
+      </Container>
     </div>
   );
 };
