@@ -5,8 +5,17 @@ import { memo, createElement } from 'react';
 import { jsx, useThemeUI, ThemeProvider, Styled } from 'theme-ui';
 import { deep } from '@theme-ui/presets';
 
-// Some styles are easier to just declare in an actual styles file
-import './styles.css';
+const Reset = () =>
+  createElement(Global, {
+    styles: {
+      '*': { boxSizing: 'border-box' },
+      body: { margin: '0' },
+      a: { color: 'inherit' },
+      img: {
+        maxWidth: '100%',
+      },
+    },
+  });
 
 const theme = {
   ...deep,
@@ -73,39 +82,41 @@ const theme = {
   },
   layout: {
     square: {
+      display: 'flex',
+      width: '100%',
       height: 'auto',
       minHeight: '400px',
-      width: '100%',
-      display: 'flex',
     },
     fill: {
-      height: '100%',
-      width: '100%',
-      minWidth: 0,
       display: 'flex',
       flex: '1 1 auto',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
+      height: '100%',
+      width: '100%',
+      minWidth: 0,
     },
     portfolio: {
       article: {
         display: 'flex',
         flex: '1 1 auto',
-        flexDirection: ['column', 'row'],
-        minWidth: 0,
         alignItems: 'center',
         justifyContent: 'center',
+        minWidth: 0,
         px: 4,
         py: 5,
       },
       image: {
-        width: ['275px', '350px'],
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        width: ['275px', '350px'],
         mb: [2, 0],
         px: [0, 5],
+        img: {
+          maxHeight: ['250px', 'none'],
+        },
       },
     },
     info: {
@@ -116,11 +127,11 @@ const theme = {
       justifyContent: 'center',
     },
     nav: {
-      justifyContent: 'flex-end',
-      width: '100%',
       display: 'flex',
       flex: 1,
-      py: 3
+      justifyContent: 'flex-end',
+      width: '100%',
+      py: 3,
     },
   },
   text: {
@@ -135,6 +146,10 @@ const theme = {
         color: 'muted',
         m: 0,
       },
+      textLink: {
+        textDecoration: '2px solid underline !important',
+        textDecorationColor: 'white',
+      },
       url: {
         ...deep.styles.h3,
         m: 0,
@@ -142,8 +157,7 @@ const theme = {
     },
     hero: {
       title: {
-        // fontSize: ['0.9em', '1.2em'],
-        fontSize: 100,
+        fontSize: ['1.05em', '1.2em'],
         fontWeight: '800',
         textTransform: 'uppercase',
         // lineHeight: ['50px', '80px'],
@@ -152,13 +166,17 @@ const theme = {
         color: 'inherit',
       },
     },
+    about: {
+      color: 'secondary',
+      fontFamily: 'Ubuntu',
+      fontWeight: '800',
+      fontSize: ['1.5em', '2.75em'],
+      m: 0,
+    },
     link: {
       fontSize: 2,
       fontFamily: 'text',
       color: 'primary',
-      textDecoration: 'none',
-      borderBottom: '1px solid',
-      borderBottomColor: 'accent',
     },
   },
   icon: {
@@ -167,18 +185,6 @@ const theme = {
     height: 25,
   },
 };
-
-const Reset = () =>
-  createElement(Global, {
-    styles: {
-      '*': { boxSizing: 'border-box' },
-      body: { margin: '0' },
-      a: { textDecoration: 'none', color: 'inherit' },
-      img: {
-        maxWidth: '100%',
-      },
-    },
-  });
 
 const CustomThemeProvider = memo(({ children, ...props }) => (
   <ThemeProvider theme={theme} {...props}>

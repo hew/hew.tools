@@ -3,11 +3,9 @@ import 'babel-polyfill';
 import ReactDOM from 'react-dom';
 import ThemeProvider from './theme';
 import Home from './home';
-import About from './about';
 import Portfolio from './portfolio';
 import githubLogo from '../assets/github.svg';
 import twitterLogo from '../assets/twitter.svg';
-import { Fragment } from 'react';
 import { jsx, Layout, Header, Main, Footer, Styled as s } from 'theme-ui';
 import { Box } from '@theme-ui/components';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
@@ -18,7 +16,7 @@ const Routes = () => (
       <Portfolio navigate={route => window.history.push(route)} />
     </Route>
     <Route path="/">
-      <About navigate={route => window.history.push(route)} />
+      <Home navigate={route => window.history.push(route)} />
     </Route>
   </Switch>
 );

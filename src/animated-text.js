@@ -1,15 +1,14 @@
 /** @jsx jsx */
-import {jsx, Styled as s, Container} from 'theme-ui';
-import {useRef, useState, useEffect, useCallback} from 'react';
-import {useTransition, animated} from 'react-spring';
-import {deep} from '@theme-ui/presets';
-import {useWindowSize} from './hooks';
+import { jsx, Styled as s, Container } from 'theme-ui';
+import { useRef, useState, useEffect, useCallback } from 'react';
+import { useTransition, animated } from 'react-spring';
+import { deep } from '@theme-ui/presets';
 
 /*
-* TODO: 
-*
-* This component works, but it's a bit of a shit show currently. Clean this up.
-*/
+ * TODO:
+ *
+ * This component works, but it's a bit of a shit show currently. Clean this up.
+ */
 
 const itemStyles = {
   fontFamily: 'Passion One',
@@ -25,17 +24,17 @@ const itemStyles = {
   textTransform: 'uppercase',
   willChange: 'transform, opacity, height',
   whiteSpace: 'nowrap',
-  cursor: 'pointer'
+  cursor: 'pointer',
 };
 
-const animationTransitions = ({items}) =>
+const animationTransitions = ({ items }) =>
   useTransition(items, null, {
     from: {
       opacity: 0,
       height: 0,
       innerHeight: 0,
       transform: 'perspective(600px) rotateX(0deg)',
-      color: deep.colors.background
+      color: deep.colors.background,
     },
     enter: [
       {
@@ -43,17 +42,17 @@ const animationTransitions = ({items}) =>
         height: 80,
         innerHeight: 80,
         lineHeight: 80,
-        color: deep.colors.primary
-      }
+        color: deep.colors.primary,
+      },
     ],
     // leave: [{color: '#282828a8'}, {innerHeight: 0}, {opacity: 0, height: 0}],
-    update: [{color: deep.colors.secondary}]
+    update: [{ color: deep.colors.secondary }],
   });
 
-export default ({text}) => {
+export default ({ text }) => {
   const ref = useRef([]);
   const [items, set] = useState([]);
-  const transitions = animationTransitions({items});
+  const transitions = animationTransitions({ items });
 
   const play = useCallback(() => {
     ref.current.map(clearTimeout);
@@ -69,17 +68,17 @@ export default ({text}) => {
 
     return () => {
       ref.current.map(clearTimeout);
-    }
+    };
   }, []);
 
   return (
-    <div sx={{variant: 'layout.square'}}>
-      <div sx={{variant: 'layout.fill'}}>
-        <Container sx={{py: 5}}>
-          {transitions.map(({item, props: {innerHeight, ...rest}, key}) => (
-            <animated.div key={key} style={{...itemStyles, ...rest}}>
-              <animated.div style={{overflow: 'hidden', height: innerHeight}}>
-                <s.h1 sx={{variant: 'text.hero.title'}}>{item}</s.h1>
+    <div sx={{ variant: 'layout.square' }}>
+      <div sx={{ variant: 'layout.fill' }}>
+        <Container sx={{ py: 5 }}>
+          {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+            <animated.div key={key} style={{ ...itemStyles, ...rest }}>
+              <animated.div style={{ overflow: 'hidden', height: innerHeight }}>
+                <s.h1 sx={{ variant: 'text.hero.title' }}>{item}</s.h1>
               </animated.div>
             </animated.div>
           ))}
