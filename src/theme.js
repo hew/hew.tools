@@ -82,7 +82,7 @@ const theme = {
         justifyContent: 'center',
         minWidth: 0,
         px: 4,
-        py: 5,
+        py: 6,
       },
       image: {
         mr: 4,
@@ -93,7 +93,7 @@ const theme = {
     },
     nav: {
       ml: 'auto',
-      py: 3,
+      py: 4,
     },
   },
   text: {

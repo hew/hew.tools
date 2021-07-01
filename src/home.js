@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react'; // required for fragments
+import {Fragment} from 'react'; // required for fragments
 import { jsx, Container, Styled as s } from 'theme-ui';
 import AnimatedText from './animated-text';
 
@@ -10,7 +10,7 @@ const text = {
 
 export default () => {
   return (
-    <>
+    <Fragment>
       <header sx={{ variant: 'layout.square' }}>
         <AnimatedText text={text} />
       </header>
@@ -35,6 +35,6 @@ export default () => {
           </Container>
         </div>
       </article>
-    </>
+    </Fragment>
   );
 };

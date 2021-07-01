@@ -32,7 +32,7 @@ const Navigation = () => (
         </Box>
       </s.li>
       <s.li>
-        <Box mr={4}>
+        <Box mr={5}>
           <span sx={{ variant: 'text.link' }}>
             <Link to="/portfolio">Projects</Link>
           </span>
@@ -53,7 +53,7 @@ const Social = () => (
         </Box>
       </s.li>
       <s.li>
-        <Box mr={4}>
+        <Box mr={5}>
           <a href="https://github.com/hew" aria-label="Github">
             <img src={githubLogo} sx={{ variant: 'icon' }} alt="Github Logo" />
           </a>
